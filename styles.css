@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*standard width*/
+    --standard-width: 1349px;
+
+
+    /*Font Weight*/
+    --font-weight-1: 900;
+    --font-weight-2: 800;
+    --font-weight-3: 700;
+    --font-weight-4: 600;
+    --font-weight-5: 500;
+    --font-weight-6: 400;
+    --font-weight-7: 300;
+    --font-weight-8: 200;
+    --font-weight-9: 100;
+
+
+    /*Heading Font Sizes*/
+    --h1-size: 46px;
+    --h2-size: 35px;
+    --h3-size: 27px;
+    --h4-size: 21px;
+    --h5-size: 16px;
+    --h6-size: 12px;
+
+    /*Primary colors*/
+    --primary-color-1: rgb(255, 173, 0);
+    --primary-color-2: rgba(255, 189, 49, 1);
+    --primary-color-3: rgba(255, 214, 127, 1);
+    --primary-color-4: rgba(255, 237, 198, 1);
+    --primary-color-5: rgba(255, 237, 198, 1);
+
+    /*Neutral colors*/
+    --neutral-color-1: rgba(255, 255, 255, 1);
+    --neutral-color-2: #b8b8b8;
+    --neutral-color-3: rgba(97, 97, 97, 1);
+    --neutral-color-4: rgba(65, 65, 65, 1);
+    --neutral-color-5: rgba(26, 26, 26, 1);
+    --neutral-color-6: rgba(0, 0, 0, 1);
+    --neutral-color-7: linear-gradient(rgba(0, 0, 0, 1), rgba(97, 97, 97, 1));
+
+    /*Font Family*/
+    --font-family: "Poppins", sans-serif;
+
+
+    /*Orange subtitle with border left Style*/
+    --orange-subtitle-color: rgba(255, 173, 0, 1);
+
+
+    /*Buttons Styles*/
+    --previous-btn-color: rgba(97, 97, 97, 1);
+    --next-btn-color: rgba(255, 173, 0, 1);
+    --booking-btn-color: rgba(26, 26, 26, 1);
+    --booking-btn-background-color: rgba(255, 173, 0, 1);
+    --submit-btn-color: rgba(26, 26, 26, 1);
+    --submit-btn-background-color: rgba(255, 173, 0, 1);
+
+    /*Spacing*/
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 28px;
+    --spacing-xl: 64px;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.section-container {
+    width: 100%;
+    max-width: var(--standard-width);
+    margin: auto;
+}
+
+.two-columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 46%;
+}
+
+.mini-heading-div{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.mini-heading{
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight-5);
+}
+
+.orange-border{
+    height: 3px;
+    width: 50px;
+    background-color: var(--primary-color-1);
+}
+
+.big-heading{
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight-4);
+}
+
+.oranged-border-w-paragraph{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+img[alt="property"]{
+    transition: transform 2s ease-out 100ms;
+}
+
+img[alt="property"]:hover{
+    transform: rotateY(360deg);
+}
+
+.standards{
+    margin: var(--spacing-xl) 0;
+}
+
+img[alt="standard-frame"]{
+    width: 100%;
+}
+.subtitle{
+    padding: var(--spacing-sm) 0;
+}
+
+.tests-w-standards{
+    text-align: center;
+    margin: var(--spacing-xl) 0;
+}
+
+.tests-w-standards .mini-heading-div{
+    justify-content: center;
+}
+
+.tests-w-standards-images .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+
+.tests-w-standards-images .section-container > img{
+    width: 33%;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin: var(--spacing-xl) 0;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--neutral-color-2);
+}
+.single-card{
+    display: flex;
+    justify-content: end;
+}
+
+.added-value-services{
+    margin: var(--spacing-xl) 0;
+}
+.added-value-services .mini-heading-div{
+    justify-content: center;
+}
+.added-value-services .section-container{
+    text-align: center;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-areas: 
+    ". b"
+    "a b"
+    "a c"
+    "h c"
+    "h d"
+    "g d"
+    "g .";
+}
+
+img[alt="push-pull"]{
+    grid-area: a;
+    width: 100%;
+
+}
+
+img[alt="grip-tests"]{
+    grid-area: b;
+    width: 100%;
+
+}
+
+img[alt="biomechanics"]{
+    grid-area: h;
+    width: 100%;
+
+}
+
+img[alt="simulation"]{
+    grid-area: c;
+    width: 100%;
+
+}
+
+img[alt="simulation"]{
+    grid-area: c;
+    width: 100%;
+
+}
+
+img[alt="modular-concrete"]{
+    grid-area: g;
+    width: 100%;
+}
+
+img[alt="impactor-tests"]{
+    grid-area: d;
+    width: 100%;
+
+}
+
+.added-value-cards .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 10px;
+}
+/* left and right column media query*/
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+   
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .left-column{
+        width:100%;
+    }
+    .right-column{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .left-column{
+        width:100%;
+    }
+    .right-column{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .left-column{
+        width:100%;
+    }
+    .right-column{
+        width: 100%;
+    }
+}
