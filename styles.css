@@ -1197,3 +1197,25 @@ img[alt="about-facility"] {
     }
 
 }
+
+
+#partner-slider {
+    width: 60px; /* Adjust width as needed */
+    overflow: hidden;
+  }
+  
+  .partner-logo {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin: 0 10px; /* Adjust margins as needed */
+  }
+  
+  @keyframes slideLeft {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  
+  #partner-slider {
+    animation: slideLeft 10s ease-in-out infinite;
+  }
+  
