@@ -285,8 +285,8 @@ img[alt="standard-frame"] {
 img[alt="push-pull"] {
     grid-area: a;
     width: 100%;
-
 }
+
 
 img[alt="grip-tests"] {
     grid-area: b;
@@ -374,10 +374,10 @@ img[alt="added-value-background"] {
     display: grid;
     grid-auto-flow: column dense;
     grid-template-areas:
-    "a a a a b b"
-    "a a a a b b"
-    "c d d d . . "
-    "c d d d. . ";
+        "a a a a b b"
+        "a a a a b b"
+        "c d d d . . "
+        "c d d d. . ";
     grid-gap: 10px;
     position: relative;
 }
@@ -1200,22 +1200,42 @@ img[alt="about-facility"] {
 
 
 #partner-slider {
-    width: 60px; /* Adjust width as needed */
+    width: 60px;
+    /* Adjust width as needed */
     overflow: hidden;
-  }
-  
-  .partner-logo {
+}
+
+.partner-logo {
     display: inline-block;
-    width: 200px; /* Adjust width as needed */
-    margin: 0 10px; /* Adjust margins as needed */
-  }
-  
-  @keyframes slideLeft {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
-  }
-  
-  #partner-slider {
+    width: 200px;
+    /* Adjust width as needed */
+    margin: 0 10px;
+    /* Adjust margins as needed */
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#partner-slider {
     animation: slideLeft 10s ease-in-out infinite;
-  }
-  
+}
+
+.img-container {
+    width: 200px;
+    height: 200px;
+    background-image: url("./images/aboutus1.svg");
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+
+}
+
+.img-container:hover {
+    background-image: url("./images/aboutus2.svg");
+}
