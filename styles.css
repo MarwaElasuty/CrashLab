@@ -451,12 +451,28 @@ img[alt="about-us4"]:hover {
     text-align: center;
 }
 
-.sponsors-slider .section-container {
+.sponsors .section-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
+.angle-sponsor-left{
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.angle-sponsor-right{
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+.testimonial{
+    margin: var(--spacing-xl) 0;
+}
 .testimonial .mini-heading-div {
     justify-content: center;
 }
@@ -1200,42 +1216,40 @@ img[alt="about-facility"] {
 
 
 #partner-slider {
-    width: 60px;
-    /* Adjust width as needed */
+    width: var(--standard-width);
     overflow: hidden;
 }
 
+
 .partner-logo {
-    display: inline-block;
-    width: 200px;
-    /* Adjust width as needed */
-    margin: 0 10px;
-    /* Adjust margins as needed */
+    margin: 0 var(--spacing-lg);
 }
 
 @keyframes slideLeft {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
     to {
-        transform: translateX(0);
+        transform: translateX(50%);
     }
 }
 
 #partner-slider {
-    animation: slideLeft 10s ease-in-out infinite;
+    animation: slideLeft 4s ease-in-out infinite;
+    width: 64%;
+    display: flex;
+    align-items: center;
 }
 
-.img-container {
-    width: 200px;
+.service-img-container{
+    width: 300px;
     height: 200px;
-    background-image: url("./images/aboutus1.svg");
+    background-image: url("./images/customized-service2.svg");
     background-size: cover;
-    transition: background-image 1s ease-in-out;
-
+    transition: background-image 0.5s ease;
 }
 
-.img-container:hover {
-    background-image: url("./images/aboutus2.svg");
+.service-img-container:hover{
+    background-image: url("./images/customized-service1.svg");
 }
