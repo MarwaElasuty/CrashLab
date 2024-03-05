@@ -69,6 +69,378 @@
     --spacing-lg: 28px;
     --spacing-xl: 64px;
 }
+/*******************NAVIGATION BAR**********************/
+
+
+
+
+/*************** NAVIGATION BAR *****************/
+nav {
+    display: flex;
+    padding: 35px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 89%;
+    margin: auto;
+    column-gap: 27px;
+}
+
+ul {
+    display: flex;
+    column-gap: 92px;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+ul a {
+    text-decoration: none;
+}
+
+
+.ul-list a:hover {
+    color: #518581;
+}
+
+.nav-btns {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.menu-btns {
+    display: none;
+}
+
+.menu-btns > img:nth-of-type(1){
+    padding-right: 10px;
+}
+
+.logo-div {
+    padding-top: 10px;
+}
+
+.nav-btns-w-search {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+}
+
+button[name="login"] {
+    background-color: inherit;
+    padding: 15px;
+    border-style: none;
+    font-size: 23px;
+}
+
+button[name="start"] {
+    padding: 11px;
+    width: 128px;
+    border-style: none;
+    font-size: 16px;
+    background-color: #1b903a;
+    color: white;
+    border-radius: 9px;
+}
+
+img[alt="menu-burger"] {
+    display: none;
+}
+
+.display{
+    display: block;
+}
+/* nav media query */
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #ffffff;
+        padding: 58px;
+        background-color: wheat;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    ul a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border: 5px solid #ffffff;
+    padding: 58px;
+    background-color: wheat;
+    color: black;
+    font-size: 25px;
+    z-index: 2;
+    text-align: center;
+    border-radius: 76px;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #ffffff;
+        padding: 58px;
+        background-color: wheat;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+    .menu-btns {
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 786px) and (min-width:600px) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #ffffff;
+        padding: 58px;
+        background-color: wheat;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border: 5px solid #ffffff;
+    padding: 58px;
+    background-color: wheat;
+    color: black;
+    font-size: 25px;
+    z-index: 2;
+    text-align: center;
+    border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
 
 /*BACKGROUND STYLES*/
 
@@ -1291,6 +1663,7 @@ img[alt="about-facility"] {
 
 .service-img-container:hover {
     background-image: url("./images/customized-service1.svg");
+    
 }
 
 
