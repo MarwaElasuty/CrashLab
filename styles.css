@@ -1291,8 +1291,6 @@ img[alt="about-facility"] {
 
 .service-img-container:hover {
     background-image: url("./images/customized-service1.svg");
-    height: 100vh;
-    background-size: cover;
 }
 
 
