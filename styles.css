@@ -40,7 +40,7 @@
 
     /*Neutral colors*/
     --neutral-color-1: rgba(255, 255, 255, 1);
-    --neutral-color-2: #b8b8b8;
+    --neutral-color-2: #cacaca;
     --neutral-color-3: rgba(97, 97, 97, 1);
     --neutral-color-4: rgba(65, 65, 65, 1);
     --neutral-color-5: rgba(26, 26, 26, 1);
@@ -69,6 +69,7 @@
     --spacing-lg: 28px;
     --spacing-xl: 64px;
 }
+
 /*******************NAVIGATION BAR**********************/
 
 
@@ -81,27 +82,34 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 89%;
+    width: 100%;
     margin: auto;
     column-gap: 27px;
 }
 
 ul {
     display: flex;
-    column-gap: 92px;
+    column-gap: 84px;
     list-style-type: none;
+    padding-right: 63px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 21px;
+    text-align: center;
 }
 
 
 ul a {
     text-decoration: none;
+    color: var(--neutral-color-2);
+}
+
+ul .active {
+    color: white;
 }
 
 
 .ul-list a:hover {
-    color: #518581;
+    color: var(--primary-color-1);
 }
 
 .nav-btns {
@@ -114,12 +122,16 @@ ul a {
     display: none;
 }
 
-.menu-btns > img:nth-of-type(1){
+.menu-btns>img:nth-of-type(1) {
     padding-right: 10px;
 }
 
 .logo-div {
     padding-top: 10px;
+}
+
+img[alt="logo"] {
+    padding-bottom: 5px;
 }
 
 .nav-btns-w-search {
@@ -137,37 +149,62 @@ button[name="login"] {
 
 button[name="start"] {
     padding: 11px;
-    width: 128px;
+    width: 175px;
     border-style: none;
-    font-size: 16px;
-    background-color: #1b903a;
+    font-size: 21px;
+    background-color: inherit;
+    border: 1px solid var(--neutral-color-2);
+    border-radius: 2px;
+    transition: background-color 0.7s;
+}
+
+button[name="mobile-contact-btn"] {
+    padding: 11px;
+    width: 124px;
+    border-style: none;
+    font-size: 21px;
+    background-color: inherit;
+    border: 1px solid var(--neutral-color-2);
     color: white;
-    border-radius: 9px;
+    border-radius: 2px;
+    transition: background-color 0.7s;
+}
+
+button[name="mobile-contact-btn"]:hover {
+    background-color: var(--primary-color-1);
+    cursor: pointer;
+}
+
+button[name="start"]:hover {
+    background-color: var(--primary-color-1);
+    cursor: pointer;
+
 }
 
 img[alt="menu-burger"] {
     display: none;
 }
 
-.display{
-    display: block;
-}
+
 /* nav media query */
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
 
     ul {
         flex-direction: column;
+        padding-right: 0;
+
     }
+
 
     .ul-list {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 20px;
+        top: 108px;
+        right: 14px;
         border: 5px solid #ffffff;
-        padding: 58px;
-        background-color: wheat;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
         color: black;
         font-size: 25px;
         z-index: 2;
@@ -185,17 +222,17 @@ img[alt="menu-burger"] {
 
     .display {
         display: none;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    border: 5px solid #ffffff;
-    padding: 58px;
-    background-color: wheat;
-    color: black;
-    font-size: 25px;
-    z-index: 2;
-    text-align: center;
-    border-radius: 76px;
+        position: absolute;
+        top: 108px;
+        right: 14px;
+        border: 5px solid #ffffff;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
     }
 
     .ul-list a:hover {
@@ -211,8 +248,13 @@ img[alt="menu-burger"] {
         display: block;
     }
 
+    img[alt="menu-burger"]:hover {
+        cursor: pointer;
+    }
+
     nav {
-        padding: 32px;
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+        column-gap: 18px;
     }
 
     .nav-btns {
@@ -226,12 +268,22 @@ img[alt="menu-burger"] {
         border-radius: 10px;
     }
 
+    button[name="mobile-contact-btn"] {
+        padding: 11px;
+        width: 124px;
+    }
+
+    button[name="start"] {
+        border-style: none;
+    }
 
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     ul {
         flex-direction: column;
+        padding-right: 0;
+
     }
 
     ul a {
@@ -245,11 +297,11 @@ img[alt="menu-burger"] {
     .display {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 20px;
-        border: 5px solid #518581;
-        padding: 58px;
-        background-color: white;
+        top: 108px;
+        right: 14px;
+        border: 5px solid #ffffff;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
         color: black;
         font-size: 25px;
         z-index: 2;
@@ -260,11 +312,11 @@ img[alt="menu-burger"] {
     .ul-list {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 20px;
+        top: 108px;
+        right: 14px;
         border: 5px solid #ffffff;
-        padding: 58px;
-        background-color: wheat;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
         color: black;
         font-size: 25px;
         z-index: 2;
@@ -276,24 +328,40 @@ img[alt="menu-burger"] {
         display: block;
     }
 
+    img[alt="menu-burger"]:hover {
+        cursor: pointer;
+    }
+
     .ul-list li {
         padding-bottom: 22px;
     }
 
     nav {
-        padding: 32px;
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+        column-gap: 18px;
     }
 
     .nav-btns {
         display: none;
     }
 
-
-
     .menu-btns {
         display: block;
         padding: 5px;
         border-radius: 10px;
+    }
+
+    button[name="mobile-contact-btn"] {
+        padding: 11px;
+        width: 124px;
+    }
+
+    button[name="start"] {
+        border-style: none;
+    }
+
+    button[name="start"]:hover {
+        color: var(--neutral-color-1);
     }
 }
 
@@ -301,6 +369,8 @@ img[alt="menu-burger"] {
 
     ul {
         flex-direction: column;
+        padding-right: 0;
+
     }
 
     ul a {
@@ -314,11 +384,11 @@ img[alt="menu-burger"] {
     .display {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 20px;
-        border: 5px solid #518581;
-        padding: 58px;
-        background-color: white;
+        top: 108px;
+        right: 14px;
+        border: 5px solid #ffffff;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
         color: black;
         font-size: 25px;
         z-index: 2;
@@ -329,11 +399,11 @@ img[alt="menu-burger"] {
     .ul-list {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 20px;
+        top: 108px;
+        right: 14px;
         border: 5px solid #ffffff;
-        padding: 58px;
-        background-color: wheat;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
         color: black;
         font-size: 25px;
         z-index: 2;
@@ -345,26 +415,41 @@ img[alt="menu-burger"] {
         display: block;
     }
 
+    img[alt="menu-burger"]:hover {
+        cursor: pointer;
+    }
+
     .ul-list li {
         padding-bottom: 22px;
     }
 
     nav {
-        padding: 32px;
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+        column-gap: 18px;
     }
 
     .nav-btns {
         display: none;
     }
 
-
-
-
     .menu-btns {
         display: block;
         background-color: white;
         padding: 5px;
         border-radius: 10px;
+    }
+
+    button[name="mobile-contact-btn"] {
+        padding: 11px;
+        width: 124px;
+    }
+
+    button[name="start"] {
+        border-style: none;
+    }
+
+    button[name="start"]:hover {
+        color: var(--neutral-color-1);
     }
 }
 
@@ -372,6 +457,7 @@ img[alt="menu-burger"] {
 
     ul {
         flex-direction: column;
+        padding-right: 0;
     }
 
     .ul-list a:hover {
@@ -385,11 +471,11 @@ img[alt="menu-burger"] {
     .display {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 20px;
-        border: 5px solid #518581;
-        padding: 58px;
-        background-color: white;
+        top: 108px;
+        right: 14px;
+        border: 5px solid #ffffff;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
         color: black;
         font-size: 25px;
         z-index: 2;
@@ -399,42 +485,60 @@ img[alt="menu-burger"] {
 
     .ul-list {
         display: none;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    border: 5px solid #ffffff;
-    padding: 58px;
-    background-color: wheat;
-    color: black;
-    font-size: 25px;
-    z-index: 2;
-    text-align: center;
-    border-radius: 76px;
+        position: absolute;
+        top: 108px;
+        right: 14px;
+        border: 5px solid #ffffff;
+        padding: var(--spacing-xl);
+        background-color: var(--primary-color-1);
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
     }
 
     img[alt="menu-burger"] {
         display: block;
     }
 
+    img[alt="menu-burger"]:hover {
+        cursor: pointer;
+    }
+
     .ul-list li {
         padding-bottom: 22px;
     }
 
+
     nav {
-        padding: 32px;
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+        column-gap: 18px;
     }
 
     .nav-btns {
         display: none;
     }
 
-
-
     .menu-btns {
         display: block;
         background-color: white;
         padding: 5px;
         border-radius: 10px;
+    }
+
+    button[name="mobile-contact-btn"] {
+        padding: 11px;
+        width: 124px;
+    }
+
+    button[name="start"] {
+        border-style: none;
+    }
+
+    button[name="start"]:hover {
+        color: var(--neutral-color-1);
+        cursor: pointer;
     }
 }
 
@@ -448,7 +552,7 @@ p {
     text-transform: capitalize;
 }
 
-.background-container{
+.background-container {
     background-image: url(./images/main-background.svg);
     color: white;
     background-size: cover;
@@ -457,7 +561,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    filter: contrast(1.2);
+    filter: contrast(1.2) brightness(-0.3);
 }
 
 .background {
@@ -481,6 +585,7 @@ p {
 .background span:nth-of-type(1) {
     color: var(--neutral-color-1);
 }
+
 .background span:nth-of-type(2) {
     color: var(--orange-subtitle-color);
 }
@@ -495,6 +600,11 @@ p {
     color: var(--orange-subtitle-color);
     font-weight: var(--font-weight-4);
     font-size: var(--h2-size);
+    text-align: center;
+}
+
+.background h1 {
+    text-align: center;
 }
 
 .accreditiations {
@@ -904,12 +1014,16 @@ footer {
     padding: var(--spacing-xl) 0 0 0;
     background-color: var(--neutral-color-6);
     color: var(--neutral-color-1);
-
 }
 
 footer h4 {
     font-size: var(--h3-size);
     margin: 0 0 var(--spacing-md) 0;
+}
+
+footer h4:hover {
+    color: var(--primary-color-1);
+    cursor: pointer;
 }
 
 footer .section-container {
@@ -928,6 +1042,11 @@ footer .follow-icons {
 footer p {
     padding: 0 0 var(--spacing-sm) 0;
     color: var(--neutral-color-2);
+}
+
+footer p:hover {
+    color: var(--primary-color-1);
+    cursor: pointer;
 }
 
 img[alt="map"] {
@@ -993,13 +1112,25 @@ img[alt="map"] {
 
 /*************************** TEST CENTER STYLES ***************************/
 
+.test-center-container {
+    background-color: black;
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    filter: contrast(1.2) brightness(-0.3);
+}
+
 .test-center-background {
     background-image: url(./images/test-center-background.svg);
     height: 100vh;
     display: flex;
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position: center;
+    background-position: top;
     color: white;
     flex-direction: column;
     align-items: center;
@@ -1015,7 +1146,7 @@ img[alt="map"] {
 .test-center-background .section-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
 
@@ -1058,7 +1189,7 @@ img[alt="map"] {
 
 .test-center-background .black-card:nth-of-type(1) {
     position: absolute;
-    bottom: -7px;
+    bottom: 70px;
     left: 0;
 }
 
@@ -1216,11 +1347,11 @@ img[alt="overview"] {
 
 /*************************** ABOUT US STYLES ***************************/
 
-.about-legacy-background > *{
+.about-legacy-background>* {
     text-transform: capitalize;
 }
 
-.about-legacy-background{
+.about-legacy-background {
     background-image: url(./images/legacy.svg);
     height: 100vh;
     display: flex;
@@ -1232,17 +1363,18 @@ img[alt="overview"] {
     background-size: contain;
 }
 
-.legacy-cards{
+.legacy-cards {
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
 
-.legacy-cards > div{
+.legacy-cards>div {
     width: 100px;
     height: 100px;
 }
-img[alt="legacy-card1"]{
+
+img[alt="legacy-card1"] {
     width: 100%;
 }
 
@@ -1676,7 +1808,7 @@ img[alt="about-facility"] {
 
 .service-img-container:hover {
     background-image: url("./images/customized-service1.svg");
-    
+
 }
 
 
@@ -2277,4 +2409,8 @@ textarea {
     .contact-details .two-columns>div {
         margin-top: -3px
     }
+}
+
+.display {
+    display: block;
 }
