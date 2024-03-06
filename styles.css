@@ -85,6 +85,8 @@ nav {
     width: 100%;
     margin: auto;
     column-gap: 27px;
+    backdrop-filter: brightness(0.6);
+    -webkit-backdrop-filter: ;
 }
 
 ul {
@@ -1255,17 +1257,10 @@ img[alt="map"] {
     width: 70%;
 }
 
-/* .test-center-background .black-card:nth-of-type(1) {
-    position: absolute;
-    bottom: 70px;
-    left: 0;
-} */
 
 .overview {
-    margin: var(--spacing-xl) 0;
     padding: 0 var(--spacing-md);
     margin-top: 180px;
-
 
 }
 
@@ -1554,8 +1549,9 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .orange-card {
+        top: -96px;
         left: 0;
-        width: 150px;
+        width: 258px;
     }
 
     .test-center-background p:nth-of-type(1) {
@@ -1563,7 +1559,9 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .black-card:nth-of-type(1) {
+        position: absolute;
         right: 0;
+        bottom: 94px;
     }
 
     .test-center-background .black-card {
@@ -1578,13 +1576,14 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .orange-card {
+        top: -96px;
         left: 0;
-        width: 150px;
+        width: 258px;
     }
 
     .test-center-background {
         background-size: cover;
-        height: 128vh;
+        height: 131vh;
     }
 
     .test-center-background p:nth-of-type(1) {
@@ -1592,11 +1591,13 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .black-card:nth-of-type(1) {
+        position: absolute;
         right: 0;
+        bottom: 94px;
     }
 
     .test-center-background .black-card {
-        width: 153px;
+        width: 131vh;
     }
 }
 
@@ -1606,13 +1607,14 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .orange-card {
+        top: -96px;
         left: 0;
-        width: 150px;
+        width: 258px;
     }
 
     .test-center-background {
         background-size: cover;
-        height: 128vh;
+        height: 131vh;
     }
 
     .test-center-background p:nth-of-type(1) {
@@ -1620,11 +1622,13 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .black-card:nth-of-type(1) {
+        position: absolute;
         right: 0;
+        bottom: 94px;
     }
 
     .test-center-background .black-card {
-        width: 153px;
+        width: 131vh;
     }
 
 }
@@ -1636,8 +1640,9 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .orange-card {
+        top: -96px;
         left: 0;
-        width: 150px;
+        width: 258px;
     }
 
     .shrinked-img {
@@ -1646,7 +1651,7 @@ img[alt="about-facility"] {
 
     .test-center-background {
         background-size: cover;
-        height: 128vh;
+        height: 131vh;
     }
 
     .test-center-background p:nth-of-type(1) {
@@ -1654,7 +1659,9 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .black-card:nth-of-type(1) {
+        position: absolute;
         right: 0;
+        bottom: 94px;
     }
 
     .test-center-background .black-card {
@@ -2100,6 +2107,7 @@ img[alt="about-facility"] {
     padding: var(--spacing-xl);
     height: 100vh;
     justify-content: center;
+    backdrop-filter: brightness(0.5);
 }
 
 .blog-background span {
