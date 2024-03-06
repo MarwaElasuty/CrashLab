@@ -26,7 +26,7 @@
     /*Heading Font Sizes*/
     --h1-size: 50px;
     --h2-size: 40px;
-    --h3-size: 24px;
+    --h3-size: 28px;
     --h4-size: 21px;
     --h5-size: 16px;
     --h6-size: 12px;
@@ -133,6 +133,11 @@ ul .active {
 
 img[alt="logo"] {
     padding-bottom: 5px;
+    width: 100%;
+}
+
+img[alt="brand-logo"] {
+    width: 100%;
 }
 
 .nav-btns-w-search {
@@ -725,7 +730,7 @@ img[alt="standard-frame"] {
     justify-content: center;
 }
 
-.tests-w-standards-images{
+.tests-w-standards-images {
     display: flex;
     flex-wrap: wrap;
     column-gap: 5px;
@@ -735,7 +740,7 @@ img[alt="standard-frame"] {
 }
 
 
-.tests-w-standards-img-container{
+.tests-w-standards-img-container {
     width: 33%;
     height: 500px;
     background-image: url(./images/un-colored1.svg);
@@ -744,24 +749,24 @@ img[alt="standard-frame"] {
 }
 
 
-#wide-img{
+#wide-img {
     width: 25%;
     height: 510px;
     background-image: url(./images/un-colored1.svg);
     background-size: cover;
 }
 
-.shrinked-img{
+.shrinked-img {
     width: 18%;
     height: 500px;
-  transition: width 1.5s;
-  background-image: url(./images/un-colored1.svg);
-  background-size: cover;
+    transition: width 1.5s;
+    background-image: url(./images/un-colored1.svg);
+    background-size: cover;
 
 }
 
 
-.shrinked-img:hover{
+.shrinked-img:hover {
     animation: width 0.8s ease forwards;
     background-image: url(./images/colored-box1.jpg);
     cursor: pointer;
@@ -771,20 +776,22 @@ img[alt="standard-frame"] {
     0% {
         width: 18%;
     }
-    100%{
+
+    100% {
         width: 33%;
     }
 }
 
 
-.shrinked-img:nth-of-type(4){
+.shrinked-img:nth-of-type(4) {
     width: 8%;
 }
-.shrinked-img:nth-of-type(4):hover{
+
+.shrinked-img:nth-of-type(4):hover {
     transition: width 0.8s;
 }
 
-.shrinked-img:nth-of-type(5){
+.shrinked-img:nth-of-type(5) {
     width: 8%;
 }
 
@@ -826,13 +833,15 @@ img[alt="standard-frame"] {
 .services-grid {
     display: grid;
     grid-template-areas:
-       ". b"
-       "a b"
-       "a c"
-       "b c"
-       "b d"
-       "e d"
-       "e .";
+        ". b"
+        "a b"
+        "a c"
+        "b c"
+        "b d"
+        "e d"
+        "e .";
+    display: none;
+
 }
 
 img[alt="push-pull"] {
@@ -1067,8 +1076,8 @@ footer {
     color: var(--neutral-color-1);
 }
 
-footer h4 {
-    font-size: var(--h3-size);
+footer h5 {
+    font-size: var(--h4-size);
     margin: 0 0 var(--spacing-md) 0;
 }
 
@@ -1083,6 +1092,10 @@ footer .section-container {
     flex-wrap: wrap;
     row-gap: 10px;
     padding: 0 var(--spacing-md);
+}
+
+footer .section-container>div {
+    width: 15%;
 }
 
 footer .follow-icons {
@@ -1106,7 +1119,7 @@ img[alt="map"] {
 
 .footer-info {
     display: flex;
-    column-gap: 39px;
+    column-gap: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -1121,6 +1134,8 @@ img[alt="map"] {
 
 .footer-tab p {
     color: var(--neutral-color-1);
+    text-align: center;
+    padding: 0 var(--spacing-lg) 0 var(--spacing-lg);
 }
 
 .tab-span {
@@ -1175,12 +1190,16 @@ img[alt="map"] {
     filter: contrast(1.2) brightness(-0.3);
 }
 
+.test-center-container h1 {
+    font-weight: var(--font-weight-4);
+}
+
 .test-center-background {
     background-image: url(./images/test-center-background.svg);
     height: 100vh;
     display: flex;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: contain;
     background-position: top;
     color: white;
     flex-direction: column;
@@ -1238,15 +1257,17 @@ img[alt="map"] {
     width: 70%;
 }
 
-.test-center-background .black-card:nth-of-type(1) {
+/* .test-center-background .black-card:nth-of-type(1) {
     position: absolute;
     bottom: 70px;
     left: 0;
-}
+} */
 
 .overview {
     margin: var(--spacing-xl) 0;
     padding: 0 var(--spacing-md);
+    margin-top: 180px;
+
 
 }
 
@@ -1361,7 +1382,7 @@ img[alt="overview"] {
     background-color: white;
     text-transform: uppercase;
     font-weight: var(--font-weight-4);
-    font-size: var(--h2-size);
+    font-size: var(--h3-size);
     padding: var(--spacing-xl) var(--spacing-lg);
     position: absolute;
     right: 142px;
@@ -1398,7 +1419,7 @@ img[alt="overview"] {
 
 /*************************** ABOUT US STYLES ***************************/
 
-.about-container{
+.about-container {
     background-color: black;
     background-image: url(./images/legacy.svg);
 
@@ -1529,6 +1550,27 @@ img[alt="about-facility"] {
         width: 100%;
     }
 
+    .test-center-background {
+        background-size: cover;
+        height: 128vh;
+    }
+
+    .test-center-background .orange-card {
+        left: 0;
+        width: 150px;
+    }
+
+    .test-center-background p:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .test-center-background .black-card:nth-of-type(1) {
+        right: 0;
+    }
+
+    .test-center-background .black-card {
+        width: 153px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -1537,6 +1579,27 @@ img[alt="about-facility"] {
         width: 100%;
     }
 
+    .test-center-background .orange-card {
+        left: 0;
+        width: 150px;
+    }
+
+    .test-center-background {
+        background-size: cover;
+        height: 128vh;
+    }
+
+    .test-center-background p:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .test-center-background .black-card:nth-of-type(1) {
+        right: 0;
+    }
+
+    .test-center-background .black-card {
+        width: 153px;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -1545,7 +1608,25 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .orange-card {
-        right: unset;
+        left: 0;
+        width: 150px;
+    }
+
+    .test-center-background {
+        background-size: cover;
+        height: 128vh;
+    }
+
+    .test-center-background p:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .test-center-background .black-card:nth-of-type(1) {
+        right: 0;
+    }
+
+    .test-center-background .black-card {
+        width: 153px;
     }
 
 }
@@ -1557,7 +1638,29 @@ img[alt="about-facility"] {
     }
 
     .test-center-background .orange-card {
-        right: unset;
+        left: 0;
+        width: 150px;
+    }
+
+    .shrinked-img {
+        width: 100%;
+    }
+
+    .test-center-background {
+        background-size: cover;
+        height: 128vh;
+    }
+
+    .test-center-background p:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .test-center-background .black-card:nth-of-type(1) {
+        right: 0;
+    }
+
+    .test-center-background .black-card {
+        width: 153px;
     }
 }
 
@@ -1607,24 +1710,40 @@ img[alt="about-facility"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .overview {
         padding: 0 var(--spacing-md);
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        margin-top: 320px;
     }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .overview {
         padding: 0 var(--spacing-md);
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        margin-top: 320px;
     }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .overview {
         padding: 0 var(--spacing-md);
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        margin-top: 320px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .overview {
         padding: 0 var(--spacing-md);
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        margin-top: 320px;
     }
 }
 
@@ -1771,6 +1890,10 @@ img[alt="about-facility"] {
         position: unset;
 
     }
+
+    .innovative-cards .left-column>p {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -1783,6 +1906,10 @@ img[alt="about-facility"] {
         position: unset;
 
     }
+
+    .innovative-cards .left-column>p {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -1793,7 +1920,10 @@ img[alt="about-facility"] {
     .innovative-cards .left-column {
         width: 100%;
         position: unset;
+    }
 
+    .innovative-cards .left-column>p {
+        width: 100%;
     }
 }
 
@@ -1805,6 +1935,10 @@ img[alt="about-facility"] {
     .innovative-cards .left-column {
         width: 100%;
         position: unset;
+    }
+
+    .innovative-cards .left-column>p {
+        width: 100%;
     }
 }
 
@@ -1813,17 +1947,53 @@ img[alt="about-facility"] {
     footer {
         padding: var(--spacing-xl) 0 0 0;
     }
+
+    footer h5 {
+        font-size: var(--h5-size);
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     footer {
         padding: var(--spacing-xl) 0 0 0;
     }
+
+    footer h5 {
+        font-size: var(--h5-size);
+    }
+
+    footer .section-container>div:nth-of-type(2) {
+        width: 38%;
+    }
+
+    footer .section-container>div:nth-of-type(3) {
+        width: 43%;
+    }
+
+    footer .section-container>div {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     footer {
         padding: var(--spacing-xl) 0 0 0;
+    }
+
+    footer h5 {
+        font-size: var(--h5-size);
+    }
+
+    footer .section-container>div:nth-of-type(2) {
+        width: 38%;
+    }
+
+    footer .section-container>div:nth-of-type(3) {
+        width: 43%;
+    }
+
+    footer .section-container>div {
+        width: 100%;
     }
 }
 
@@ -1832,6 +2002,21 @@ img[alt="about-facility"] {
         padding: var(--spacing-xl) 0 0 0;
     }
 
+    footer h5 {
+        font-size: var(--h5-size);
+    }
+
+    footer .section-container>div {
+        width: 100%;
+    }
+
+    footer .section-container>div:nth-of-type(2) {
+        width: 38%;
+    }
+
+    footer .section-container>div:nth-of-type(3) {
+        width: 43%;
+    }
 }
 
 
@@ -1870,22 +2055,23 @@ img[alt="about-facility"] {
     transition: background-image 0.5s ease;
 }
 
-.service-img-container:nth-of-type(1){
+.service-img-container:nth-of-type(1) {
     grid-area: a;
 }
-.service-img-container:nth-of-type(2){
+
+.service-img-container:nth-of-type(2) {
     grid-area: b;
 }
 
-.service-img-container:nth-of-type(1){
+.service-img-container:nth-of-type(1) {
     grid-area: c;
 }
 
-.service-img-container:nth-of-type(1){
+.service-img-container:nth-of-type(1) {
     grid-area: d;
 }
 
-.service-img-container:nth-of-type(1){
+.service-img-container:nth-of-type(1) {
     grid-area: e;
 }
 
@@ -1897,7 +2083,7 @@ img[alt="about-facility"] {
 
 /********************** BLOG *******************************/
 
-.blog-container{
+.blog-container {
     background-image: url(./images/blog-car.jpeg);
     display: flex;
     flex-direction: column;
@@ -1907,7 +2093,7 @@ img[alt="about-facility"] {
     height: 100vh;
     justify-content: center;
     background-position: bottom;
-    filter: contrast(1.2) ;
+    filter: contrast(1.2);
 }
 
 .blog-background {
@@ -2062,13 +2248,16 @@ img[alt="blog1"] {
     .blog-cards .section-container>div {
         width: 32%;
     }
-    .blog-background p:nth-of-type(1){
+
+    .blog-background p:nth-of-type(1) {
         width: 100%;
     }
-    .blog-background h1{
+
+    .blog-background h1 {
         width: 100%;
     }
-    .blog-background h2{
+
+    .blog-background h2 {
         width: 100%;
     }
 }
@@ -2081,13 +2270,16 @@ img[alt="blog1"] {
     .hidden-blogs {
         display: none;
     }
-    .blog-background p:nth-of-type(1){
+
+    .blog-background p:nth-of-type(1) {
         width: 100%;
     }
-    .blog-background h1{
+
+    .blog-background h1 {
         width: 100%;
     }
-    .blog-background h2{
+
+    .blog-background h2 {
         width: 100%;
     }
 }
@@ -2100,13 +2292,16 @@ img[alt="blog1"] {
     .hidden-blogs {
         display: none;
     }
-    .blog-background p:nth-of-type(1){
+
+    .blog-background p:nth-of-type(1) {
         width: 100%;
     }
-    .blog-background h1{
+
+    .blog-background h1 {
         width: 100%;
     }
-    .blog-background h2{
+
+    .blog-background h2 {
         width: 100%;
     }
 }
@@ -2119,13 +2314,16 @@ img[alt="blog1"] {
     .hidden-blogs {
         display: none;
     }
-    .blog-background p:nth-of-type(1){
+
+    .blog-background p:nth-of-type(1) {
         width: 100%;
     }
-    .blog-background h1{
+
+    .blog-background h1 {
         width: 100%;
     }
-    .blog-background h2{
+
+    .blog-background h2 {
         width: 100%;
     }
 }
@@ -2267,9 +2465,10 @@ img[alt="blog1"] {
 
 /********************** CONTACT US ****************/
 
-.contact-container{
+.contact-container {
     background-color: black;
 }
+
 .contact-background {
     background-color: var(--neutral-color-6);
     color: var(--neutral-color-1);
