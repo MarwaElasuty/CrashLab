@@ -725,31 +725,71 @@ img[alt="standard-frame"] {
     justify-content: center;
 }
 
-.tests-w-standards-images .section-container {
+.tests-w-standards-images{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 5px;
     row-gap: 5px;
+    overflow-x: hidden;
+    justify-content: center;
 }
 
-.tests-w-standards-images .section-container>img {
+
+.tests-w-standards-img-container{
     width: 33%;
-}
-.tests-w-standards-images .section-container>img:hover {
-    /* animation: standard-move 1s; */
-    width: 50%;
-    transition: all 0.5s;
+    height: 500px;
+    background-image: url(./images/un-colored1.svg);
+    background-size: cover;
 
 }
 
 
-/* @keyframes standard-move{
-    0%{
-        width: 100px;
+#wide-img{
+    width: 25%;
+    height: 510px;
+    background-image: url(./images/un-colored1.svg);
+    background-size: cover;
+}
+
+.shrinked-img{
+    width: 18%;
+    height: 500px;
+  transition: width 1.5s;
+  background-image: url(./images/un-colored1.svg);
+  background-size: cover;
+
+}
+
+
+.shrinked-img:hover{
+    animation: width 0.8s ease forwards;
+    background-image: url(./images/colored-box1.jpg);
+    cursor: pointer;
+}
+
+@keyframes width {
+    0% {
+        width: 18%;
     }
     100%{
-        width: 500px;
+        width: 33%;
     }
-} */
+}
+
+
+.shrinked-img:nth-of-type(4){
+    width: 8%;
+}
+.shrinked-img:nth-of-type(4):hover{
+    transition: width 0.8s;
+}
+
+.shrinked-img:nth-of-type(5){
+    width: 8%;
+}
+
+
+
 
 .arrows {
     display: flex;
