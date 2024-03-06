@@ -25,7 +25,7 @@
 
     /*Heading Font Sizes*/
     --h1-size: 50px;
-    --h2-size: 31px;
+    --h2-size: 40px;
     --h3-size: 24px;
     --h4-size: 21px;
     --h5-size: 16px;
@@ -448,17 +448,27 @@ p {
     text-transform: capitalize;
 }
 
-.background {
+.background-container{
     background-image: url(./images/main-background.svg);
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    filter: contrast(1.2);
+}
+
+.background {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     background-size: cover;
-    padding: var(--spacing-xl);
-    height: 100vh;
+    padding: 0 var(--spacing-md) 0 var(--spacing-md);
+    height: 87vh;
     justify-content: center;
-    background-position: bottom;
 }
 
 .background p {
@@ -468,11 +478,14 @@ p {
     width: 70%;
 }
 
-.background span {
+.background span:nth-of-type(1) {
+    color: var(--neutral-color-1);
+}
+.background span:nth-of-type(2) {
     color: var(--orange-subtitle-color);
 }
 
-.background h1 {
+.background h1:nth-of-type(2) {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: var(--spacing-sm) 0 0 0;
@@ -481,7 +494,7 @@ p {
 .background .mini-orange-subtitle {
     color: var(--orange-subtitle-color);
     font-weight: var(--font-weight-4);
-
+    font-size: var(--h2-size);
 }
 
 .accreditiations {
