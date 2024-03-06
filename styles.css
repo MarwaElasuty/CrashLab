@@ -1559,20 +1559,35 @@ img[alt="innovation-img1"]{
 }
 
 
-.innovation-details > div:nth-of-type(1){
+.innovation-details > .inno-one{
+    padding: var(--spacing-md) var(--spacing-xl);
     position: relative;
     top: 244px;
-    left: 134px;
+    left: 50px;
     width: 112%;
     height: 24vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.innovation-details > div:nth-of-type(3){
+.innovation-details > .inno-three{
+    padding: var(--spacing-md) var(--spacing-xl);
     position: relative;
-    top: 0;
-    right: 0;
-        border: 1px solid black;
+    top: 56px;
+    right: 74px;
+    width: 112%;
+    height: 24vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.journey{
+    margin: var(--spacing-xl) 0;
 }
 
 .journey p:nth-of-type(2) {
