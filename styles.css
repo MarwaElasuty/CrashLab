@@ -1457,6 +1457,7 @@ img[alt="overview"] {
 .about-legacy-background p{
     color: var(--neutral-color-2);
 }
+
 .legacy-cards {
     display: flex;
     align-items: center;
@@ -1464,14 +1465,7 @@ img[alt="overview"] {
     margin: var(--spacing-xl) 0;
 }
 
-.legacy-cards>div {
-    width: 100px;
-    height: 100px;
-}
 
-img[alt="legacy-card1"] {
-    width: 100%;
-}
 
 
 .mission {
