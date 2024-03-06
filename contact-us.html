@@ -17,33 +17,64 @@
     </header>
 
     <main>
-        <div class="contact-background">
-            <div class="section-container">
-                <div class="form-container">
-                    <div class="contact-black">
+        <div class="contact-container">
+            <div>
+                <nav>
+                    <div class="logo-div">
+                        <a href="index.html">
+                            <img src="./images/footer-logo.svg" alt="logo">
+                        </a>
+                    </div>
+        
+                    <div class="ul-list">
+                        <ul>
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a href="test-center.html">Center</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="nav-btns-w-search">
                         <div>
-                            <h1><span>Reach out</span> to the Future of Mobility</h1>
-                            <p>Your insights, questions, and feedback propel us forward. Whether you're interested in our services, seeking partnership opportunities, or simply have a query about the future of mobility, we're here to connect with you.</p>
+                            <button type="button" name="mobile-contact-btn">Contact</button> 
                         </div>
-                        <div class="contact-form">
-                            <h3>Write to Us</h3>
-                            <form action="get">
-                                <label for="username">Name</label>
-                                <input type="text" name="username" id="username" placeholder="Text">
-                                <label for="useremail">Email</label>
-                                <input type="text" name="useremail" id="useremail" placeholder="Text">
-                                <label for="usersubject">Subject</label>
-                                <input type="text" name="usersubject" id="usersubject" placeholder="Text">
-                                <label for="usermsg">Message</label>
-                                <textarea name="usermsg" id="usermsg" cols="30" rows="10" placeholder="Text"></textarea>
-                            </form>
-                            <button type="submit" class="submit-btn">Submit</button>
+                        
+                        <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+                    </div>
+                </nav>
+            </div>
+         
+            <div class="contact-background">
+                <div class="section-container">
+                    <div class="form-container">
+                        <div class="contact-black">
+                            <div>
+                                <h1><span>Reach out</span> to the Future of Mobility</h1>
+                                <p>Your insights, questions, and feedback propel us forward. Whether you're interested in our services, seeking partnership opportunities, or simply have a query about the future of mobility, we're here to connect with you.</p>
+                            </div>
+                            <div class="contact-form">
+                                <h3>Write to Us</h3>
+                                <form action="get">
+                                    <label for="username">Name</label>
+                                    <input type="text" name="username" id="username" placeholder="Text">
+                                    <label for="useremail">Email</label>
+                                    <input type="text" name="useremail" id="useremail" placeholder="Text">
+                                    <label for="usersubject">Subject</label>
+                                    <input type="text" name="usersubject" id="usersubject" placeholder="Text">
+                                    <label for="usermsg">Message</label>
+                                    <textarea name="usermsg" id="usermsg" cols="30" rows="10" placeholder="Text"></textarea>
+                                </form>
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="contact-img"></div>
             </div>
-            <div class="contact-img"></div>
         </div>
+       
 
         <div class="contact-details">
             <div class="section-container">
@@ -140,7 +171,8 @@
         <div class="footer-tab">
             <p>© 2021 All rights reserved <span class="tab-span">|</span> Designed and developed by LesBonsTech</p>
         </div>
-    
     </footer>
+    <script src="index.js"></script>
+
 </body>
 </html>
