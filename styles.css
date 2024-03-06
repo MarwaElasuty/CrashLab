@@ -76,6 +76,8 @@
 
 
 /*************** NAVIGATION BAR *****************/
+
+
 nav {
     display: flex;
     padding: 35px;
@@ -85,8 +87,6 @@ nav {
     width: 100%;
     margin: auto;
     column-gap: 27px;
-    backdrop-filter: brightness(0.6);
-    -webkit-backdrop-filter: ;
 }
 
 ul {
@@ -1178,6 +1178,10 @@ img[alt="map"] {
 
 /*************************** TEST CENTER STYLES ***************************/
 
+.blog-container nav{
+    backdrop-filter: brightness(0.6);
+}
+
 .test-center-container {
     background-color: black;
     color: white;
@@ -2094,8 +2098,7 @@ img[alt="about-facility"] {
     flex-direction: column;
     color: white;
     background-size: cover;
-    padding: var(--spacing-xl);
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
     background-position: bottom;
     filter: contrast(1.2);
@@ -2105,9 +2108,11 @@ img[alt="about-facility"] {
     color: white;
     background-size: cover;
     padding: var(--spacing-xl);
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
     backdrop-filter: brightness(0.5);
+    position: relative;
+    z-index: -1;
 }
 
 .blog-background span {
@@ -2255,15 +2260,13 @@ img[alt="blog1"] {
         width: 32%;
     }
 
-    .blog-background p:nth-of-type(1) {
-        width: 100%;
-    }
-
-    .blog-background h1 {
-        width: 100%;
-    }
-
     .blog-background h2 {
+        width: 100%;
+    }
+    .blog-background{
+        padding: 0 var(--spacing-md) 0 var(--spacing-md);
+    }
+    .blog-background h1{
         width: 100%;
     }
 }
@@ -2288,6 +2291,9 @@ img[alt="blog1"] {
     .blog-background h2 {
         width: 100%;
     }
+    .blog-background{
+        padding: 0 var(--spacing-md) 0 var(--spacing-md);
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -2310,6 +2316,9 @@ img[alt="blog1"] {
     .blog-background h2 {
         width: 100%;
     }
+    .blog-background{
+        padding: 0 var(--spacing-md) 0 var(--spacing-md);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -2331,6 +2340,9 @@ img[alt="blog1"] {
 
     .blog-background h2 {
         width: 100%;
+    }
+    .blog-background{
+        padding: 0 var(--spacing-md) 0 var(--spacing-md);
     }
 }
 
