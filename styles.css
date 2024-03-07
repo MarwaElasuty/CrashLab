@@ -216,9 +216,7 @@ img[alt=added-card] {
     color: #fff;
     background-size: cover;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
+    padding: 0 var(--spacing-md);
 }
 
 .background,
@@ -232,7 +230,6 @@ img[alt=added-card] {
     color: #fff;
     background-size: cover;
     padding: 0 var(--spacing-md) 0 var(--spacing-md);
-    height: 87vh;
     justify-content: center
 }
 
@@ -250,7 +247,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: var(--spacing-sm) 0 0 0;
-    font-size: 60px
+    font-size: 48px;
 }
 
 .background .mini-orange-subtitle {
@@ -349,6 +346,9 @@ h6 {
     font-weight: var(--font-weight-5)
 }
 
+.test-center-background .black-card:nth-of-type(2){
+    background-color: beige;
+}
 .orange-border {
     height: 3px;
     width: 50px;
@@ -1578,6 +1578,9 @@ textarea {
             "b d";
         grid-gap: 15px;
     }
+    .background p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:992px) and (min-width:786px) {
@@ -1782,6 +1785,9 @@ textarea {
             "a ."
             "b d";
         grid-gap: 15px;
+    }
+    .background p{
+        width: 100%;
     }
 }
 
@@ -1988,6 +1994,9 @@ textarea {
             "a ."
             "b d";
         grid-gap: 15px;
+    }
+    .background p{
+        width: 100%;
     }
 }
 
@@ -2203,6 +2212,9 @@ textarea {
             "a ."
             "b d";
         grid-gap: 15px;
+    }
+    .background p{
+        width: 100%;
     }
 }
 
