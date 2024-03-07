@@ -366,12 +366,15 @@ h6 {
     background-image: url("./images/Property\ 1=yes.svg");
     background-size: cover;
     height: 300px;
-    transition: transform .6s ease-out
+    transition: all .6s ease-out;
 }
 
 .accreditiations .right-column:hover {
     background-image: url("./images/Property\ 1=no.svg");
-    transform: scaleX(-1)
+  /* transform: scaleX(1); */
+  transform: rotateY('180deg');
+  transform-origin: center;
+
 }
 
 .contact-black>div:first-of-type,
@@ -516,7 +519,9 @@ img[alt=added-card]:hover {
 .about-us-grid {
     display: grid;
     grid-auto-flow: column dense;
-    grid-template-areas: "a a a a b b" "a a a a b b" "c d d d . . " "c d d d. . ";
+    grid-template-areas: 
+    "a a a b"
+    "c d d d";
     grid-gap: 10px
 }
 
@@ -534,19 +539,19 @@ img[alt=about-us4]:hover {
 }
 
 img[alt=about-us2] {
-    grid-area: c;
+    grid-area: b;
     width: 100%;
     transition: .4s ease-in
 }
 
 img[alt=about-us3] {
-    grid-area: d;
+    grid-area: c;
     width: 100%;
     transition: .3s ease-in
 }
 
 img[alt=about-us4] {
-    grid-area: b;
+    grid-area: d;
     width: 100%;
     transition: .3s ease-in
 }
@@ -1572,12 +1577,18 @@ textarea {
     .mission .left-column {
         display: grid;
         grid-template-areas:
-            "a ."
-            "b d";
+            "a"
+            "b"
+            "d";
         grid-gap: 15px;
     }
     .background p{
         width: 100%;
+    }
+    .legacy-cards {
+        grid-template-areas:
+            "a b"
+            "c";
     }
 }
 
@@ -1780,12 +1791,19 @@ textarea {
     .mission .left-column {
         display: grid;
         grid-template-areas:
-            "a ."
-            "b d";
+        "a"
+        "b"
+        "d";
         grid-gap: 15px;
     }
     .background p{
         width: 100%;
+    }
+    .legacy-cards {
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
     }
 }
 
@@ -1989,12 +2007,19 @@ textarea {
     .mission .left-column {
         display: grid;
         grid-template-areas:
-            "a ."
-            "b d";
+        "a"
+        "b"
+        "d";
         grid-gap: 15px;
     }
     .background p{
         width: 100%;
+    }
+    .legacy-cards {
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
     }
 }
 
@@ -2197,22 +2222,27 @@ textarea {
         width: 100%;
     }
 
+
+    .mission .left-column {
+        display: grid;
+        grid-template-areas:
+        "a"
+        "b"
+        "d";
+        grid-gap: 15px;
+    }
+    .background p{
+        width: 100%;
+    }
+    .about-us-grid{
+        grid-template-areas: 
+        "";
+    }
     .legacy-cards {
         grid-template-areas:
             "a"
             "b"
             "c";
-    }
-
-    .mission .left-column {
-        display: grid;
-        grid-template-areas:
-            "a ."
-            "b d";
-        grid-gap: 15px;
-    }
-    .background p{
-        width: 100%;
     }
 }
 
