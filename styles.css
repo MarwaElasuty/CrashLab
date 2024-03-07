@@ -1066,7 +1066,6 @@ img[alt=innovation-img1] {
     background-position: bottom;
     filter: contrast(1.2);
     padding: var(--spacing-md) var(--spacing-md);
-    height: 100vh;
 }
 
 .blog-container > .section-container:nth-of-type(1){
