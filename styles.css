@@ -47,6 +47,7 @@
     --spacing-lg: 28px;
     --spacing-xl: 64px
 }
+
 .about-legacy-background>*,
 .background p,
 .blog-article-background>*,
@@ -313,7 +314,7 @@ h6 {
 .our-facilities,
 .testimonial,
 .tests-w-standards {
-    margin: var(--spacing-xl) 0
+    margin: var(--spacing-xl) var(--spacing-md);
 }
 
 .two-columns {
@@ -868,7 +869,8 @@ img[alt=about-facility] {
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    color: var(--neutral-color-1)
+    color: var(--neutral-color-1);
+    margin: var(--spacing-xl) 0;
 }
 
 .blog-background,
@@ -893,15 +895,15 @@ img[alt=about-facility] {
     grid-gap: 15px;
 }
 
-img[alt="legacy-card1"]{
+img[alt="legacy-card1"] {
     grid-area: a;
 }
 
-img[alt="legacy-card2"]{
+img[alt="legacy-card2"] {
     grid-area: b;
 }
 
-img[alt="legacy-card3"]{
+img[alt="legacy-card3"] {
     grid-area: c;
 }
 
@@ -1393,8 +1395,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 108px;
-        right: 14px;
+        top: 72px;
+        right: 0px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -1555,8 +1557,16 @@ textarea {
     .contact-details .two-columns>div {
         margin-top: -19px
     }
-    .mission .right-column{
+
+    .mission .right-column {
         width: 100%;
+    }
+    .mission .left-column{
+        display: grid;
+        grid-template-areas:
+            "a ."
+            "b d";
+        grid-gap: 15px;
     }
 }
 
@@ -1575,8 +1585,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 108px;
-        right: 14px;
+        top: 72px;
+        right: 0px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -1751,8 +1761,16 @@ textarea {
     .contact-details .two-columns>div:nth-of-type(2) {
         margin: var(--spacing-md)
     }
-    .mission .right-column{
+
+    .mission .right-column {
         width: 100%;
+    }
+    .mission .left-column{
+        display: grid;
+        grid-template-areas:
+            "a ."
+            "b d";
+        grid-gap: 15px;
     }
 }
 
@@ -1771,8 +1789,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 108px;
-        right: 14px;
+        top: 72px;
+        right: 0px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -1948,8 +1966,16 @@ textarea {
     .contact-details .two-columns>div:nth-of-type(2) {
         margin: var(--spacing-md)
     }
-    .mission .right-column{
+
+    .mission .right-column {
         width: 100%;
+    }
+    .mission .left-column{
+        display: grid;
+        grid-template-areas:
+            "a ."
+            "b d";
+        grid-gap: 15px;
     }
 }
 
@@ -1968,8 +1994,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 108px;
-        right: 14px;
+        top: 72px;
+        right: 0px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -2147,14 +2173,23 @@ textarea {
     .contact-details .two-columns>div:nth-of-type(2) {
         margin: var(--spacing-md)
     }
-    .mission .right-column{
+
+    .mission .right-column {
         width: 100%;
     }
-    .legacy-cards{
-        grid-template-areas: 
-        "a"
-        "b"
-        "c";
+
+    .legacy-cards {
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+    }
+    .mission .left-column{
+        display: grid;
+        grid-template-areas:
+            "a ."
+            "b d";
+        grid-gap: 15px;
     }
 }
 
