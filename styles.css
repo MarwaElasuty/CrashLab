@@ -1200,7 +1200,7 @@ img[alt=circle-blog3] {
 .blog-article-background,
 .blog-article-container {
     background-position: top;
-    padding: 0 var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md);
     display: flex;
     background-size: cover;
 }
@@ -1210,7 +1210,6 @@ img[alt=circle-blog3] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-md) 0;
 }
 
 .blog-article-background {
