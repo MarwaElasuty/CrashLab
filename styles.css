@@ -80,13 +80,14 @@
 
 nav {
     display: flex;
-    padding: var(--spacing-lg) 0;
+    padding: 0 var(--spacing-md) 0 var(--spacing-md);
     justify-content: space-between;
     align-items: center;
     position: relative;
     width: 100%;
     margin: auto;
     column-gap: 27px;
+    
 }
 
 .main-navigation-bar {
@@ -259,7 +260,6 @@ img[alt="menu-burger"] {
     }
 
     nav {
-        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
         column-gap: 18px;
     }
 
@@ -343,7 +343,6 @@ img[alt="menu-burger"] {
     }
 
     nav {
-        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
         column-gap: 18px;
     }
 
@@ -430,7 +429,6 @@ img[alt="menu-burger"] {
     }
 
     nav {
-        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
         column-gap: 18px;
     }
 
@@ -518,7 +516,6 @@ img[alt="menu-burger"] {
 
 
     nav {
-        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-lg) var(--spacing-md);
         column-gap: 18px;
     }
 
@@ -2169,7 +2166,7 @@ img[alt="innovation-img1"]{
 .blog-background {
     color: white;
     background-size: cover;
-    padding: var(--spacing-xl);
+    padding: 0 var(--spacing-md) 0 var(--spacing-md);
     /* height: 100vh; */
     justify-content: center;
     backdrop-filter: brightness(0.5);
