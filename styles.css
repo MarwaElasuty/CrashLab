@@ -556,7 +556,7 @@ p {
 }
 
 .background-container {
-    background-image: url(./images/main-background.svg);
+    background-image: url(./images/main-background.png);
     color: white;
     background-size: cover;
     height: 100vh;
