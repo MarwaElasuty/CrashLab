@@ -1200,7 +1200,7 @@ img[alt=circle-blog3] {
 .blog-article-background,
 .blog-article-container {
     background-position: top;
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-sm);
     display: flex;
     background-size: cover;
 }
