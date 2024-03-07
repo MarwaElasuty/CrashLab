@@ -314,7 +314,7 @@ h6 {
 .our-facilities,
 .testimonial,
 .tests-w-standards {
-    margin: var(--spacing-xl) var(--spacing-md);
+    margin: var(--spacing-xl) 0;
 }
 
 .two-columns {
@@ -676,7 +676,6 @@ footer p {
     padding: 0 var(--spacing-md) 0 var(--spacing-md)
 }
 
-.main-test-center,
 .overview {
     padding: 0 var(--spacing-md)
 }
@@ -688,7 +687,12 @@ footer p {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: var(--spacing-md) 0;
+}
+
+.test-center-container nav {
+    padding: 0 var(--spacing-md);
 }
 
 .about-legacy-background h3,
@@ -704,7 +708,8 @@ footer p {
     background-position: top;
     color: #fff;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    padding: 0 var(--spacing-md);
 }
 
 .about-container,
@@ -850,7 +855,7 @@ img[alt=about-facility] {
     background-color: #fff;
     text-transform: uppercase;
     font-size: var(--h3-size);
-    padding: var(--spacing-lg) var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-lg);
     position: absolute;
     right: 96px;
     bottom: -33px;
@@ -954,7 +959,7 @@ img[alt=about-facility] {
 .innovation-core {
     background-image: url("./images/about-map.svg");
     background-size: cover;
-    height: 60vh
+    height: 60vh;
 }
 
 .innovation-core .two-columns {
@@ -969,7 +974,6 @@ img[alt=innovation-img1] {
 .innovation-details {
     display: flex;
     justify-content: center;
-    display: none;
 }
 
 .contact-details .two-columns>div:first-of-type,
@@ -1062,6 +1066,11 @@ img[alt=innovation-img1] {
     background-position: bottom;
     filter: contrast(1.2);
     padding: var(--spacing-md) var(--spacing-md);
+    height: 100vh;
+}
+
+.blog-container > .section-container:nth-of-type(1){
+    margin-top: 0;
 }
 
 .blog-background {
@@ -1395,8 +1404,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 72px;
-        right: 0px;
+        top: 67px;
+        right: 12px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -1561,7 +1570,8 @@ textarea {
     .mission .right-column {
         width: 100%;
     }
-    .mission .left-column{
+
+    .mission .left-column {
         display: grid;
         grid-template-areas:
             "a ."
@@ -1585,8 +1595,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 72px;
-        right: 0px;
+        top: 67px;
+        right: 12px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -1765,7 +1775,8 @@ textarea {
     .mission .right-column {
         width: 100%;
     }
-    .mission .left-column{
+
+    .mission .left-column {
         display: grid;
         grid-template-areas:
             "a ."
@@ -1789,8 +1800,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 72px;
-        right: 0px;
+        top: 67px;
+        right: 12px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -1970,7 +1981,8 @@ textarea {
     .mission .right-column {
         width: 100%;
     }
-    .mission .left-column{
+
+    .mission .left-column {
         display: grid;
         grid-template-areas:
             "a ."
@@ -1994,8 +2006,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 72px;
-        right: 0px;
+        top: 67px;
+        right: 12px;
         border: 5px solid #fff;
         padding: var(--spacing-xl);
         background-color: var(--primary-color-1);
@@ -2184,7 +2196,8 @@ textarea {
             "b"
             "c";
     }
-    .mission .left-column{
+
+    .mission .left-column {
         display: grid;
         grid-template-areas:
             "a ."
