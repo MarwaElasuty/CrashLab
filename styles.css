@@ -370,11 +370,10 @@ h6 {
 }
 
 .accreditiations .right-column:hover {
-    background-image: url("./images/Property\ 1=no.svg");
-  /* transform: scaleX(1); */
-  transform: rotateY('180deg');
-  transform-origin: center;
-
+    background-image: url("./images/mirrored-img.svg");
+    transform: scaleX(-1);
+  /* transform: rotateY('180deg');
+  transform-origin: center; */
 }
 
 .contact-black>div:first-of-type,
