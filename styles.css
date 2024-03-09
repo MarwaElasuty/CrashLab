@@ -897,31 +897,38 @@ img[alt=about-facility] {
     color: var(--neutral-color-2)
 }
 
-.legacy-cards {
+.legacy-cards{
     display: grid;
-    margin: var(--spacing-xl) 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "a b c";
-    grid-gap: 15px;
+    column-gap: 10px;
+    margin: var(--spacing-lg) 0;
+    margin: auto;
+    row-gap: 13px;
+    display: none;
 }
 
-img[alt="legacy-card1"] {
+img[alt="legacy-card1"]{
     grid-area: a;
 }
 
-img[alt="legacy-card2"] {
+
+img[alt="legacy-card2"]{
     grid-area: b;
 }
 
-img[alt="legacy-card3"] {
+
+img[alt="legacy-card3"]{
     grid-area: c;
 }
-
 
 .mission .left-column {
     display: grid;
     grid-template-areas: "a b b" "a d d";
     grid-gap: 15px;
-    width: 68%
+    width: 68%;
+    margin: auto;
 }
 
 img[alt=mission1] {
@@ -1584,11 +1591,8 @@ textarea {
     .background p{
         width: 100%;
     }
-    .legacy-cards {
-        grid-template-areas:
-            "a b"
-            "c";
-    }
+
+    
 }
 
 @media screen and (max-width:992px) and (min-width:786px) {
@@ -1798,11 +1802,9 @@ textarea {
     .background p{
         width: 100%;
     }
-    .legacy-cards {
-        grid-template-areas:
-            "a"
-            "b"
-            "c";
+    .legacy-cards{
+        grid-template-areas: 
+        "a b";
     }
 }
 
@@ -2014,11 +2016,11 @@ textarea {
     .background p{
         width: 100%;
     }
-    .legacy-cards {
-        grid-template-areas:
-            "a"
-            "b"
-            "c";
+    .legacy-cards{
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
     }
 }
 
@@ -2237,11 +2239,12 @@ textarea {
         grid-template-areas: 
         "";
     }
-    .legacy-cards {
-        grid-template-areas:
-            "a"
-            "b"
-            "c";
+
+    .legacy-cards{
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
     }
 }
 
