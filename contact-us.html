@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
 
@@ -25,7 +27,7 @@
                             <img src="./images/footer-logo.svg" alt="logo">
                         </a>
                     </div>
-        
+
                     <div class="ul-list">
                         <ul class="main-navigation-bar">
                             <li><a class="active" href="index.html">Home</a></li>
@@ -35,26 +37,28 @@
                             <li><a href="contact-us.html">Contact</a></li>
                         </ul>
                     </div>
-        
+
                     <div class="nav-btns-w-search">
                         <div>
-                            <button type="button" name="mobile-contact-btn">Contact</button> 
+                            <button type="button" name="mobile-contact-btn">Contact</button>
                         </div>
-                        
+
                         <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
                     </div>
                 </nav>
             </div>
-         
+
             <div class="contact-background">
                 <div class="section-container">
                     <div class="form-container">
                         <div class="contact-black">
                             <div>
                                 <h1><span>Reach out</span> to the Future of Mobility</h1>
-                                <p>Your insights, questions, and feedback propel us forward. Whether you're interested in our services, seeking partnership opportunities, or simply have a query about the future of mobility, we're here to connect with you.</p>
+                                <p>Your insights, questions, and feedback propel us forward. Whether you're interested
+                                    in our services, seeking partnership opportunities, or simply have a query about the
+                                    future of mobility, we're here to connect with you.</p>
                             </div>
-                            <div class="contact-form-container">
+                            <div class="contact-form-container" id="formDiv">
                                 <div class="contact-form">
                                     <h3>Write to Us</h3>
                                     <form action="get">
@@ -65,12 +69,19 @@
                                         <label for="usersubject">Subject</label>
                                         <input type="text" name="usersubject" id="usersubject" placeholder="Text">
                                         <label for="usermsg">Message</label>
-                                        <textarea name="usermsg" id="usermsg" cols="30" rows="10" placeholder="Text"></textarea>
+                                        <textarea name="usermsg" id="usermsg" cols="30" rows="10"
+                                            placeholder="Text"></textarea>
                                     </form>
-                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <input type="Submit" class="submit-btn" onclick="showDiv('welcomeDiv')">
+                                    <div id="welcomeDiv" style="display:none;" class="answer_list">
+                                        <h4>Success</h4>
+                                        <p id="welcoming-text">Congratulations</p>
+                                        <button type="text" name="ok-btn" class="ok-btn" onclick="hideDiv('welcomeDiv')">OK</button>
+                                    </div>
+
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -107,11 +118,15 @@
                     <div class="right-column">
                         <div>
                             <h3>Visit Our Center</h3>
-                            <p>While we appreciate digital communication, nothing compares to an in-person meeting. Arrange a visit to our CrashTest Center and experience the future of mobility firsthand. (Note: Visits by appointment only.)</p>
+                            <p>While we appreciate digital communication, nothing compares to an in-person meeting.
+                                Arrange a visit to our CrashTest Center and experience the future of mobility firsthand.
+                                (Note: Visits by appointment only.)</p>
                         </div>
                         <div>
                             <h3>Follow Us</h3>
-                            <p>While we appreciate digital communication, nothing compares to an in-person meeting. Arrange a visit to our CrashTest Center and experience the future of mobility firsthand. (Note: Visits by appointment only.)</p>
+                            <p>While we appreciate digital communication, nothing compares to an in-person meeting.
+                                Arrange a visit to our CrashTest Center and experience the future of mobility firsthand.
+                                (Note: Visits by appointment only.)</p>
                             <ul>
                                 <li>Facebook: CrashTestTestCenter</li>
                                 <li>Twitter: @CrashTest</li>
@@ -120,7 +135,9 @@
                             </ul>
                         </div>
                         <div>
-                            <p>Thank you for your interest in CrashTest Center. Our team looks forward interest in CrashTest Center to assisting you on your journey toward safer, more efficient mobility.</p>
+                            <p>Thank you for your interest in CrashTest Center. Our team looks forward interest in
+                                CrashTest Center to assisting you on your journey toward safer, more efficient mobility.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -157,7 +174,10 @@
 
             <div>
                 <h4>Maps Location</h4>
-                <img src="./images/map.svg" alt="map">
+                <!-- <img src="./images/map.svg" alt="map"> -->
+                <div class="responsive-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
             </div>
 
             <div>
@@ -174,8 +194,11 @@
         <div class="footer-tab">
             <p>© 2021 All rights reserved <span class="tab-span">|</span> Designed and developed by LesBonsTech</p>
         </div>
+
+       
     </footer>
     <script src="index.js"></script>
 
 </body>
+
 </html>

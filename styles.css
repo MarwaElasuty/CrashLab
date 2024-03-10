@@ -1331,6 +1331,7 @@ textarea {
     z-index: 1
 }
 
+
 .contact-black h1 {
     width: 50%;
     text-align: left
@@ -1338,7 +1339,7 @@ textarea {
 
 .contact-black p {
     width: 65%;
-    text-align: left
+    text-align: left;
 }
 
 .contact-img {
@@ -1368,8 +1369,35 @@ textarea {
     border-style: none
 }
 
+.ok-btn{
+    width: 100%;
+    background-color: var(--primary-color-1);
+    color: var(--neutral-color-6);
+    font-size: var(--h4-size);
+    padding: var(--spacing-sm) 0;
+    border-style: none
+}
+
 .submit-btn:hover {
     cursor: pointer
+}
+
+#welcomeDiv{
+    display: block;
+    position: absolute;
+    background: black;
+    width: 93%;
+    bottom: 322px;
+    text-align: center;
+}
+
+#welcoming-text{
+    text-align: center;
+    width: 100%;
+}
+
+button[name="ok-btn"]:hover{
+    cursor: pointer;
 }
 
 .contact-background form label {
@@ -2246,4 +2274,20 @@ textarea {
 
 .display {
     display: block
+}
+
+
+
+.responsive-map{
+overflow: hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.responsive-map iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
 }
