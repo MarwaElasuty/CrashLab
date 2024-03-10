@@ -212,7 +212,7 @@ img[alt=added-card] {
 }
 
 .background-container {
-    background-image: url(./images/main-background.png);
+    background-image: url(./images/home-back.svg);
     color: #fff;
     background-size: cover;
     height: 100vh;
@@ -243,6 +243,10 @@ img[alt=added-card] {
 .footer-tab p,
 footer {
     color: var(--neutral-color-1)
+}
+
+.footer-tab p:hover{
+    color: var(--neutral-color-1);
 }
 
 .background h1:nth-of-type(2) {
@@ -641,11 +645,17 @@ footer .section-container {
     row-gap: 10px
 }
 
+footer .section-container > div{
+    width: 17%;
+}
+
 footer .follow-icons {
     display: flex;
     column-gap: 15px
 }
-
+img[alt="brand-logo"]{
+    width: 100%;
+}
 footer p {
     padding: 0 0 var(--spacing-sm) 0;
     color: var(--neutral-color-2)
@@ -700,7 +710,8 @@ footer p {
 
 .about-legacy-background h3,
 .client-info h5 {
-    font-weight: var(--font-weight-5)
+    font-weight: var(--font-weight-5);
+    text-align: left;
 }
 
 .test-center-background {
@@ -730,6 +741,7 @@ footer p {
     column-gap: 10px;
     flex-wrap: wrap;
 }
+
 
 .test-center-background .black-card>p,
 .test-center-background .orange-card>p,
@@ -1119,11 +1131,11 @@ img[alt=innovation-img1] {
 
 .blog-container {
     backdrop-filter: brightness(0.6);
-    background-image: url(./images/blog-car.jpeg);
+    background-image: url(./images/blog-back.svg);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-position: bottom;
+    background-position: top;
     filter: contrast(1.2);
     padding: var(--spacing-md) var(--spacing-md);
 }
@@ -1134,7 +1146,6 @@ img[alt=innovation-img1] {
 
 .blog-background {
     justify-content: center;
-    backdrop-filter: brightness(0.5);
     position: relative;
     z-index: -1;
     margin: var(--spacing-xl) 0
@@ -1195,7 +1206,7 @@ img[alt=circle-blog3] {
 .blog-cards,
 .client-info {
     display: flex;
-    align-items: center
+    /* align-items: center */
 }
 
 .client-info {
@@ -1231,7 +1242,7 @@ img[alt=circle-blog3] {
 .client-text p {
     line-height: 29px;
     color: var(--neutral-color-4);
-    width: 95%
+    text-align: left;
 }
 
 .pages {
@@ -2256,9 +2267,9 @@ textarea {
         width: 38%
     }
 
-    footer .section-container>div:nth-of-type(3) {
+    /* footer .section-container>div:nth-of-type(3) {
         width: 43%
-    }
+    } */
 
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-md)
@@ -2418,7 +2429,7 @@ swiper-slide {
 
 swiper-slide img {
     display: block;
-    width: 100%;
+    width: 70px;
     height: 100%;
     object-fit: cover;
 }
