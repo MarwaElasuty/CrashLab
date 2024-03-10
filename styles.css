@@ -373,8 +373,6 @@ h6 {
 .accreditiations .right-column:hover {
     background-image: url("./images/mirrored-img.svg");
     transform: scaleX(-1);
-    /* transform: rotateY('180deg');
-  transform-origin: center; */
 }
 
 .contact-black>div:first-of-type,
@@ -704,7 +702,7 @@ footer p {
 
 .test-center-background {
     background-image: url(./images/test-center-background.svg);
-    height: 100vh;
+    height: 109vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -725,8 +723,8 @@ footer p {
 .test-center-background .section-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap
+    align-items: center;
+    column-gap: 10px;
 }
 
 .test-center-background .black-card>p,
@@ -748,12 +746,16 @@ footer p {
 
 .test-center-background .orange-card {
     background-color: var(--primary-color-1);
-    position: absolute;
-    right: 0
+    margin-bottom: -40px;
 }
 
-.test-center-background .black-card {
-    background-color: var(--neutral-color-6)
+
+.first-black-card{
+    background-color: var(--neutral-color-6);
+}
+
+.second-black-card{
+    background-color: var(--neutral-color-6);
 }
 
 .overview {
@@ -976,8 +978,7 @@ img[alt=about-facility] {
 }
 
 img[alt=innovation-img1] {
-    width: 100%;
-    height: 60vh
+    height: 60vh;
 }
 
 .innovation-details {
@@ -998,7 +999,7 @@ img[alt=innovation-img1] {
     align-items: center
 }
 
-.innovation-details>.inno-one::before {
+/* .innovation-details>.inno-one::before {
     content: "Innovation at Our Core";
     position: absolute;
     bottom: 271px;
@@ -1007,7 +1008,7 @@ img[alt=innovation-img1] {
     font-size: var(--h2-size);
     font-weight: var(--font-weight-4);
     text-transform: capitalize
-}
+} */
 
 .innovation-details>.inno-three {
     top: 56px;
@@ -1434,15 +1435,14 @@ textarea {
         display: none;
         position: absolute;
         top: 67px;
-        right: 12px;
-        border: 5px solid #fff;
-        padding: var(--spacing-xl);
-        background-color: var(--primary-color-1);
+        right: 19px;
+        padding: var(--spacing-lg);
+        background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        border-radius: 76px
+        width: 90%;
     }
 
     .main-navigation-bar a,
@@ -1452,7 +1452,7 @@ textarea {
     }
 
     .ul-list li {
-        padding-bottom: 22px
+        padding-bottom: 35px;
     }
 
     img[alt=menu-burger] {
@@ -1504,28 +1504,10 @@ textarea {
 
     .test-center-background {
         background-size: cover;
-        height: 128vh
+        /* height: 128vh */
     }
 
-    .test-center-background .orange-card {
-        top: -96px;
-        left: 0;
-        width: 258px
-    }
 
-    .test-center-background .black-card:first-of-type {
-        position: absolute;
-        right: 0;
-        bottom: 94px
-    }
-
-    .test-center-background .black-card:nth-of-type(2) {
-        left: 0
-    }
-
-    .test-center-background .black-card {
-        width: 153px
-    }
 
     .breakdown-cards>div {
         width: 23%
@@ -1632,15 +1614,14 @@ textarea {
         display: none;
         position: absolute;
         top: 67px;
-        right: 12px;
-        border: 5px solid #fff;
-        padding: var(--spacing-xl);
-        background-color: var(--primary-color-1);
+        right: 19px;
+        padding: var(--spacing-lg);
+        background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        border-radius: 76px
+        width: 90%;
     }
 
     img[alt=menu-burger] {
@@ -1652,7 +1633,7 @@ textarea {
     }
 
     .ul-list li {
-        padding-bottom: 22px
+        padding-bottom: 35px;
     }
 
     nav {
@@ -1705,30 +1686,11 @@ textarea {
         width: 100%
     }
 
-    .test-center-background .orange-card {
-        top: -96px;
-        left: 0;
-        width: 258px
-    }
-
     .test-center-background {
         background-size: cover;
-        height: 131vh
     }
 
-    .test-center-background .black-card:first-of-type {
-        position: absolute;
-        right: 0;
-        bottom: 94px
-    }
 
-    .test-center-background .black-card:nth-of-type(2) {
-        left: 0
-    }
-
-    .test-center-background .black-card {
-        width: 153px
-    }
 
     .amenities,
     .breakdown,
@@ -1837,6 +1799,12 @@ textarea {
             "c"
             "d";
     }
+    .first-black-card{
+
+    }
+    .second-black-card{
+        
+    }
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -1855,15 +1823,14 @@ textarea {
         display: none;
         position: absolute;
         top: 67px;
-        right: 12px;
-        border: 5px solid #fff;
-        padding: var(--spacing-xl);
-        background-color: var(--primary-color-1);
+        right: 19px;
+        padding: var(--spacing-lg);
+        background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        border-radius: 76px
+        width: 90%;
     }
 
     img[alt=menu-burger] {
@@ -1875,7 +1842,7 @@ textarea {
     }
 
     .ul-list li {
-        padding-bottom: 22px
+        padding-bottom: 35px;
     }
 
     nav {
@@ -1929,30 +1896,10 @@ textarea {
         width: 100%
     }
 
-    .test-center-background .orange-card {
-        top: -96px;
-        left: 0;
-        width: 258px
-    }
-
     .test-center-background {
         background-size: cover;
-        height: 131vh
     }
 
-    .test-center-background .black-card:first-of-type {
-        position: absolute;
-        bottom: 94px;
-        right: 0
-    }
-
-    .test-center-background .black-card:nth-of-type(2) {
-        left: 0
-    }
-
-    .test-center-background .black-card {
-        width: 153px
-    }
 
     .amenities,
     .breakdown,
@@ -2063,6 +2010,14 @@ textarea {
             "c"
             "d";
     }
+    .first-black-card{
+        width: 150px;
+
+    }
+    .second-black-card{
+        width: 150px;
+
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -2081,15 +2036,14 @@ textarea {
         display: none;
         position: absolute;
         top: 67px;
-        right: 12px;
-        border: 5px solid #fff;
-        padding: var(--spacing-xl);
-        background-color: var(--primary-color-1);
+        right: 19px;
+        padding: var(--spacing-lg);
+        background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        border-radius: 76px
+        width: 90%;
     }
 
     img[alt=menu-burger] {
@@ -2101,7 +2055,7 @@ textarea {
     }
 
     .ul-list li {
-        padding-bottom: 22px
+        padding-bottom: 35px;
     }
 
     nav {
@@ -2157,30 +2111,12 @@ textarea {
         width: 100%
     }
 
-    .test-center-background .orange-card {
-        top: -96px;
-        left: 0;
-        width: 258px
-    }
 
     .test-center-background {
         background-size: cover;
-        height: 131vh
     }
 
-    .test-center-background .black-card:first-of-type {
-        position: absolute;
-        right: 0;
-        bottom: 94px
-    }
 
-    .test-center-background .black-card:nth-of-type(2) {
-        left: 0
-    }
-
-    .test-center-background .black-card {
-        width: 153px
-    }
 
     .amenities,
     .breakdown,
@@ -2292,7 +2228,21 @@ textarea {
             "b"
             "c";
     }
+    .services-grid{
+        grid-template-areas: 
+        "a b"
+        "c d"
+        "e f";
+    }
+    .first-black-card{
+        width: 150px;
+    }
+    .second-black-card{
+        width: 150px;
+        
+    }
 }
+
 
 .display {
     display: block
