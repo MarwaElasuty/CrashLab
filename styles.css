@@ -404,7 +404,7 @@ footer h4 {
 .breakdown,
 .customized-services,
 footer .section-container {
-    padding: 0 var(--spacing-md)
+    padding: 0 var(--spacing-lg);
 }
 
 .about-us .mini-heading-div,
