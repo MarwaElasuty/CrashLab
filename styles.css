@@ -226,16 +226,18 @@ img[alt=added-card] {
 }
 
 .background {
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: #fff;
     background-size: cover;
     padding: 0 var(--spacing-md) 0 var(--spacing-md);
-    justify-content: center
 }
 
 .background p {
-    font-size: var(--h4-size);
-    width: 70%
+    font-size: var(--h-size);
 }
 
 .footer-tab p,
@@ -2313,3 +2315,5 @@ swiper-container {
     height: 100%;
     object-fit: cover;
   }
+
+
