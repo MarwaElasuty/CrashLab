@@ -685,7 +685,6 @@ footer p {
     color: #fff;
     background-size: cover;
     height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: var(--spacing-md) 0;
@@ -710,6 +709,7 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 0 var(--spacing-md);
+    height: 85vh;
 }
 
 .about-container,
@@ -725,7 +725,6 @@ footer p {
     justify-content: space-between;
     align-items: center;
     column-gap: 10px;
-    flex-wrap: wrap;
 }
 
 
@@ -2475,7 +2474,3 @@ img[alt="innovation-img1"] {
 .slick-slide {
   margin: 0px 10px;
 } 
-
-
-
-  
