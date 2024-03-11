@@ -1492,15 +1492,15 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 67px;
-        right: 19px;
+        top: 71px;
+        right: 13px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        width: 40%;
+        width: 60%;
     }
 
     .main-navigation-bar a,
@@ -1672,15 +1672,15 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 67px;
-        right: 19px;
+        top: 71px;
+        right: 13px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        width: 90%;
+        width: 60%;
     }
 
     img[alt=menu-burger] {
@@ -1915,15 +1915,15 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 67px;
-        right: 19px;
+        top: 71px;
+        right: 13px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        width: 90%;
+        width: 60%;
     }
 
     img[alt=menu-burger] {
@@ -2175,15 +2175,15 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 67px;
-        right: 19px;
+        top: 71px;
+        right: 13px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
         font-size: 25px;
         z-index: 2;
         text-align: center;
-        width: 90%;
+        width: 60%;
     }
 
     img[alt=menu-burger] {
@@ -2199,7 +2199,8 @@ textarea {
     }
 
     nav {
-        column-gap: 18px
+        column-gap: 18px;
+        padding: 0 var(--spacing-md);;
     }
 
     .hidden-blogs,
