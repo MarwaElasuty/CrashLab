@@ -475,6 +475,7 @@ footer .section-container {
 
 
 
+
 .added-value-cards .section-container {
     display: flex;
     justify-content: center;
@@ -635,9 +636,7 @@ footer .follow-icons {
     display: flex;
     column-gap: 15px
 }
-img[alt="brand-logo"]{
-    width: 100%;
-}
+
 footer p {
     padding: 0 0 var(--spacing-sm) 0;
     color: var(--neutral-color-2)
@@ -1074,6 +1073,7 @@ img[alt=innovation-img1] {
         "g f"
         "g .";
 }
+
 
 .services-grid>div:nth-of-type(1) {
     grid-template-areas: a;
@@ -1823,15 +1823,6 @@ textarea {
         width: 100%;
     }
 
-    /* .mission .left-column {
-        display: grid;
-        grid-template-areas:
-            "a"
-            "b"
-            "d";
-        grid-gap: 15px;
-    } */
-
     .background p {
         width: 100%;
     }
@@ -1873,6 +1864,24 @@ textarea {
 
     .our-facilities {
         padding: 0 var(--spacing-lg);
+    }
+    .shrinked-img:nth-of-type(2){
+        display: none;
+    }
+    .shrinked-img:nth-of-type(3){
+        display: none;
+    }
+    .services-grid {
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+    }
+    .service-img-container:nth-of-type(3), .service-img-container:nth-of-type(4), .service-img-container:nth-of-type(5){
+        display: none;
+    }
+    .single-card{
+        display: none;
     }
 }
 
@@ -2117,6 +2126,21 @@ textarea {
     .mission .right-column {
         width: 100%;
     }
+    .shrinked-img:nth-of-type(2){
+        display: none;
+    }
+    .shrinked-img:nth-of-type(3){
+        display: none;
+    }
+    .services-grid {
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f";
+    }
+    .single-card{
+        display: none;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -2327,10 +2351,11 @@ textarea {
 
     .services-grid {
         grid-template-areas:
-            "a b"
-            "c d"
-            "e f";
+            "a"
+            "b"
+            "c";
     }
+
 
     .first-black-card {
         width: 150px;
@@ -2365,10 +2390,27 @@ textarea {
         width: 100%;
     }
 
-  
-
     .our-facilities {
         padding: 0 var(--spacing-lg);
+    }
+    .shrinked-img:nth-of-type(2){
+        display: none;
+    }
+    .shrinked-img:nth-of-type(3){
+        display: none;
+    }
+    .shrinked-img:hover{
+        display: none;
+    }
+    .shrinked-img{
+        background-image: url(./images/colored-box1.jpg);
+        background-position: center;
+    }
+    .service-img-container:nth-of-type(3), .service-img-container:nth-of-type(4), .service-img-container:nth-of-type(5){
+        display: none;
+    }
+    .single-card{
+        display: none;
     }
 }
 
