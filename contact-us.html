@@ -72,13 +72,15 @@
                                         <textarea name="usermsg" id="usermsg" cols="30" rows="10"
                                             placeholder="Text"></textarea>
                                     </form>
-                                    <input type="Submit" class="submit-btn" onclick="showDiv('welcomeDiv')">
-                                    <div id="welcomeDiv" style="display:none;" class="answer_list">
-                                        <h4>Success</h4>
-                                        <p id="welcoming-text">Congratulations</p>
-                                        <button type="text" name="ok-btn" class="ok-btn" onclick="hideDiv('welcomeDiv')">OK</button>
+                                    <input type="Submit" class="submit-btn" onclick="showDiv('opacity-welcome')">
+                                    <div class="opacity-welcome" style="display: none;" id="opacity-welcome">
+                                        <div id="welcomeDiv"  class="answer_list">
+                                            <h4>Success</h4>
+                                            <p id="welcoming-text">Congratulations</p>
+                                            <button type="text" name="ok-btn" class="ok-btn" onclick="hideDiv('opacity-welcome')">OK</button>
+                                        </div>
                                     </div>
-
+                                   
                                 </div>
                             </div>
 

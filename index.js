@@ -27,13 +27,9 @@ function formDiv(Div) {
 
 function hideDiv(Div) {
   var hide = document.getElementById(Div);
-  if (hide.style.display == "none") {
-    hide.style.display = "block";
+  if (hide.style.display == "none") {    
   } else {
     hide.style.display = "none";
-    // Apply blur on close
-    var contactForm = document.getElementById("contact-form");
-    contactForm.style.filter = "blur(20px)";
   }
 }
 

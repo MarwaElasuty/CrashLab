@@ -17,7 +17,7 @@
     --font-weight-8: 200;
     --font-weight-9: 100;
     --h1-size: 45px;
-    --h2-size: 40px;
+    --h2-size: 35px;
     --h3-size: 28px;
     --h4-size: 21px;
     --h5-size: 16px;
@@ -930,6 +930,7 @@ img[alt="legacy-card3"] {
     grid-gap: 15px;
     width: 67%;
     margin: auto;
+        margin: var(--spacing-md) 0;
 }
 
 .mission .two-columns {
@@ -940,6 +941,7 @@ img[alt=mission1] {
     filter: brightness(1.3);
     grid-area: a;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     margin: auto;
 }
@@ -1413,12 +1415,14 @@ textarea {
 }
 
 #welcomeDiv {
-    display: block;
-    position: absolute;
+    
+    
     background: black;
-    width: 93%;
-    bottom: 322px;
+    /* width: 93%; */
+    /* bottom: 322px; */
     text-align: center;
+    margin-top: 50%;
+   
 }
 
 #welcoming-text {
@@ -1492,8 +1496,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 71px;
-        right: 13px;
+        top: 90px;
+        right: -2px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
@@ -1672,8 +1676,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 71px;
-        right: 13px;
+        top: 90px;
+    right: -2px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
@@ -1897,7 +1901,9 @@ textarea {
         display: none;
     }
 
-    .legacy-cards>div {}
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -1915,8 +1921,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 71px;
-        right: 13px;
+        top: 90px;
+    right: -2px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
@@ -2157,7 +2163,12 @@ textarea {
         display: none;
     }
 
-    .legacy-cards>div {}
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
+    img[alt=mission1]{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -2175,8 +2186,8 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 71px;
-        right: 13px;
+        top: 90px;
+    right: -2px;
         padding: var(--spacing-lg);
         background-color: black;
         color: #000;
@@ -2431,8 +2442,13 @@ textarea {
         display: none;
     }
 
-    .legacy-cards>div {}
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
 
+    img[alt=mission1]{
+        width: 100%;
+    }
    
 }
 
@@ -2500,4 +2516,20 @@ img[alt="innovation-img1"] {
 
 .slick-slide {
     margin: 0px 10px;
+}
+
+
+.opacity-welcome{
+    width: 93%;
+    margin: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+
+  
+}
+.contact-form{
+    position: relative;
 }
