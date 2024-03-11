@@ -443,34 +443,16 @@ footer .section-container {
 }
 
 .shrinked-img {
-    width: 18%;
-    transition: width 1.5s
+    width: 27%;
+    transition: width 0.5s ease;
 }
 
 .shrinked-img:hover {
-    animation: .8s forwards width;
     background-image: url(./images/colored-box1.jpg);
-    cursor: pointer
+    cursor: pointer;
+    width: 38%;
 }
 
-@keyframes width {
-    0% {
-        width: 18%
-    }
-
-    100% {
-        width: 33%
-    }
-}
-
-.shrinked-img:nth-of-type(4),
-.shrinked-img:nth-of-type(5) {
-    width: 8%
-}
-
-.shrinked-img:nth-of-type(4):hover {
-    transition: width .8s
-}
 
 .arrows {
     display: flex;
