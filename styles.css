@@ -872,6 +872,7 @@ img[alt=about-facility] {
     flex-direction: column;
     justify-content: center;
     padding: var(--spacing-md) var(--spacing-md);
+    background-size: 37%;
 }
 
 .about-legacy-background {
