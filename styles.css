@@ -966,10 +966,10 @@ img[alt=mission3] {
     width: 29%
 }
 
-
+/* 
 img[alt="brand-logo"]{
     width: 100%;
-}
+} */
 
 
 
@@ -1953,13 +1953,19 @@ textarea {
     .innovation-description-container .desc-one{
         position: unset;
         width: 100%;
+        height: 163px;
     }
     .innovation-description-container .desc-two{
         position: unset;
         width: 100%;
+        height: 163px;
+
     }
     .about-container {
         /* background-position: bottom; */
+    }
+    .journey{
+        margin-top: 759px
     }
 }
 
@@ -2227,14 +2233,20 @@ textarea {
     .innovation-description-container .desc-one{
         position: unset;
         width: 100%;
+        height: 163px;
+
     }
     .innovation-description-container .desc-two{
         position: unset;
         width: 100%;
+        height: 163px;
     }
     .about-container {
         /* background-image: linear-gradient(to right, transparent 60%, black 30%), url(./images/legacy.svg); */
         /* background-position: bottom; */
+    }
+    .journey{
+        margin-top: 759px
     }
 }
 
@@ -2516,14 +2528,20 @@ textarea {
     .innovation-description-container .desc-one{
         position: unset;
         width: 100%;
+        height: 163px;
+
     }
     .innovation-description-container .desc-two{
         position: unset;
         width: 100%;
+        height: 163px;
     }
    
     .about-container {
         background-position: bottom;
+    }
+    .journey{
+        margin-top: 759px
     }
 }
 
