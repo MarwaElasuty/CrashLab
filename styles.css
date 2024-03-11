@@ -147,7 +147,7 @@ img[alt=menu-burger] {
 
 img[alt=logo] {
     padding-bottom: 5px;
-    width: 100%
+    width: 100%;
 }
 
 .nav-btns-w-search {
@@ -311,7 +311,6 @@ h6 {
 .amenities-cards,
 .arrows,
 .customer-stories,
-.customers,
 .journey,
 .mission,
 .our-facilities,
@@ -321,6 +320,9 @@ h6 {
     padding: 0 var(--spacing-lg);
 }
 
+.customers{
+    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+}
 .two-columns {
     display: flex;
     width: 100%;
@@ -412,6 +414,10 @@ footer h4 {
 .customized-services,
 footer .section-container {
     padding: 0 var(--spacing-lg);
+}
+
+.customized-services{
+    margin: var(--spacing-xl) 0;
 }
 
 .about-us .mini-heading-div,
@@ -697,7 +703,6 @@ footer p {
 
 .test-center-background {
     background-image: url(./images/test-center-background.svg);
-    height: 109vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -752,10 +757,6 @@ footer p {
 
 .second-black-card {
     background-color: var(--neutral-color-6);
-}
-
-.overview {
-    margin-top: 180px
 }
 
 img[alt=overview] {
@@ -894,45 +895,49 @@ img[alt=about-facility] {
 }
 
 .legacy-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
     grid-template-areas: "a b c";
-    column-gap: 10px;
+    column-gap: 63px;
     margin: var(--spacing-lg) 0;
-    margin: auto;
     row-gap: 13px;
-    display: none;
+    flex-wrap: wrap;
 }
 
-img[alt="legacy-card1"] {
-    grid-area: a;
+
+
+img[alt="legacy-card1"] {    
+    width: 100%;
 }
 
 
 img[alt="legacy-card2"] {
-    grid-area: b;
+    width: 100%;
+
 }
 
 
 img[alt="legacy-card3"] {
-    grid-area: c;
+    width: 100%;
+
 }
 
 .mission .left-column {
     display: grid;
     grid-template-areas: "a b b" "a d d";
     grid-gap: 15px;
-    width: 68%;
+    width: 67%;
     margin: auto;
 }
 
+.mission .two-columns {
+    column-gap: 39px;
+}
 img[alt=mission1] {
     filter: brightness(1.3);
     grid-area: a;
-    width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: auto;
 }
 
 img[alt=mission2] {
@@ -1573,7 +1578,6 @@ textarea {
         position: relative;
         z-index: 1;
         background-color: #fff;
-        margin-top: 320px
     }
 
     .amenities-cards-divs>div {
@@ -1752,7 +1756,6 @@ textarea {
         position: relative;
         z-index: 1;
         background-color: #fff;
-        margin-top: 320px
     }
 
     .amenities-cards-divs>div {
@@ -1828,8 +1831,7 @@ textarea {
     }
 
     .legacy-cards {
-        grid-template-areas:
-            "a b";
+        justify-content: center;
     }
 
     .about-us-grid {
@@ -1882,6 +1884,9 @@ textarea {
     }
     .single-card{
         display: none;
+    }
+    .legacy-cards > div{
+
     }
 }
 
@@ -1990,7 +1995,6 @@ textarea {
         position: relative;
         z-index: 1;
         background-color: #fff;
-        margin-top: 320px
     }
 
     .amenities-cards-divs>div {
@@ -2072,10 +2076,7 @@ textarea {
     }
 
     .legacy-cards {
-        grid-template-areas:
-            "a"
-            "b"
-            "c";
+        justify-content: center;
     }
 
     .about-us-grid {
@@ -2140,6 +2141,9 @@ textarea {
     }
     .single-card{
         display: none;
+    }
+    .legacy-cards > div{
+
     }
 }
 
@@ -2249,7 +2253,6 @@ textarea {
         position: relative;
         z-index: 1;
         background-color: #fff;
-        margin-top: 320px
     }
 
     .amenities-cards-divs>div {
@@ -2272,10 +2275,6 @@ textarea {
     footer .section-container>div:nth-of-type(2) {
         width: 38%
     }
-
-    /* footer .section-container>div:nth-of-type(3) {
-        width: 43%
-    } */
 
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-md)
@@ -2341,12 +2340,8 @@ textarea {
             "c"
             "d";
     }
-
     .legacy-cards {
-        grid-template-areas:
-            "a"
-            "b"
-            "c";
+        justify-content: center;
     }
 
     .services-grid {
@@ -2412,6 +2407,9 @@ textarea {
     .single-card{
         display: none;
     }
+    .legacy-cards > div{
+
+    }
 }
 
 
@@ -2470,3 +2468,14 @@ img[alt="innovation-img1"] {
     height: 60vh;
     width: 100%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.slick-slide {
+  margin: 0px 10px;
+} 
+
+
+
+  

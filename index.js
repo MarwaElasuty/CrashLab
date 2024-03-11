@@ -38,36 +38,31 @@ function hideDiv(Div) {
 }
 
 
-const swiperEl = document.querySelector("swiper-container");
-
-      const params = {
-        injectStyles: [
-          `
-      .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        line-height: 20px;
-        font-size: 12px;
-        color: #000;
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.2);
+$(document).ready(function () {
+  $(".customer-logos").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1100,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 3
+        }
       }
+    ]
+  });
+});
 
-      .swiper-pagination-bullet-active {
-        color: #fff;
-        background: red;
-      }
-      `,
-        ],
-        pagination: {
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-          },
-        },
-      };
 
-      Object.assign(swiperEl, params);
 
-      swiperEl.initialize();
