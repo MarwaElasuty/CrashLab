@@ -1022,6 +1022,21 @@ img[alt=about-facility] {
     background-size: cover
 }
 
+
+.blog-articles{
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.blog-articles > div{
+    width: 31.3%;
+}
+
+img[alt="blog-articles"]{
+    width: 100%;
+}
+
 .about-legacy-background h3 {
     color: var(--orange-subtitle-color)
 }
@@ -2967,3 +2982,6 @@ swiper-slide img {
     height: 100%;
     object-fit: cover;
 }
+
+
+
