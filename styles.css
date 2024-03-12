@@ -45,7 +45,8 @@
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 28px;
-    --spacing-xl: 64px
+    --spacing-xl: 64px;
+    --spacing-xxl: 130px;
 }
 
 .about-legacy-background>*,
@@ -70,8 +71,13 @@ img[alt=about-us4],
 img[alt=mission2],
 img[alt=mission3] {
     height: 100%;
-    object-fit: cover
+    width: 100%;
+    object-fit: cover;
+    transition: filter 0.5s;
 }
+
+
+
 
 .about-us .section-container,
 .added-value-services .section-container,
@@ -87,6 +93,10 @@ img[alt=mission3] {
 .testimonial .section-container,
 .tests-w-standards {
     text-align: center
+}
+
+.testimonial{
+    margin: var(--spacing-lg) 0;
 }
 
 
@@ -198,7 +208,6 @@ button[name=start]:hover {
 .innovative-cards .two-columns,
 img[alt=added-card] {
     position: relative
-
 }
 
 
@@ -287,7 +296,6 @@ h1 {
     font-size: var(--h1-size)
 }
 
-.big-heading,
 h2 {
     font-size: var(--h2-size);
     font-weight: var(--font-weight-4)
@@ -319,11 +327,9 @@ h6 {
 .about-us,
 .amenities-cards,
 .arrows,
-.customer-stories,
 .journey,
 .mission,
 .our-facilities,
-.testimonial,
 .tests-w-standards {
     margin: var(--spacing-xl) 0;
     padding: 0 var(--spacing-lg);
@@ -427,8 +433,16 @@ footer .section-container {
     padding: 0 var(--spacing-lg);
 }
 
+.big-heading {
+    font-size: var(--h1-size);
+}
+
 .customized-services {
     margin: var(--spacing-xl) 0;
+}
+
+.customized-services .two-columns {
+    align-items: flex-start;
 }
 
 .about-us .mini-heading-div,
@@ -487,7 +501,30 @@ footer .section-container {
 
 .single-card {
     display: flex;
-    justify-content: end
+    justify-content: end;
+    margin-top: 83px;
+    background-image: url("./images/customized-service2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 194px;
+    width: 306.27px;
+    margin-left: auto;
+    transition: background-image .5s;
+
+}
+
+
+img[alt="single-card"] {
+    transition: background-image .5s;
+}
+
+.single-card:hover {
+    background-image: url("./images/customized-service1.svg");
+}
+
+
+.customized-desc {
+    margin-top: 50px;
 }
 
 
@@ -518,44 +555,132 @@ img[alt=added-card]:hover {
     justify-content: space-evenly
 }
 
-.about-us-grid {
-    display: grid;
-    grid-auto-flow: column dense;
-    grid-template-areas:
-        "a a a b"
-        "c d d d";
-    grid-gap: 10px
+.about-us-flex>div {
+    display: flex;
+    column-gap: 10px;
+    height: 100%;
+    margin: var(--spacing-md) 0;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
-img[alt=about-us1] {
-    grid-area: a;
-    transition: .3s ease-in;
-    width: 100%
+.about-us-flex .first-left-img-flex::before {
+    content: "Safety & trust";
+    font-size: var(--h3-size);
+    position: absolute;
+    top: 21px;
+    color: white;
+    left: 23px;
+    z-index: 1;
 }
+
+.about-us-flex .first-left-img-flex::after {
+    content: "AlRisk analysis - Safety briefing - Personalised support Private grounds hidden away from public view with security gates and almost 30 CCTVs in operation";
+    font-size: var(--h4-size);
+    color: rgb(226, 226, 226);
+    position: absolute;
+    top: 60px;
+    left: 23px;
+    z-index: 1;
+}
+
+.about-us-flex .first-left-img-flex {
+    width: 63%;
+    position: relative;
+    height: 500px;
+}
+
+
+.about-us-flex .first-right-img-flex::before {
+    content: "Safety & trust";
+    font-size: var(--h3-size);
+    position: absolute;
+    top: 21px;
+    color: white;
+    left: 23px;
+    z-index: 1;
+}
+
+.about-us-flex .first-right-img-flex::after {
+    content: "AlRisk analysis - Safety briefing - Personalised support Private grounds hidden away from public view with security gates and almost 30 CCTVs in operation";
+    font-size: var(--h4-size);
+    color: rgb(226, 226, 226);
+    position: absolute;
+    top: 60px;
+    left: 23px;
+    z-index: 1;
+}
+
+
+.about-us-flex .first-right-img-flex {
+    width: 35%;
+    position: relative;
+    height: 500px;
+
+}
+
+
+.about-us-flex .second-left-img-flex::before {
+    content: "Safety & trust";
+    font-size: var(--h3-size);
+    position: absolute;
+    top: 21px;
+    color: white;
+    left: 23px;
+    z-index: 1;
+}
+
+.about-us-flex .second-left-img-flex::after {
+    content: "AlRisk analysis - Safety briefing - Personalised support Private grounds hidden away from public view with security gates and almost 30 CCTVs in operation";
+    font-size: var(--h4-size);
+    color: rgb(226, 226, 226);
+    position: absolute;
+    top: 60px;
+    left: 23px;
+    z-index: 1;
+}
+
+.about-us-flex .second-left-img-flex {
+    width: 35%;
+    position: relative;
+    height: 500px;
+
+}
+
+.about-us-flex .second-right-img-flex::before {
+    content: "Safety & trust";
+    font-size: var(--h3-size);
+    position: absolute;
+    top: 21px;
+    color: white;
+    left: 23px;
+    z-index: 1;
+}
+
+.about-us-flex .second-right-img-flex::after {
+    content: "AlRisk analysis - Safety briefing - Personalised support Private grounds hidden away from public view with security gates and almost 30 CCTVs in operation";
+    font-size: var(--h4-size);
+    color: rgb(226, 226, 226);
+    position: absolute;
+    top: 60px;
+    left: 23px;
+    z-index: 1;
+}
+
+.about-us-flex .second-right-img-flex {
+    width: 63%;
+    position: relative;
+    height: 500px;
+
+}
+
 
 img[alt=about-us1]:hover,
 img[alt=about-us2]:hover,
 img[alt=about-us3]:hover,
 img[alt=about-us4]:hover {
-    filter: brightness(.6)
-}
-
-img[alt=about-us2] {
-    grid-area: b;
-    width: 100%;
-    transition: .4s ease-in
-}
-
-img[alt=about-us3] {
-    grid-area: c;
-    width: 100%;
-    transition: .3s ease-in
-}
-
-img[alt=about-us4] {
-    grid-area: d;
-    width: 100%;
-    transition: .3s ease-in
+    filter: brightness(.333);
+    cursor: pointer;
 }
 
 .position-text::before {
@@ -584,7 +709,8 @@ img[alt=about-us4] {
 }
 
 .customer-stories {
-    position: relative
+    position: relative;
+    margin: var(--spacing-xxl) 0 var(--spacing-xxl) 0;
 }
 
 .customer-stories .right-column {
@@ -595,11 +721,14 @@ img[alt=about-us4] {
     text-transform: uppercase;
     font-weight: var(--font-weight-4);
     font-size: var(--h2-size);
-    padding: var(--spacing-xl) var(--spacing-lg)
+    padding: var(--spacing-xl);
+    box-shadow: 2px 2px 5px 1px gainsboro;
+
+
 }
 
 .customer-stories .right-column>p {
-    width: 88%
+    width: 71%
 }
 
 .customer-stories .left-column {
@@ -911,7 +1040,7 @@ img[alt=about-facility] {
     flex-wrap: wrap;
 }
 
-.legacy-cards > div{
+.legacy-cards>div {
     width: 25%;
 }
 
@@ -938,7 +1067,7 @@ img[alt="legacy-card3"] {
     grid-gap: 15px;
     width: 67%;
     margin: auto;
-        margin: var(--spacing-md) 0;
+    margin: var(--spacing-md) 0;
 }
 
 .mission .two-columns {
@@ -985,7 +1114,8 @@ img[alt=about-facility] {
     background-size: cover;
     height: 60vh;
 }
-.innovation-core .section-container{
+
+.innovation-core .section-container {
     padding: 0 var(--spacing-lg);
 }
 
@@ -997,49 +1127,50 @@ img[alt=innovation-img1] {
     height: 60vh;
 }
 
-img[alt="inno-people"]{
+img[alt="inno-people"] {
     width: 100%;
     height: 60vh;
     object-fit: cover;
 }
 
 
-.innovation-details{
+.innovation-details {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
 }
 
-.innovation-details > div{
+.innovation-details>div {
     width: 33%;
 }
 
-.innovation-details h3{
+.innovation-details h3 {
     width: 70%;
     font-weight: var(--font-weight-4);
     font-size: var(--h2-size);
 }
 
-.innovation-description-container{
+.innovation-description-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 35px;
 }
 
-.innovation-description-container > div {
+.innovation-description-container>div {
     background-color: var(--neutral-color-1);
     padding: var(--spacing-lg);
     width: 30%;
     box-shadow: 2px 3px 2px 2px gainsboro;
 }
-.innovation-description-container .desc-one{
+
+.innovation-description-container .desc-one {
     position: absolute;
     bottom: 48px;
     left: 89px;
 }
 
-.innovation-description-container .desc-two{
+.innovation-description-container .desc-two {
     position: absolute;
     bottom: 222px;
     right: 103px;
@@ -1129,52 +1260,56 @@ img[alt="inno-people"]{
 
 .services-grid {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        ". b"
-        "a b"
-        "a c"
+        ". a"
+        "b a"
+        "b c"
         "d c"
-        "d f"
-        "g f"
-        "g .";
+        "d g"
+        "f g"
+        "f .";
+    grid-gap: 8px;
+}
+
+.first {
+    grid-area: a;
+}
+
+.second {
+    grid-area: b;
+}
+
+.third {
+    grid-area: c;
+}
+
+.fourth {
+    grid-area: d;
+}
+
+.fivth {
+    grid-area: g;
+}
+
+.sixth {
+    grid-area: f;
 }
 
 
-.services-grid>div:nth-of-type(1) {
-    grid-template-areas: a;
-}
-
-.services-grid>div:nth-of-type(2) {
-    grid-template-areas: b;
-}
-
-.services-grid>div:nth-of-type(3) {
-    grid-template-areas: c;
-}
-
-.services-grid>div:nth-of-type(4) {
-    grid-template-areas: d;
-}
-
-.services-grid>div:nth-of-type(5) {
-    grid-template-areas: e;
-}
-
-.services-grid>div:nth-of-type(6) {
-    grid-template-areas: f;
-}
 
 .service-img-container {
-    width: 300px;
-    height: 200px;
-    background-image: url("./images/customized-service2.svg");
+    height: 194px;
+    background-image: url(./images/customized-service2.svg);
+    transition: background-image .5s;
     background-size: cover;
-    transition: background-image .5s
 }
 
 .service-img-container:hover {
     background-image: url("./images/customized-service1.svg")
 }
+
+
 
 .blog-container {
     backdrop-filter: brightness(0.6);
@@ -1207,7 +1342,6 @@ img[alt="inno-people"]{
 
 .blog-background h1,
 h2 {
-    padding: var(--spacing-md) 0;
     text-transform: capitalize
 }
 
@@ -1469,14 +1603,14 @@ textarea {
 }
 
 #welcomeDiv {
-    
-    
+
+
     background: black;
     /* width: 93%; */
     /* bottom: 322px; */
     text-align: center;
     margin-top: 50%;
-   
+
 }
 
 #welcoming-text {
@@ -1553,7 +1687,7 @@ textarea {
         top: 90px;
         right: -2px;
         padding: var(--spacing-lg);
-        background-color: black;
+        background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
         z-index: 2;
@@ -1727,9 +1861,9 @@ textarea {
         display: none;
         position: absolute;
         top: 90px;
-    right: -2px;
+        right: -2px;
         padding: var(--spacing-lg);
-        background-color: black;
+        background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
         z-index: 2;
@@ -1931,10 +2065,17 @@ textarea {
     }
 
     .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "a"
-            "b"
-            "c";
+            ". a"
+            "b a"
+            "b c"
+            "d c"
+            "d g"
+            "f g"
+            "f .";
+        grid-gap: 8px;
     }
 
     .service-img-container:nth-of-type(3),
@@ -1947,32 +2088,88 @@ textarea {
         display: none;
     }
 
-    .customer-stories .right-column>p{
+    .customer-stories .right-column>p {
         width: 100%;
     }
-    .innovation-details > div{
+
+    .innovation-details>div {
         width: 100%;
     }
-    .innovation-description-container .desc-one{
+
+    .innovation-description-container .desc-one {
         position: unset;
         width: 100%;
         height: 100%;
     }
-    .innovation-description-container .desc-two{
+
+    .innovation-description-container .desc-two {
         position: unset;
         width: 100%;
         height: 100%;
 
     }
+
     .about-container {
         /* background-position: bottom; */
     }
-    .journey{
+
+    .journey {
         margin-top: 759px
     }
-    .legacy-cards > div{
+
+    .legacy-cards>div {
         width: 45%;
     }
+
+    .shrinked-img {
+        background-image: url(./images/colored-box1.jpg);
+        background-position: center;
+        width: 80%;
+    }
+
+    .shrinked-img:hover {
+        display: none;
+    }
+
+    .about-us-flex .first-left-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .first-right-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .second-left-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .second-right-img-flex {
+        width: 100%;
+    }
+
+    .slider img {
+        animation: none;
+    }
+    
+    .customer-stories .left-column {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .customer-stories .right-column {
+        position: relative;
+        width: 81%;
+        z-index: 3;
+        left: 60px;
+        bottom: 88px;
+        box-shadow: 2px 2px 5px 1px gainsboro;
+        height: 100%;
+        font-size: var(--h3-size);
+        padding: var(--spacing-md);
+
+    }
+
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -1991,9 +2188,9 @@ textarea {
         display: none;
         position: absolute;
         top: 90px;
-    right: -2px;
+        right: -2px;
         padding: var(--spacing-lg);
-        background-color: black;
+        background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
         z-index: 2;
@@ -2031,7 +2228,7 @@ textarea {
 
     button[name=mobile-contact-btn] {
         padding: 6px;
-    width: 107px;
+        width: 107px;
     }
 
     button[name=start] {
@@ -2216,47 +2413,100 @@ textarea {
         display: none;
     }
 
-    .services-grid {
-        grid-template-areas:
-            "a b"
-            "c d"
-            "e f";
-    }
 
     .single-card {
         display: none;
     }
 
-    .customer-stories .right-column>p{
+    .customer-stories .right-column>p {
         width: 100%;
     }
-    img[alt=mission1]{
+
+    img[alt=mission1] {
         width: 100%;
     }
-    .innovation-details > div{
+
+    .innovation-details>div {
         width: 100%;
     }
-    .innovation-description-container .desc-one{
+
+    .innovation-description-container .desc-one {
         position: unset;
         width: 100%;
         height: 100%;
 
     }
-    .innovation-description-container .desc-two{
+
+    .innovation-description-container .desc-two {
         position: unset;
         width: 100%;
         height: 100%;
     }
-    .about-container {
-        /* background-image: linear-gradient(to right, transparent 60%, black 30%), url(./images/legacy.svg); */
-        /* background-position: bottom; */
-    }
-    .journey{
+
+
+    .journey {
         margin-top: 759px
     }
-    .legacy-cards > div{
+
+    .legacy-cards>div {
         width: 100%;
     }
+
+    .shrinked-img {
+        background-image: url(./images/colored-box1.jpg);
+        background-position: center;
+        width: 80%;
+    }
+
+    .shrinked-img:hover {
+        display: none;
+    }
+
+    .service-img-container {
+        height: 220px;
+    }
+
+    .about-us-flex .first-left-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .first-right-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .second-left-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .second-right-img-flex {
+        width: 100%;
+    }
+
+    .slider img {
+        animation: none;
+    }
+    
+    .customer-stories .left-column {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .customer-stories .right-column {
+        position: relative;
+        width: 81%;
+        z-index: 3;
+        left: 37px;
+        bottom: 88px;
+        box-shadow: 2px 2px 5px 1px gainsboro;
+        height: 100%;
+        font-size: var(--h3-size);
+        padding: var(--spacing-md);
+
+
+
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -2275,9 +2525,9 @@ textarea {
         display: none;
         position: absolute;
         top: 90px;
-    right: -2px;
+        right: -2px;
         padding: var(--spacing-lg);
-        background-color: black;
+        background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
         z-index: 2;
@@ -2315,7 +2565,7 @@ textarea {
 
     button[name=mobile-contact-btn] {
         padding: 6px;
-    width: 107px;
+        width: 107px;
     }
 
     button[name=start] {
@@ -2458,10 +2708,11 @@ textarea {
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
         grid-template-areas:
             "a"
             "b"
-            "c";
+            "f";
     }
 
 
@@ -2524,61 +2775,91 @@ textarea {
         display: none;
     }
 
-    .customer-stories .right-column>p{
+    .customer-stories .right-column>p {
         width: 100%;
     }
 
-    img[alt=mission1]{
+    img[alt=mission1] {
         width: 100%;
     }
-    .innovation-details > div{
+
+    .innovation-details>div {
         width: 100%;
     }
-    .innovation-description-container .desc-one{
+
+    .innovation-description-container .desc-one {
         position: unset;
         width: 100%;
         height: 100%;
 
     }
-    .innovation-description-container .desc-two{
+
+    .innovation-description-container .desc-two {
         position: unset;
         width: 100%;
         height: 100%;
     }
-   
+
     .about-container {
         background-position: bottom;
     }
-    .journey{
+
+    .journey {
         margin-top: 759px
     }
-    .legacy-cards > div{
+
+    .legacy-cards>div {
         width: 100%;
     }
+
+    .service-img-container {
+        height: 298px;
+    }
+
+    .about-us-flex .first-left-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .first-right-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .second-left-img-flex {
+        width: 100%;
+    }
+
+    .about-us-flex .second-right-img-flex {
+        width: 100%;
+    }
+
+    .slider img {
+        animation: none;
+    }
+
+    .customer-stories .left-column {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .customer-stories .right-column {
+        position: relative;
+        width: 81%;
+        z-index: 3;
+        left: 37px;
+        bottom: 88px;
+        box-shadow: 2px 2px 5px 1px gainsboro;
+        height: 100%;
+        font-size: var(--h3-size);
+        padding: var(--spacing-md);
+
+    }
+
 }
 
 
 
-swiper-container {
-    width: 100%;
-    height: 100%;
-  }
 
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
 
 
@@ -2619,12 +2900,9 @@ img[alt="innovation-img1"] {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
-.slick-slide {
-    margin: 0px 10px;
-}
 
 
-.opacity-welcome{
+.opacity-welcome {
     width: 93%;
     margin: auto;
     height: 100%;
@@ -2633,8 +2911,59 @@ img[alt="innovation-img1"] {
     position: absolute;
     top: 0;
 
-  
+
 }
-.contact-form{
+
+.contact-form {
     position: relative;
+}
+
+
+
+.slider img {
+    width: 145px;
+    height: 100px;
+    animation: scroll 10s linear infinite;
+
+}
+
+.slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translatex(-1000%)
+    }
+}
+
+
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
