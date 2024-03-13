@@ -76,8 +76,59 @@ img[alt=mission3] {
     transition: filter 0.5s;
 }
 
+.innovative-cards .left-column {
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: var(--spacing-lg) var(--spacing-lg);
+    position: absolute;
+    right: 96px;
+    bottom: -33px;
+    box-shadow: 0 0 11px 1px rgb(241 241 241);
+    width: 43%
+}
+.innovative-cards .right-column {
+    width: 55%
+}
+/* innovative cards media query */
 
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .innovative-cards .left-column{
+        position: unset;
+        width: 100%;
+    }
+    .innovative-cards .right-column{
+        width: 100%;
+    }
+}
 
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .innovative-cards .right-column{
+        width: 100%;
+    }
+    .innovative-cards .left-column{
+        position: unset;
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .innovative-cards .right-column{
+        width: 100%;
+    }
+    .innovative-cards .left-column{
+        position: unset;
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .innovative-cards .right-column{
+        width: 100%;
+    }
+    .innovative-cards .left-column{
+        position: unset;
+        width: 100%;
+    }
+}
 
 .about-us .section-container,
 .added-value-services .section-container,
@@ -1019,21 +1070,12 @@ img[alt=about-facility] {
     padding: var(--spacing-md) 0
 }
 
-.innovative-cards .right-column {
-    width: 55%
+
+
+.innovative-cards p{
+    font-size: var(--h3-size);
 }
 
-.innovative-cards .left-column {
-    background-color: #fff;
-    text-transform: uppercase;
-    font-size: var(--h3-size);
-    padding: var(--spacing-lg) var(--spacing-lg);
-    position: absolute;
-    right: 96px;
-    bottom: -33px;
-    box-shadow: 0 0 11px 1px rgb(241 241 241);
-    width: 43%
-}
 
 .about-container {
     background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
@@ -1799,10 +1841,6 @@ textarea {
         width: 14%
     }
 
-    .innovative-cards .left-column {
-        width: 100%;
-        position: unset
-    }
 
     footer {
         padding: var(--spacing-xl) 0 0 0
@@ -1870,9 +1908,13 @@ textarea {
     .service-img-container{
         height: 338px;
     }
+
 }
 
 @media screen and (max-width:992) and (min-width:786px) {
+    .innovative-cards p{
+        font-size: var(--h3-size);
+    }
     .single-card-service{
         display: none;
     }
@@ -1990,10 +2032,6 @@ textarea {
         width: 45%
     }
 
-    .innovative-cards .left-column {
-        width: 100%;
-        position: unset
-    }
 
     footer {
         padding: var(--spacing-xl) 0 0 0
@@ -2192,8 +2230,6 @@ textarea {
         width: 100%;
     }
 
-
-
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -2314,11 +2350,6 @@ textarea {
 
     .amenities-cards-divs>div {
         width: 45%
-    }
-
-    .innovative-cards .left-column {
-        width: 100%;
-        position: unset
     }
 
     footer {
@@ -2538,8 +2569,6 @@ textarea {
         padding: var(--spacing-md);
     }
 
-
-
     .customized-services .left-column{
         width: 100%;
     }
@@ -2665,13 +2694,9 @@ textarea {
     }
 
     .amenities-cards-divs>div {
-        width: 45%
+        width: 100%
     }
 
-    .innovative-cards .left-column {
-        width: 100%;
-        position: unset
-    }
 
     footer {
         padding: var(--spacing-xl) 0 0 0
@@ -2939,11 +2964,6 @@ img[alt="innovation-img1"] {
     height: 60vh;
     width: 100%;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
-
 
 .opacity-welcome {
     width: 93%;
