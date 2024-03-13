@@ -271,7 +271,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: var(--spacing-sm) 0 0 0;
-    font-size: 48px;
+    font-size: 41px;
 }
 
 .background .mini-orange-subtitle {
@@ -290,6 +290,10 @@ footer {
 .table-of-content {
     margin: var(--spacing-xl) 0;
     padding: 0 var(--spacing-md)
+}
+
+.standards .big-heading{
+    font-size: var(--h2-size);
 }
 
 h1 {
@@ -434,12 +438,39 @@ footer .section-container {
 }
 
 .customized-services .right-column{
-    width: 55%;
+    display: flex;
+    width: 46%;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.inner-service{
+    width: 200px;
+    height: 156px;
+    background-color: white;
+    box-shadow: 1px 2px 3px 2px rgb(240, 240, 240);
+    margin-bottom: 22px;
+}
+
+img[alt="ur-service"]{
+    padding-top: 44px;
+    padding-left: 71px;
+}
+
+.single-card-service{
+    margin-left: auto;
+    margin-top: 25px;
+}
+.customized-services .right-column > div:nth-of-type(1){
+    margin-top: 88px;
 }
 
 .customized-services .left-column{
     width: 45%;
 }
+
+
 
 .big-heading {
     font-size: var(--h1-size);
@@ -451,6 +482,8 @@ footer .section-container {
 
 .customized-services .two-columns {
     align-items: flex-start;
+
+    
 }
 
 .about-us .mini-heading-div,
@@ -507,10 +540,9 @@ footer .section-container {
     background-color: var(--neutral-color-2)
 }
 
-.single-card {
+/* .single-card {
     display: flex;
     justify-content: end;
-    margin-top: 167px;
     background-image: url(./images/customized-service2.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -518,17 +550,18 @@ footer .section-container {
     width: 347.27px;
     margin-left: auto;
     transition: background-image 0.1s ease;
+    margin-top: 85px;
 
-}
+} */
 
 
-.single-card:hover {
+/* .single-card:hover {
     background-image: url("./images/customized-service1.svg");
-}
+} */
 
 
 .customized-desc {
-    margin-top: 116px;
+    margin-top: 113px;
 }
 
 
@@ -1277,57 +1310,24 @@ img[alt="inno-people"] {
     }
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        ". a"
-        "b a"
-        "b c"
-        "d c"
-        "d g"
-        "f g"
-        "f .";
-    grid-gap: 8px;
-}
-
-.first {
-    grid-area: a;
-}
-
-.second {
-    grid-area: b;
-}
-
-.third {
-    grid-area: c;
-}
-
-.fourth {
-    grid-area: d;
-}
-
-.fivth {
-    grid-area: g;
-}
-
-.sixth {
-    grid-area: f;
+.services-flex{
+    display: flex;
 }
 
 
-
+/* 
 .service-img-container {
-    height: 261px;
-    background-image: url(./images/customized-service2.svg);
+    height: 231px;
+    background-image: url(./images/Push.svg);
     transition: background-image 0.1s ease;
     background-size: contain;
     background-repeat: no-repeat;
-}
+    box-shadow: 2.5px 9.5px 6.4px 3.5px gainsboro;
+} */
 
-.service-img-container:hover {
+/* .service-img-container:hover {
     background-image: url("./images/customized-service1.svg")
-}
+} */
 
 
 
@@ -1694,7 +1694,8 @@ textarea {
     object-fit: cover
 }
 
-@media screen and (max-width:1200px) and (min-width:992px) {
+@media screen and (max-width:1200px) and (min-width:992) {
+
     .main-navigation-bar {
         flex-direction: column;
         padding-right: 0
@@ -1850,8 +1851,6 @@ textarea {
     .mission .right-column {
         width: 100%;
     }
-
-
     .background p {
         width: 100%;
     }
@@ -1866,9 +1865,7 @@ textarea {
     .customized-services .left-column{
         width: 100%;
     }
-    .customized-services .right-column{
-        width: 100%;
-    }
+
     .single-card {
         display: none;
     }
@@ -1877,7 +1874,16 @@ textarea {
     }
 }
 
-@media screen and (max-width:992px) and (min-width:786px) {
+@media screen and (max-width:992) and (min-width:786px) {
+    .single-card-service{
+        display: none;
+    }
+    .customized-services .right-column{
+        width: 100%;
+    }
+    .customized-services .left-column{
+        width: 100%;
+    }
     .main-navigation-bar {
         flex-direction: column;
         padding-right: 0
@@ -2096,20 +2102,6 @@ textarea {
         display: none;
     }
 
-    .services-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            ". a"
-            "b a"
-            "b c"
-            "d c"
-            "d g"
-            "f g"
-            "f .";
-        grid-gap: 8px;
-    }
-
     .service-img-container:nth-of-type(3),
     .service-img-container:nth-of-type(4),
     .service-img-container:nth-of-type(5) {
@@ -2201,13 +2193,21 @@ textarea {
     .customized-services .left-column{
         width: 100%;
     }
-    .customized-services .right-column{
-        width: 100%;
-    }
+
+
 
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
+    .single-card-service{
+        display: none;
+    }
+    .customized-services .right-column{
+        width: 100%;
+    }
+    .customized-services .left-column{
+        width: 100%;
+    }
     .main-navigation-bar {
         flex-direction: column;
         padding-right: 0
@@ -2540,9 +2540,7 @@ textarea {
         padding: var(--spacing-md);
     }
 
-    .customized-services .right-column{
-        width: 100%;
-    }
+
 
     .customized-services .left-column{
         width: 100%;
@@ -2550,11 +2548,22 @@ textarea {
 }
 
 @media screen and (max-width:600px) {
+    .single-card-service{
+        display: none;
+    }
+    .customized-services .right-column{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .customized-services .left-column{
+        width: 100%;
+    }
+
+
     .main-navigation-bar {
         flex-direction: column;
         padding-right: 0
     }
-
     .main-navigation-bar a,
     .ul-list a:hover {
         color: #fff
@@ -2747,15 +2756,6 @@ textarea {
         justify-content: center;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "a"
-            "b"
-            "f";
-    }
-
-
     .first-black-card {
         width: 150px;
     }
@@ -2893,9 +2893,6 @@ textarea {
 
     }
 
-    .customized-services .right-column{
-        width: 100%;
-    }
 
     .customized-services .left-column{
         width: 100%;
@@ -3002,7 +2999,7 @@ swiper-slide {
     font-size: 18px;
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
