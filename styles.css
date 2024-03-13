@@ -517,14 +517,10 @@ footer .section-container {
     height: 261px;
     width: 347.27px;
     margin-left: auto;
-    transition: background-image .5s;
+    transition: background-image 0.1s ease;
 
 }
 
-
-img[alt="single-card"] {
-    transition: background-image .5s;
-}
 
 .single-card:hover {
     background-image: url("./images/customized-service1.svg");
@@ -1324,7 +1320,7 @@ img[alt="inno-people"] {
 .service-img-container {
     height: 261px;
     background-image: url(./images/customized-service2.svg);
-    transition: background-image .5s;
+    transition: background-image 0.1s ease;
     background-size: contain;
     background-repeat: no-repeat;
 }
