@@ -863,7 +863,7 @@ footer p {
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-md) var(--spacing-md);
 }
 
 
@@ -908,7 +908,6 @@ footer p {
 }
 
 .test-center-background .section-container:nth-of-type(2) {
-    width: 1100px;
     position: relative
 }
 
@@ -1704,7 +1703,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
+        top: 53px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -1897,7 +1896,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
+        top: 53px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2221,7 +2220,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
+        top: 53px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2572,7 +2571,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
+        top: 53px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2757,8 +2756,11 @@ textarea {
 
     .first-black-card {
         width: 150px;
+        display: none;
     }
-
+    .test-center-background .orange-card{
+        display: none;
+    }
     .second-black-card {
         width: 150px;
 
