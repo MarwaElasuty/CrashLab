@@ -201,7 +201,9 @@ img[alt=menu-burger] {
 .menu-btns>img:first-of-type {
     padding-right: 10px
 }
-
+.mission .right-column {
+    width: 29%
+}
 .logo-div {
     padding-top: 10px
 }
@@ -1186,9 +1188,7 @@ img[alt=mission3] {
     width: 100%
 }
 
-.mission .right-column {
-    width: 29%
-}
+
 
 /* 
 img[alt="brand-logo"]{
@@ -1264,7 +1264,7 @@ img[alt="inno-people"] {
 
 .innovation-description-container .desc-two {
     position: absolute;
-    bottom: 222px;
+    bottom: 196px;
     right: 103px;
 }
 
@@ -1912,6 +1912,10 @@ textarea {
 }
 
 @media screen and (max-width:992) and (min-width:786px) {
+    
+    .mission .right-column {
+        width: 100%;
+    }
     .innovative-cards p{
         font-size: var(--h3-size);
     }
@@ -2088,9 +2092,6 @@ textarea {
         margin: var(--spacing-md)
     }
 
-    .mission .right-column {
-        width: 100%;
-    }
 
     .background p {
         width: 100%;
