@@ -433,6 +433,14 @@ footer .section-container {
     padding: 0 var(--spacing-lg);
 }
 
+.customized-services .right-column{
+    width: 55%;
+}
+
+.customized-services .left-column{
+    width: 45%;
+}
+
 .big-heading {
     font-size: var(--h1-size);
 }
@@ -502,12 +510,12 @@ footer .section-container {
 .single-card {
     display: flex;
     justify-content: end;
-    margin-top: 83px;
-    background-image: url("./images/customized-service2.svg");
+    margin-top: 167px;
+    background-image: url(./images/customized-service2.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 194px;
-    width: 306.27px;
+    height: 261px;
+    width: 347.27px;
     margin-left: auto;
     transition: background-image .5s;
 
@@ -524,7 +532,7 @@ img[alt="single-card"] {
 
 
 .customized-desc {
-    margin-top: 50px;
+    margin-top: 116px;
 }
 
 
@@ -1030,7 +1038,7 @@ img[alt=about-facility] {
 }
 
 .blog-articles > div{
-    width: 31.3%;
+    width: 33.3%;
 }
 
 img[alt="blog-articles"]{
@@ -1314,10 +1322,11 @@ img[alt="inno-people"] {
 
 
 .service-img-container {
-    height: 194px;
+    height: 261px;
     background-image: url(./images/customized-service2.svg);
     transition: background-image .5s;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .service-img-container:hover {
@@ -1858,6 +1867,18 @@ textarea {
     .mission .left-column {
         width: 100%;
     }
+    .customized-services .left-column{
+        width: 100%;
+    }
+    .customized-services .right-column{
+        width: 100%;
+    }
+    .single-card {
+        display: none;
+    }
+    .service-img-container{
+        height: 338px;
+    }
 }
 
 @media screen and (max-width:992px) and (min-width:786px) {
@@ -2124,10 +2145,6 @@ textarea {
 
     }
 
-    .about-container {
-        /* background-position: bottom; */
-    }
-
     .journey {
         margin-top: 759px
     }
@@ -2139,7 +2156,8 @@ textarea {
     .shrinked-img {
         background-image: url(./images/colored-box1.jpg);
         background-position: center;
-        width: 80%;
+        width: 84%;
+        margin: auto;
     }
 
     .shrinked-img:hover {
@@ -2183,6 +2201,12 @@ textarea {
         font-size: var(--h3-size);
         padding: var(--spacing-md);
 
+    }
+    .customized-services .left-column{
+        width: 100%;
+    }
+    .customized-services .right-column{
+        width: 100%;
     }
 
 }
@@ -2470,8 +2494,9 @@ textarea {
     .shrinked-img {
         background-image: url(./images/colored-box1.jpg);
         background-position: center;
-        width: 80%;
-    }
+        width: 84%;
+        margin: auto;
+        }
 
     .shrinked-img:hover {
         display: none;
@@ -2517,11 +2542,15 @@ textarea {
         height: 100%;
         font-size: var(--h3-size);
         padding: var(--spacing-md);
-
-
-
     }
 
+    .customized-services .right-column{
+        width: 100%;
+    }
+
+    .customized-services .left-column{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -2827,9 +2856,7 @@ textarea {
         width: 100%;
     }
 
-    .service-img-container {
-        height: 298px;
-    }
+
 
     .about-us-flex .first-left-img-flex {
         width: 100%;
@@ -2870,6 +2897,13 @@ textarea {
 
     }
 
+    .customized-services .right-column{
+        width: 100%;
+    }
+
+    .customized-services .left-column{
+        width: 100%;
+    }
 }
 
 
@@ -2972,7 +3006,7 @@ swiper-slide {
     font-size: 18px;
     background: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 

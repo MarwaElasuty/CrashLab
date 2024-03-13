@@ -15,6 +15,7 @@ const swiperEl = document.querySelector('swiper-container')
 
       .swiper-pagination-bullet-active {
         color: #fff;
+        background: #ffad00;
       }
       `],
       pagination: {
