@@ -1745,7 +1745,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 53px;
+        top: 75px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -1938,7 +1938,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 53px;
+        top: 75px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2256,7 +2256,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 53px;
+        top: 75px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2600,7 +2600,7 @@ textarea {
     .ul-list {
         display: none;
         position: absolute;
-        top: 53px;
+        top: 75px;
         right: -2px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
