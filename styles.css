@@ -113,12 +113,11 @@ nav {
 
 .main-navigation-bar {
     display: flex;
-    column-gap: 84px;
+    column-gap: 38px;
     list-style-type: none;
-    padding-right: 63px;
     font-weight: 600;
     font-size: 21px;
-    font-weight: var(--font-weight-6)
+    font-weight: var(--font-weight-6);
 }
 
 
@@ -158,13 +157,13 @@ img[alt=menu-burger] {
 
 img[alt=logo] {
     padding-bottom: 5px;
-    width: 100%;
+    width: 106px;
 }
 
 .nav-btns-w-search {
     display: flex;
     align-items: center;
-    column-gap: 21px
+    column-gap: 21px;
 }
 
 button[name=login] {
@@ -1750,8 +1749,8 @@ textarea {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 3px;
+        width: 88px;
     }
 
     button[name=start] {
@@ -1937,8 +1936,8 @@ textarea {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 3px;
+        width: 88px;
     }
 
     button[name=start] {
@@ -2262,8 +2261,8 @@ textarea {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 3px;
+        width: 88px;
     }
 
     button[name=start] {
@@ -2613,8 +2612,8 @@ textarea {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 3px;
+        width: 88px;
     }
 
     button[name=start] {
