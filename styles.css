@@ -45,7 +45,7 @@
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 28px;
-    --spacing-xl: 64px;
+    --spacing-xl: 45px;
     --spacing-xxl: 130px;
 }
 
@@ -809,7 +809,7 @@ img[alt=about-us4]:hover {
     right: 0;
     text-transform: uppercase;
     font-weight: var(--font-weight-4);
-    font-size: var(--h2-size);
+    font-size: var(--h1-size);
     padding: var(--spacing-xl);
     box-shadow: 2px 2px 5px 1px gainsboro;
 
@@ -860,12 +860,10 @@ footer .section-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 10px
+    row-gap: 10px;
+    column-gap: 12px;
 }
 
-footer .section-container>div {
-    width: 17%;
-}
 
 footer .follow-icons {
     display: flex;
@@ -1257,14 +1255,14 @@ img[alt="inno-people"] {
 }
 
 .innovation-description-container .desc-one {
-    position: absolute;
+    position: relative;
     bottom: 48px;
     left: 89px;
 }
 
 .innovation-description-container .desc-two {
-    position: absolute;
-    bottom: 196px;
+    position: relative;
+    bottom: 500px;
     right: 103px;
 }
 
@@ -1884,9 +1882,7 @@ textarea {
         margin-top: -19px
     }
 
-    .mission .right-column {
-        width: 100%;
-    }
+
     .background p {
         width: 100%;
     }
@@ -1895,9 +1891,6 @@ textarea {
         padding: 0 var(--spacing-lg);
     }
 
-    .mission .left-column {
-        width: 100%;
-    }
     .customized-services .left-column{
         width: 100%;
     }
@@ -1912,10 +1905,7 @@ textarea {
 }
 
 @media screen and (max-width:992) and (min-width:786px) {
-    
-    .mission .right-column {
-        width: 100%;
-    }
+
     .innovative-cards p{
         font-size: var(--h3-size);
     }
@@ -2045,13 +2035,7 @@ textarea {
         font-size: var(--h5-size)
     }
 
-    footer .section-container>div:nth-of-type(2) {
-        width: 38%
-    }
 
-    footer .section-container>div:nth-of-type(3) {
-        width: 43%
-    }
 
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-md)
@@ -2121,12 +2105,6 @@ textarea {
         padding: 0 var(--spacing-lg);
 
     }
-
-
-    .mission .left-column {
-        width: 100%;
-    }
-
     .our-facilities {
         padding: 0 var(--spacing-lg);
     }
@@ -2170,10 +2148,6 @@ textarea {
 
     }
 
-    .journey {
-        margin-top: 759px
-    }
-
     .legacy-cards>div {
         width: 45%;
     }
@@ -2215,18 +2189,7 @@ textarea {
         width: 100%;
     }
 
-    .customer-stories .right-column {
-        position: relative;
-        width: 81%;
-        z-index: 3;
-        left: 60px;
-        bottom: 88px;
-        box-shadow: 2px 2px 5px 1px gainsboro;
-        height: 100%;
-        font-size: var(--h3-size);
-        padding: var(--spacing-md);
 
-    }
     .customized-services .left-column{
         width: 100%;
     }
@@ -2361,13 +2324,7 @@ textarea {
         font-size: var(--h5-size)
     }
 
-    footer .section-container>div:nth-of-type(2) {
-        width: 38%
-    }
 
-    footer .section-container>div:nth-of-type(3) {
-        width: 43%
-    }
 
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-md)
@@ -2458,17 +2415,10 @@ textarea {
 
     }
 
-    .mission .left-column {
-        width: 100%;
-    }
-
     .our-facilities {
         padding: 0 var(--spacing-lg);
     }
 
-    .mission .right-column {
-        width: 100%;
-    }
 
     .shrinked-img:nth-of-type(2) {
         display: none;
@@ -2506,11 +2456,6 @@ textarea {
         position: unset;
         width: 100%;
         height: 100%;
-    }
-
-
-    .journey {
-        margin-top: 759px
     }
 
     .legacy-cards>div {
@@ -2558,17 +2503,6 @@ textarea {
         width: 100%;
     }
 
-    .customer-stories .right-column {
-        position: relative;
-        width: 81%;
-        z-index: 3;
-        left: 37px;
-        bottom: 88px;
-        box-shadow: 2px 2px 5px 1px gainsboro;
-        height: 100%;
-        font-size: var(--h3-size);
-        padding: var(--spacing-md);
-    }
 
     .customized-services .left-column{
         width: 100%;
@@ -2672,8 +2606,7 @@ textarea {
     .roads .right-column,
     .shrinked-img,
     .test-center-background .section-container:nth-of-type(2),
-    .test-center-background p:first-of-type,
-    footer .section-container>div {
+    .test-center-background p:first-of-type {
         width: 100%
     }
 
@@ -2707,9 +2640,7 @@ textarea {
         font-size: var(--h5-size)
     }
 
-    footer .section-container>div:nth-of-type(2) {
-        width: 38%
-    }
+
 
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-md)
@@ -2750,9 +2681,6 @@ textarea {
         margin: var(--spacing-md)
     }
 
-    .mission .right-column {
-        width: 100%;
-    }
 
 
     .mission .left-column {
@@ -2804,11 +2732,6 @@ textarea {
         width: 100%;
         padding: 0 var(--spacing-lg);
 
-    }
-
-
-    .mission .left-column {
-        width: 100%;
     }
 
     .our-facilities {
@@ -2870,16 +2793,9 @@ textarea {
     .about-container {
         background-position: bottom;
     }
-
-    .journey {
-        margin-top: 759px
-    }
-
     .legacy-cards>div {
         width: 100%;
     }
-
-
 
     .about-us-flex .first-left-img-flex {
         width: 100%;
@@ -2907,18 +2823,7 @@ textarea {
         width: 100%;
     }
 
-    .customer-stories .right-column {
-        position: relative;
-        width: 81%;
-        z-index: 3;
-        left: 37px;
-        bottom: 88px;
-        box-shadow: 2px 2px 5px 1px gainsboro;
-        height: 100%;
-        font-size: var(--h3-size);
-        padding: var(--spacing-md);
 
-    }
 
 
     .customized-services .left-column{
@@ -3034,3 +2939,131 @@ swiper-slide img {
 
 
 
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
+    .customer-stories .left-column{
+        width: 100%;
+    }
+    .customer-stories .right-column {
+        position: relative;
+        width: 81%;
+        z-index: 3;
+        left: 60px;
+        bottom: 88px;
+        box-shadow: 2px 2px 5px 1px gainsboro;
+        height: 100%;
+        font-size: var(--h3-size);
+        padding: var(--spacing-md);
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
+    .customer-stories .right-column {
+        position: relative;
+        width: 81%;
+        z-index: 3;
+        left: 37px;
+        bottom: 88px;
+        box-shadow: 2px 2px 5px 1px gainsboro;
+        height: 100%;
+        font-size: var(--h3-size);
+        padding: var(--spacing-md);
+    }
+
+}
+@media  screen and (max-width: 600px){
+    .customer-stories .right-column>p{
+        width: 100%;
+    }
+    .customer-stories .right-column {
+        position: relative;
+        width: 81%;
+        z-index: 3;
+        left: 37px;
+        bottom: 88px;
+        box-shadow: 2px 2px 5px 1px gainsboro;
+        height: 100%;
+        font-size: var(--h3-size);
+        padding: var(--spacing-md);
+
+    }
+}
+
+
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .mission .right-column {
+        width: 100%;
+        font-size: var(--h3-size);
+
+    }
+    .mission .left-column{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) { 
+    .mission .right-column {
+        width: 100%;
+        font-size: var(--h3-size);
+
+    }
+    .mission .left-column{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .mission .right-column {
+        width: 100%;
+        font-size: var(--h3-size);
+
+    }
+    .mission .left-column{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .mission .right-column {
+        width: 100%;
+        font-size: var(--h3-size);
+    }
+    .mission .left-column{
+        width: 100%;
+    }
+}
+
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+   
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    footer .section-container>div:nth-of-type(2) {
+        width: 38%;
+    }
+
+    footer .section-container>div:nth-of-type(3) {
+        width: 43%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    footer .section-container>div:nth-of-type(2) {
+        width: 38%
+    }
+
+    footer .section-container>div:nth-of-type(3) {
+        width: 43%;
+    }
+}
+@media  screen and (max-width: 600px){
+    footer .section-container>div:nth-of-type(2) {
+        width: 38%
+    }
+}
