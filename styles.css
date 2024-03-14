@@ -932,7 +932,7 @@ footer .section-container {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 10px;
-    column-gap: 12px;
+    column-gap: 20px;
 }
 
 
@@ -3264,7 +3264,7 @@ swiper-slide img {
     width: 30%;
     position: relative;
     left: 13%;
-    bottom: 46px;
+    bottom: 125px;
     padding: var(--spacing-lg);
     box-shadow: 2px 1px 2px 3px gainsboro;
     margin-bottom: 15px;
@@ -3317,6 +3317,15 @@ swiper-slide img {
     .journeyy {
         margin-top: -152px;
     }
+    .desc-onee p{
+        width: 100%;
+    }
+    .desc-two p{
+        width: 100%;
+    }
+    .innovation-details h3{
+        width: 100%;
+    }
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
     .journeyy{
@@ -3328,6 +3337,15 @@ swiper-slide img {
     }
     .desc-two{
         position: unset;
+        width: 100%;
+    }
+    .desc-onee p{
+        width: 100%;
+    }
+    .desc-two p{
+        width: 100%;
+    }
+    .innovation-details h3{
         width: 100%;
     }
 }
@@ -3343,7 +3361,15 @@ swiper-slide img {
         position: unset;
         width: 100%;
     }
-
+    .desc-onee p{
+        width: 100%;
+    }
+    .desc-two p{
+        width: 100%;
+    }
+    .innovation-details h3{
+        width: 100%;
+    }
 }
 @media  screen and (max-width: 600px){
     .journeyy{
@@ -3355,6 +3381,15 @@ swiper-slide img {
     }
     .desc-two{
         position: unset;
+        width: 100%;
+    }
+    .desc-onee p{
+        width: 100%;
+    }
+    .desc-two p{
+        width: 100%;
+    }
+    .innovation-details h3{
         width: 100%;
     }
 }
