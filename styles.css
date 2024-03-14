@@ -517,11 +517,35 @@ footer .section-container {
 }
 
 .inner-service{
-    width: 200px;
-    height: 156px;
+    width: 254px;
+    height: 160px;
     background-color: white;
     box-shadow: 1px 2px 3px 2px rgb(240, 240, 240);
     margin-bottom: 22px;
+    transition: all 0.3s ease;
+    background-image: url(./images/oranged-customer-service.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.inner-service p{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 72px;
+}
+
+.inner-service:hover{
+    background-color: var(--primary-color-1);
+    background-image: url(./images/white-customer-service.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+
 }
 
 img[alt="ur-service"]{
@@ -532,6 +556,18 @@ img[alt="ur-service"]{
 .single-card-service{
     margin-left: auto;
     margin-top: 25px;
+    width: 254px;
+    height: 156px;
+    background-color: white;
+    box-shadow: 1px 2px 3px 2px rgb(240, 240, 240);
+    margin-bottom: 22px;
+    transition: all 0.3s ease;
+    background-image: url(./images/oranged-customer-service.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
 }
 .customized-services .right-column > div:nth-of-type(1){
     margin-top: 88px;
@@ -548,7 +584,7 @@ img[alt="ur-service"]{
 }
 
 .customized-services {
-    margin: var(--spacing-xl) 0;
+    margin: var(--spacing-xxl) 0;
 }
 
 .customized-services .two-columns {
@@ -644,7 +680,7 @@ img[alt="ur-service"]{
     align-items: center;
     flex-wrap: wrap;
     row-gap: 5px;
-    column-gap: 10px;
+    column-gap: 27px;
     margin-bottom: -165px;
     position: relative;
     z-index: 1
@@ -840,7 +876,7 @@ img[alt=about-us4]:hover {
 }
 
 .customer-stories .left-column {
-    width: 68%
+    width: 62%
 }
 
 .customer-stories .mini-orange-subtitle,
@@ -1975,9 +2011,6 @@ textarea {
     .single-card-service{
         display: none;
     }
-    .customized-services .right-column{
-        width: 100%;
-    }
     .customized-services .left-column{
         width: 100%;
     }
@@ -2822,6 +2855,8 @@ textarea {
     .shrinked-img {
         background-image: url(./images/colored-box1.jpg);
         background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .service-img-container:nth-of-type(3),
@@ -3066,6 +3101,7 @@ swiper-slide img {
         padding: var(--spacing-md);
 
     }
+    
 }
 
 
@@ -3089,6 +3125,9 @@ swiper-slide img {
     .mission .left-column{
         width: 100%;
     }
+    .standards-frame .section-container{
+        background-image: url("./images/mobile-frame4.svg");
+    }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .mission .right-column {
@@ -3099,6 +3138,9 @@ swiper-slide img {
     .mission .left-column{
         width: 100%;
     }
+    .standards-frame .section-container{
+        background-image: url("./images/mobile-frame4.svg");
+    }
 }
 @media  screen and (max-width: 600px){
     .mission .right-column {
@@ -3107,6 +3149,9 @@ swiper-slide img {
     }
     .mission .left-column{
         width: 100%;
+    }
+    .standards-frame .section-container{
+        background-image: url("./images/mobile-frame4.svg");
     }
 }
 
@@ -3122,6 +3167,18 @@ swiper-slide img {
     footer .section-container>div:nth-of-type(3) {
         width: 43%;
     }
+    .customized-services .right-column{
+        width: 100%;
+    }
+    .customized-services .right-column > div:nth-of-type(1){
+        margin-top: 0;
+    }
+    .single-card-service{
+        display: none;
+    }
+    .customer-stories{
+        margin: 0;
+    }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     footer .section-container>div:nth-of-type(2) {
@@ -3131,10 +3188,19 @@ swiper-slide img {
     footer .section-container>div:nth-of-type(3) {
         width: 43%;
     }
+    .customized-services .right-column > div:nth-of-type(1){
+        margin-top: 0;
+    }
+    .customer-stories{
+        margin: 0;
+    }
 }
 @media  screen and (max-width: 600px){
     footer .section-container>div:nth-of-type(2) {
         width: 38%
+    }
+    .customer-stories{
+        margin: 0;
     }
 }
 
