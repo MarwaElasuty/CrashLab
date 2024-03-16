@@ -171,12 +171,12 @@ nav {
 
 .main-navigation-bar {
     display: flex;
-    column-gap: 84px;
+    column-gap: 74px;
     list-style-type: none;
-    padding-right: 63px;
+    padding-right: 33px;
     font-weight: 600;
-    font-size: 21px;
-    font-weight: var(--font-weight-6)
+    font-size: 18px;
+    font-weight: var(--font-weight-6);
 }
 
 
@@ -237,6 +237,8 @@ img[alt=menu-burger] {
 img[alt=logo] {
     padding-bottom: 5px;
     width: 100%;
+    max-width: 171px;
+    height: auto;
 }
 
 .nav-btns-w-search {
@@ -254,9 +256,9 @@ button[name=login] {
 
 button[name=mobile-contact-btn],
 button[name=start] {
-    padding: 11px;
+    padding: 7px;
     border-style: none;
-    font-size: 18px;
+    font-size: 16px;
     background-color: inherit;
     transition: background-color .7s
 }
@@ -268,7 +270,7 @@ button[name=start] {
 }
 
 button[name=mobile-contact-btn] {
-    width: 124px;
+    width: 110px;
     border: 1px solid var(--neutral-color-2);
     color: #fff;
     border-radius: 2px
@@ -2317,8 +2319,8 @@ swiper-slide img {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 2px;
+        width: 87px;
     }
 
     button[name=start] {
@@ -2505,8 +2507,8 @@ swiper-slide img {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 2px;
+        width: 87px;
     }
 
     button[name=start] {
@@ -2799,8 +2801,8 @@ swiper-slide img {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 2px;
+        width: 87px;
     }
 
     button[name=start] {
@@ -3123,8 +3125,8 @@ swiper-slide img {
     }
 
     button[name=mobile-contact-btn] {
-        padding: 6px;
-        width: 107px;
+        padding: 2px;
+        width: 87px;
     }
 
     button[name=start] {
