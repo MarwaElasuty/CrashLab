@@ -479,10 +479,12 @@ h6 {
 }
 
 .accreditiations .right-column {
-    background-image: url("./images/Property\ 1=yes.svg");
-    background-size: cover;
-    height: 300px;
+    background-image: url(./images/Property\ 1=yes.svg);
+    background-size: contain;
     transition: all .6s ease-out;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
 }
 
 .accreditiations .right-column:hover {
