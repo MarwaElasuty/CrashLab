@@ -315,7 +315,7 @@ img[alt=added-card] {
 
 .background-container nav {
     display: flex;
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
 }
 
 .background,
@@ -1980,9 +1980,7 @@ swiper-slide img {
 }
 
 
-@media screen and (max-width: 1200px) and (min-width:992px) {
-   
-}
+@media screen and (max-width: 1200px) and (min-width:992px) {}
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     footer .section-container>div:nth-of-type(2) {
@@ -2109,12 +2107,12 @@ swiper-slide img {
 
 
 
-.innovation-description-containerr{
+.innovation-description-containerr {
     position: relative;
     top: -161px;
 }
 
-.desc-onee{
+.desc-onee {
     background-color: white;
     width: 30%;
     position: relative;
@@ -2125,7 +2123,7 @@ swiper-slide img {
     margin-bottom: 15px;
 }
 
-.desc-two{
+.desc-two {
     background-color: white;
     position: relative;
     width: 30%;
@@ -2134,129 +2132,158 @@ swiper-slide img {
     bottom: 425px;
     box-shadow: 2px 1px 2px 3px gainsboro;
 }
-.desc-two p{
+
+.desc-two p {
     width: 80%;
     font-weight: var(--font-weight-5);
 }
 
-.desc-onee p{
+.desc-onee p {
     width: 80%;
     font-weight: var(--font-weight-5);
 
 }
 
-.journeyy{
+.journeyy {
     margin: 0 0 var(--spacing-xl) 0;
     margin-top: -219px;
-   
+
 }
 
-.innovation-corere{
+.innovation-corere {
     padding: 0 var(--spacing-lg);
     background-image: url("./images/about-map.svg");
 }
 
-.journeyy{
+.journeyy {
     padding: 0 var(--spacing-lg);
 
 }
-@media  screen and (max-width: 1200px) and (min-width:992px) {
-   .desc-onee{
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .desc-onee {
         position: unset;
         width: 100%;
     }
-    .desc-two{
+
+    .desc-two {
         position: unset;
         width: 100%;
     }
+
     .journeyy {
         margin-top: -152px;
     }
-    .desc-onee p{
+
+    .desc-onee p {
         width: 100%;
     }
-    .desc-two p{
+
+    .desc-two p {
         width: 100%;
     }
-    .innovation-details h3{
+
+    .innovation-details h3 {
         width: 100%;
     }
-    .background h1:nth-of-type(2){
+
+    .background h1:nth-of-type(2) {
         font-size: 26px;
     }
 }
-@media  screen and (max-width: 992px) and (min-width:786px) {
-    .journeyy{
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    .journeyy {
         margin-top: -152px;
     }
-    .desc-onee{
+
+    .desc-onee {
         position: unset;
         width: 100%;
     }
-    .desc-two{
+
+    .desc-two {
         position: unset;
         width: 100%;
     }
-    .desc-onee p{
+
+    .desc-onee p {
         width: 100%;
     }
-    .desc-two p{
+
+    .desc-two p {
         width: 100%;
     }
-    .innovation-details h3{
+
+    .innovation-details h3 {
         width: 100%;
     }
-    .background h1:nth-of-type(2){
+
+    .background h1:nth-of-type(2) {
         font-size: 26px;
     }
 }
-@media  screen and (max-width: 786px) and (min-width:600px) {
-    .journeyy{
+
+@media screen and (max-width: 786px) and (min-width:600px) {
+    .journeyy {
         margin-top: -152px;
     }
-    .desc-onee{
+
+    .desc-onee {
         position: unset;
         width: 100%;
     }
-    .desc-two{
+
+    .desc-two {
         position: unset;
         width: 100%;
     }
-    .desc-onee p{
+
+    .desc-onee p {
         width: 100%;
     }
-    .desc-two p{
+
+    .desc-two p {
         width: 100%;
     }
-    .innovation-details h3{
+
+    .innovation-details h3 {
         width: 100%;
     }
-    .background h1:nth-of-type(2){
+
+    .background h1:nth-of-type(2) {
         font-size: 26px;
     }
 }
-@media  screen and (max-width: 600px){
-    .journeyy{
+
+@media screen and (max-width: 600px) {
+    .journeyy {
         margin-top: -152px;
     }
-    .desc-onee{
+
+    .desc-onee {
         position: unset;
         width: 100%;
     }
-    .desc-two{
+
+    .desc-two {
         position: unset;
         width: 100%;
     }
-    .desc-onee p{
+
+    .desc-onee p {
         width: 100%;
     }
-    .desc-two p{
+
+    .desc-two p {
         width: 100%;
     }
-    .innovation-details h3{
+
+    .innovation-details h3 {
         width: 100%;
     }
-    .background h1:nth-of-type(2){
+
+    .background h1:nth-of-type(2) {
         font-size: 26px;
     }
 }
@@ -2274,8 +2301,8 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
-        right: -2px;
+        top: 56px;
+        right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -2468,8 +2495,8 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
-        right: -2px;
+        top: 56px;
+        right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -2518,6 +2545,7 @@ swiper-slide img {
     button[name=start]:hover {
         color: var(--neutral-color-1)
     }
+
     .amenities .left-column,
     .amenities .right-column,
     .blog-article-background p,
@@ -2761,8 +2789,8 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
-        right: -2px;
+        top: 56px;
+        right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -3085,8 +3113,8 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 90px;
-        right: -2px;
+        top: 56px;
+        right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
