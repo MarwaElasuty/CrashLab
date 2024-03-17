@@ -20,7 +20,7 @@
     --h2-size: 36px;
     --h3-size: 26px;
     --h4-size: 22px;
-    --h5-size: 18px;
+    --h5-size: 16.5px;
     --h6-size: 12px;
     --primary-color-1: #ffad00;
     --primary-color-2: rgba(255, 189, 49, 1);
@@ -56,7 +56,7 @@
 .contact-background>*,
 .mission .right-column>p,
 p {
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .background-container,
@@ -82,7 +82,7 @@ img[alt=mission3] {
     text-transform: uppercase;
     padding: var(--spacing-lg) var(--spacing-lg);
     position: relative;
-    left: 140px;
+    left: 81px;
     bottom: -51px;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     width: 43%;
@@ -90,7 +90,7 @@ img[alt=mission3] {
 }
 
 .innovative-cards .right-column {
-    width: 55%
+    width: 57%
 }
 
 /* innovative cards media query */
@@ -435,7 +435,6 @@ h6 {
 .mission,
 .our-facilities {
     margin: var(--spacing-xxl) 0;
-    padding: 0 var(--spacing-lg);
 }
 
 .tests-w-standards {
@@ -990,6 +989,11 @@ footer p {
     margin: var(--spacing-xxl) 0;
 }
 
+.overview p {
+    margin: var(--spacing-md) 0;
+    font-size: var(--h5-size);
+}
+
 .overview-img-container {
     background-image: url("./images/overview.svg");
     background-size: cover;
@@ -1074,7 +1078,7 @@ footer p {
 .test-center-background .black-card>p,
 .test-center-background .orange-card>p,
 .test-center-background p:first-of-type {
-    width: 70%
+    width: 70%;
 }
 
 .test-center-background .section-container:nth-of-type(2) {
@@ -1129,6 +1133,10 @@ img[alt=overview] {
 .roads{
     margin: var(--spacing-xxxl) 0;
 }
+
+.roads p {
+    font-size: var(--h5-size);
+}
 .amenities h3,
 .roads h3 {
     padding: 0 0 var(--spacing-md) 0
@@ -1159,7 +1167,8 @@ img[alt=about-facility] {
 }
 
 .amenities .right-column {
-    width: 54%
+    width: 54%;
+    font-size: var(--h5-size);
 }
 
 .amenities .left-column {
