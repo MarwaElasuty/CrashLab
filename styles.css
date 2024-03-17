@@ -46,7 +46,8 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 45px;
-    --spacing-xxl: 130px;
+    --spacing-xxl: 85px;
+    --spacing-xxxl : 120px;
 }
 
 .about-legacy-background>*,
@@ -80,11 +81,12 @@ img[alt=mission3] {
     background-color: #fff;
     text-transform: uppercase;
     padding: var(--spacing-lg) var(--spacing-lg);
-    position: absolute;
-    right: 96px;
-    bottom: -33px;
+    position: relative;
+    left: 140px;
+    bottom: -51px;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
-    width: 43%
+    width: 43%;
+    height: 71vh;
 }
 
 .innovative-cards .right-column {
@@ -97,6 +99,7 @@ img[alt=mission3] {
     .innovative-cards .left-column {
         position: unset;
         width: 100%;
+        height: auto;
     }
 
     .innovative-cards .right-column {
@@ -112,6 +115,7 @@ img[alt=mission3] {
     .innovative-cards .left-column {
         position: unset;
         width: 100%;
+        height: auto;
     }
 }
 
@@ -123,6 +127,7 @@ img[alt=mission3] {
     .innovative-cards .left-column {
         position: unset;
         width: 100%;
+        height: auto;
     }
 }
 
@@ -134,6 +139,7 @@ img[alt=mission3] {
     .innovative-cards .left-column {
         position: unset;
         width: 100%;
+        height: auto;
     }
 }
 
@@ -369,7 +375,7 @@ footer {
 .roads,
 .standards,
 .table-of-content {
-    margin: var(--spacing-xl) 0;
+    margin: var(--spacing-xxl) 0;
     padding: 0 var(--spacing-lg)
 }
 
@@ -538,6 +544,7 @@ footer h4 {
 .customized-services,
 footer .section-container {
     padding: 0 var(--spacing-lg);
+    margin: var(--spacing-xxl) 0;
 }
 
 .customized-services .right-column {
@@ -980,7 +987,7 @@ footer p {
 
 .overview {
     padding: 0 var(--spacing-lg);
-    margin: var(--spacing-lg) 0;
+    margin: var(--spacing-xxl) 0;
 }
 
 .overview-img-container {
@@ -1119,6 +1126,9 @@ img[alt=overview] {
     width: 23%
 }
 
+.roads{
+    margin: var(--spacing-xxxl) 0;
+}
 .amenities h3,
 .roads h3 {
     padding: 0 0 var(--spacing-md) 0
