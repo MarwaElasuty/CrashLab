@@ -191,8 +191,8 @@ nav {
     color: var(--neutral-color-2)
 }
 
-.main-navigation-bar .active {
-    color: #fff
+.main-navigation-bar .active{
+    color: var(--neutral-color-1);
 }
 
 .background span:first-of-type,
