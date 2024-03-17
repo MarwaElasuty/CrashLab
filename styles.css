@@ -18,8 +18,8 @@
     --font-weight-9: 100;
     --h1-size: 45px;
     --h2-size: 35px;
-    --h3-size: 28px;
-    --h4-size: 21px;
+    --h3-size: 26px;
+    --h4-size: 22px;
     --h5-size: 16px;
     --h6-size: 12px;
     --primary-color-1: #ffad00;
@@ -44,7 +44,7 @@
     --submit-btn-background-color: rgba(255, 173, 0, 1);
     --spacing-sm: 8px;
     --spacing-md: 16px;
-    --spacing-lg: 28px;
+    --spacing-lg: 24px;
     --spacing-xl: 45px;
     --spacing-xxl: 130px;
 }
@@ -414,10 +414,13 @@ h6 {
 .arrows,
 .journey,
 .mission,
-.our-facilities,
-.tests-w-standards {
+.our-facilities {
     margin: var(--spacing-xl) 0;
     padding: 0 var(--spacing-lg);
+}
+
+.tests-w-standards{
+    margin: var(--spacing-lg) 0 0 0;
 }
 
 .customers {
@@ -596,7 +599,7 @@ img[alt="ur-service"] {
 }
 
 .customized-services {
-    margin: var(--spacing-xxl) 0;
+    margin: var(--spacing-xl) 0;
 }
 
 .customized-services .two-columns {
@@ -972,7 +975,15 @@ footer p {
 }
 
 .overview {
-    padding: 0 var(--spacing-md)
+    padding: 0 var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.overview-img-container{
+    background-image: url("./images/overview.svg");
+    background-size: cover;
+    height: 43vh;
+    background-position: center;
 }
 
 .test-center-container {
@@ -1286,10 +1297,10 @@ img[alt=mission3] {
 
 
 
-/* 
+
 img[alt="brand-logo"]{
     width: 100%;
-} */
+}
 
 
 
@@ -2392,7 +2403,7 @@ swiper-slide img {
     }
 
     .overview {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-lg);
         position: relative;
         z-index: 1;
         background-color: #fff;
@@ -2584,7 +2595,7 @@ swiper-slide img {
     }
 
     .overview {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-lg);
         position: relative;
         z-index: 1;
         background-color: #fff;
@@ -2880,7 +2891,7 @@ swiper-slide img {
     }
 
     .overview {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-lg);
         position: relative;
         z-index: 1;
         background-color: #fff;
@@ -2972,7 +2983,7 @@ swiper-slide img {
     }
 
     .second-black-card {
-        width: 150px;
+        width: 172px;
 
     }
 
@@ -3204,7 +3215,7 @@ swiper-slide img {
     }
 
     .overview {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-lg);
         position: relative;
         z-index: 1;
         background-color: #fff;
@@ -3302,7 +3313,7 @@ swiper-slide img {
     }
 
     .second-black-card {
-        width: 150px;
+        width: 172px;
 
     }
 
