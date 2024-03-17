@@ -370,7 +370,7 @@ footer {
 .standards,
 .table-of-content {
     margin: var(--spacing-xl) 0;
-    padding: 0 var(--spacing-md)
+    padding: 0 var(--spacing-lg)
 }
 
 .standards .big-heading {
@@ -419,11 +419,6 @@ h6 {
     margin: var(--spacing-xl) 0;
     padding: 0 var(--spacing-lg);
 }
-
-/* .journey {
-    position: relative;
-    margin-top: 132px;
-} */
 
 .customers {
     margin: var(--spacing-xl) 0 var(--spacing-md) 0;
@@ -700,7 +695,8 @@ img[alt="ur-service"] {
     column-gap: 27px;
     margin-bottom: -165px;
     position: relative;
-    z-index: 1
+    z-index: 1;
+    padding: 0 var(--spacing-lg);
 }
 
 img[alt=added-card] {
@@ -2751,9 +2747,9 @@ swiper-slide img {
         width: 100%;
     }
 
-    .slider img {
+    /* .slider img {
         animation: none;
-    }
+    } */
 
     .customer-stories .left-column {
         position: relative;
@@ -3072,9 +3068,9 @@ swiper-slide img {
         width: 100%;
     }
 
-    .slider img {
+    /* .slider img {
         animation: none;
-    }
+    } */
 
     .customer-stories .left-column {
         position: relative;
@@ -3409,9 +3405,9 @@ swiper-slide img {
         width: 100%;
     }
 
-    .slider img {
+    /* .slider img {
         animation: none;
-    }
+    } */
 
     .customer-stories .left-column {
         position: relative;
