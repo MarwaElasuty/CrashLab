@@ -352,7 +352,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: var(--spacing-sm) 0 0 0;
-    font-size: 37px;
+    font-size: 45px;
 }
 
 .background .mini-orange-subtitle {
@@ -2195,7 +2195,7 @@ swiper-slide img {
     }
 
     .background h1:nth-of-type(2) {
-        font-size: 26px;
+        font-size: 30px;
     }
 }
 
@@ -2227,7 +2227,7 @@ swiper-slide img {
     }
 
     .background h1:nth-of-type(2) {
-        font-size: 26px;
+        font-size: 30px;
     }
 }
 
@@ -2259,7 +2259,7 @@ swiper-slide img {
     }
 
     .background h1:nth-of-type(2) {
-        font-size: 26px;
+        font-size: 30px;
     }
 }
 
@@ -2291,7 +2291,7 @@ swiper-slide img {
     }
 
     .background h1:nth-of-type(2) {
-        font-size: 26px;
+        font-size: 30px;
     }
 }
 
@@ -2308,7 +2308,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 65px;
         right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2502,7 +2502,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 65px;
         right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -2796,7 +2796,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 65px;
         right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -3120,7 +3120,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 65px;
         right: -4px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
