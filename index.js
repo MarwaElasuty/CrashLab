@@ -94,6 +94,24 @@ $(document).ready(function () {
 });
 
 
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message');
+
+const sendEmail = (e) =>{
+  e.preventDefault()
+  emailjs.sendForm('service_u0t85ax', 'template_sq0onfo', '#contact-form', 'NGE7DmxLauJeUM9jb')
+  .then(() =>{
+    contactMessage.textContent = "Message sent successfully!";
+    console.log("hey");
+  }, ()=>{
+    contactMessage.textContent = "Message not sent (service error)";
+  })
+}
+
+contactForm.addEventListener('submit', sendEmail)
 
 
+
+
+/* Multiple Languages */
 
