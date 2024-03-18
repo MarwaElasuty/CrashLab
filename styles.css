@@ -450,6 +450,7 @@ h6 {
 .mission,
 .our-facilities {
     margin: var(--spacing-xxl) 0;
+    padding: 0 var(--spacing-lg);
 }
 
 .tests-w-standards {
@@ -1457,7 +1458,7 @@ img[alt=about-facility] {
     background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
     flex-direction: column;
     justify-content: center;
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
     background-size: contain;
 }
 
@@ -1844,7 +1845,7 @@ img[alt="right-arrow"]:hover {
 .contact-container,
 .contact-details .two-columns>div,
 .contact-form {
-    padding: var(--spacing-md) var(--spacing-md)
+    padding: var(--spacing-md) var(--spacing-lg)
 }
 
 .blog-article-background p,
@@ -2403,7 +2404,7 @@ swiper-slide img {
     left: 13%;
     bottom: 125px;
     padding: var(--spacing-lg);
-    box-shadow: 2px 1px 2px 3px gainsboro;
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     margin-bottom: 30px;
     height: 190px;
     display: flex;
@@ -2421,7 +2422,7 @@ swiper-slide img {
     padding: var(--spacing-lg);
     height: 190px;
     bottom: 447px;
-    box-shadow: 2px 1px 2px 3px gainsboro;
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3102,6 +3103,9 @@ swiper-slide img {
     .test-center-background .card{
         width: 80%;
     }
+    .added-value-services p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -3453,6 +3457,9 @@ swiper-slide img {
     .test-center-background .card{
         width: 80%;
     }
+    .added-value-services p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -3566,7 +3573,7 @@ swiper-slide img {
     .amenities,
     .breakdown,
     .roads {
-        padding: 0 var(--spacing-md)
+        padding: 0 var(--spacing-lg);
     }
 
     .overview {
@@ -3590,7 +3597,7 @@ swiper-slide img {
     }
 
     .blog-background {
-        padding: 0 var(--spacing-md) 0 var(--spacing-md);
+        padding: 0 var(--spacing-md) 0 var(--spacing-lg);
         position: unset;
     }
 
@@ -3822,6 +3829,9 @@ swiper-slide img {
     }
     .test-center-background .card{
         width: 80%;
+    }
+    .added-value-services p{
+        width: 100%;
     }
 }
 
