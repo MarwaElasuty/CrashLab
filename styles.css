@@ -379,6 +379,12 @@ footer {
     padding: 0 var(--spacing-lg)
 }
 
+.added-value-services p{
+    width: 70%;
+    margin: auto;
+    line-height: 28px;
+}
+
 .accreditiations {
     margin: var(--spacing-xxl) 0;
 }
@@ -916,15 +922,23 @@ img[alt="ur-service"] {
 }
 .added-value-cards p {
     position: relative;
-    left: 17px;
+    left: 10px;
     top: 10px;
 }
-.added-value-cards p:nth-of-type(4) {
-    left: 20px;
+
+.added-real-text{
+    left: 25px !important;
+    top: 10px !important;
 }
 
+.added-result-text{
+    left: 16px !important;
+    top: 10px !important;
+}
+
+
 img[alt=added-card] {
-    border-bottom: 2px solid var(--neutral-color-2)
+    border-bottom: 2px solid #dddddd;
 }
 
 img[alt=added-card]:hover {
