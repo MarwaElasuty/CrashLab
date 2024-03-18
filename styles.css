@@ -59,6 +59,11 @@ p {
     text-transform: capitalize;
 }
 
+.mission .right-column{
+    width: 29%;
+    line-height: 34px;
+}
+
 .background-container,
 .test-center-container {
     background-position: bottom;
@@ -2399,7 +2404,13 @@ swiper-slide img {
     bottom: 125px;
     padding: var(--spacing-lg);
     box-shadow: 2px 1px 2px 3px gainsboro;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .desc-two {
@@ -2408,25 +2419,36 @@ swiper-slide img {
     width: 30%;
     left: 58%;
     padding: var(--spacing-lg);
-    bottom: 425px;
+    height: 190px;
+    bottom: 447px;
     box-shadow: 2px 1px 2px 3px gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .desc-two p {
     width: 80%;
-    font-weight: var(--font-weight-5);
+    font-weight: var(--font-weight-6);
+    font-size: 18px;
 }
 
 .desc-onee p {
     width: 80%;
-    font-weight: var(--font-weight-5);
+    font-weight: var(--font-weight-6);
+    font-size: 18px;
+
 
 }
 
 .journeyy {
     margin: 0 0 var(--spacing-xl) 0;
-    margin-top: -219px;
+    margin-top: -278px;
+}
 
+.journeyy p:nth-of-type(1){
+    margin-bottom: 20px;
 }
 
 .innovation-corere {
@@ -2451,7 +2473,7 @@ swiper-slide img {
     }
 
     .journeyy {
-        margin-top: -152px;
+        margin-top: -100px;
     }
 
     .desc-onee p {
@@ -2473,7 +2495,7 @@ swiper-slide img {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .journeyy {
-        margin-top: -152px;
+        margin-top: -100px;
     }
 
     .desc-onee {
@@ -2505,7 +2527,7 @@ swiper-slide img {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .journeyy {
-        margin-top: -152px;
+        margin-top: -100px;
     }
 
     .desc-onee {
@@ -2537,7 +2559,7 @@ swiper-slide img {
 
 @media screen and (max-width: 600px) {
     .journeyy {
-        margin-top: -152px;
+        margin-top: -100px;
     }
 
     .desc-onee {
