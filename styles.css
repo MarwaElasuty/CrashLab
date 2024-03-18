@@ -1322,7 +1322,8 @@ img[alt="client"]{
 .test-center-background .card {
     padding: var(--spacing-lg) var(--spacing-md);
     font-size: var(--h4-size);
-    text-transform: capitalize
+    text-transform: capitalize;
+    width: 28%;
 }
 
 .test-center-background .orange-card {
@@ -1361,7 +1362,12 @@ img[alt=overview] {
 .breakdown-cards>div {
     padding: var(--spacing-md) var(--spacing-md);
     box-shadow: 0 0 11px 7px rgb(241 241 241);
-    width: 23%
+    width: 23%;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .roads{
@@ -3071,6 +3077,9 @@ swiper-slide img {
     .circle-blog-options{
         justify-content: center;
     }
+    .test-center-background .card{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -3418,6 +3427,9 @@ swiper-slide img {
     }
     .circle-blog-options{
         justify-content: center;
+    }
+    .test-center-background .card{
+        width: 80%;
     }
 }
 
@@ -3785,6 +3797,9 @@ swiper-slide img {
     }
     .about-us-flex .first-left-img-flex::after{
         top: 94px;
+    }
+    .test-center-background .card{
+        width: 80%;
     }
 }
 
