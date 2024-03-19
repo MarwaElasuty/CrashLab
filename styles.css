@@ -3916,6 +3916,7 @@ swiper-slide img {
 [type="checkbox"]:not(:checked){
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 
