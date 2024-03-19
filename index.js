@@ -1,3 +1,23 @@
+
+
+/* Send email to the user via EmailJS */
+
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
+
+
+const sendEmail = (e) =>{
+    e.preventDefault();
+    emailjs.sendForm('service_u0t85ax', 'template_sq0onfo', '#contact-form', 'NGE7DmxLauJeUM9jb')
+    .then(() =>{
+        contactMessage.textContent = 'Message sent successfully!';
+    }, ()=>{
+        contactMessage.textContent = 'Message not sent (server error)';
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
 const swiperEl = document.querySelector('swiper-container')
 
     const params = {
@@ -35,36 +55,36 @@ function appear() {
 }
 
 
-function showDiv(Div) {
-  var x = document.getElementById(Div);
-  if (x.style.display == "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+// function showDiv(Div) {
+//   var x = document.getElementById(Div);
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
 
 
-function formDiv(Div) {
-  var formDiv = document.getElementById(Div);
-  if (formDiv.style.display == "none") {
-    formDiv.style.display = "block";
-  } else {
-    formDiv.style.display = "none";
-  }
-}
+// function formDiv(Div) {
+//   var formDiv = document.getElementById(Div);
+//   if (formDiv.style.display == "none") {
+//     formDiv.style.display = "block";
+//   } else {
+//     formDiv.style.display = "none";
+//   }
+// }
 
 
-function hideDiv(Div) {
-  var hide = document.getElementById(Div);
+// function hideDiv(Div) {
+//   var hide = document.getElementById(Div);
   
-  if (hide.style.display == "none") {  
+//   if (hide.style.display == "none") {  
    
-  } else {
-    hide.style.display = "none";
-    // document.querySelector('input').value= ' ';  
-  }
-}
+//   } else {
+//     hide.style.display = "none";
+//     // document.querySelector('input').value= ' ';  
+//   }
+// }
 
 
 $(document).ready(function () {
@@ -93,22 +113,6 @@ $(document).ready(function () {
   });
 });
 
-
-const contactForm = document.getElementById('contact-form'),
-      contactMessage = document.getElementById('contact-message');
-
-const sendEmail = (e) =>{
-  e.preventDefault()
-  emailjs.sendForm('service_u0t85ax', 'template_sq0onfo', '#contact-form', 'NGE7DmxLauJeUM9jb')
-  .then(() =>{
-    contactMessage.textContent = "Message sent successfully!";
-    console.log("hey");
-  }, ()=>{
-    contactMessage.textContent = "Message not sent (service error)";
-  })
-}
-
-contactForm.addEventListener('submit', sendEmail)
 
 
 
