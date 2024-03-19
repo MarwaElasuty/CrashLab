@@ -1456,10 +1456,10 @@ img[alt=about-facility] {
 
 
 .about-container {
-    background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
+    /* background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg); */
     flex-direction: column;
     justify-content: center;
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: var(--spacing-md) 0;
     background-size: contain;
 }
 
@@ -1469,6 +1469,12 @@ img[alt=about-facility] {
     justify-content: center;
     color: var(--neutral-color-1);
     margin: var(--spacing-xl) 0;
+}
+
+.about-legacy-background .left-column{
+    width: 51%;
+    position: relative;
+    left: 150px;
 }
 
 .blog-background,
@@ -1500,6 +1506,12 @@ img[alt="blog-articles"] {
 .about-legacy-background p,
 .contact-form h3 {
     color: var(--neutral-color-2)
+}
+
+.about-legacy-background p{
+    width: 70%;
+    line-height: 30px;
+    font-size: var(--h5-size);
 }
 
 .legacy-cards {
@@ -1865,6 +1877,14 @@ img[alt="right-arrow"]:hover {
     text-transform: capitalize
 }
 
+.table-of-content a{
+    text-decoration: none;
+    color:black;
+}
+
+.table-of-content a:hover{
+    cursor: pointer;
+}
 .table-of-content .inner-shadowed-table>*,
 .table-of-content .inner-table>* {
     /* padding: var(--spacing-ssm) 0; */
