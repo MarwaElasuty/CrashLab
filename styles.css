@@ -1270,7 +1270,6 @@ img[alt="client"]{
 .about-legacy-background h3,
 .client-info h5 {
     font-weight: var(--font-weight-5);
-    text-align: left;
 }
 
 .blogs {
@@ -1692,7 +1691,7 @@ img[alt="inno-people"] {
     flex-direction: column;
     justify-content: center;
     background-position: calc();
-    filter: contrast(1.2);
+    filter: contrast(1);
     padding: var(--spacing-md) var(--spacing-md);
 }
 
@@ -1709,7 +1708,6 @@ img[alt="inno-people"] {
 }
 
 .blog-background p:first-of-type {
-    color: var(--neutral-color-2);
     line-height: 43px;
     width: 70%;
     font-size: var(--h4-size)
@@ -1742,15 +1740,13 @@ h2 {
     width: 87px;
     height: 87px;
     border-radius: 50%;
-    background-color: #fff
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img[alt=circle-blog1],
-img[alt=circle-blog2],
-img[alt=circle-blog3] {
-    padding-left: 28px;
-    padding-top: 26px;
-}
+
 
 .blog-cards .section-container {
     display: flex;
@@ -3928,25 +3924,25 @@ swiper-slide img {
 
 .dropdown:checked + label,
 .dropdown:not(:checked) + label{
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 2;
-  height: 50px;
-  transition: all 200ms linear;
-  border-radius: 4px;
-  width: 100px;
-  letter-spacing: 1px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: none;
-  background-color: #ffeba7;
-  cursor: pointer;
-  color: #102770;
-  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+    position: relative;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    height: 41px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    width: 100px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background-color: var(--primary-color-1);
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
 }
 .dark-light:checked ~ .sec-center .for-dropdown{
   background-color: #102770;

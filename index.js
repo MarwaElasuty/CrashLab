@@ -25,8 +25,13 @@ function changeLanguage(){
  
  function change_arabic(){
   document.getElementById('body').style.direction = "rtl";
+
+    /* Home */
+
   document.querySelector(".customer-stories .right-column").classList.add("arabic-customers-stories");
   document.querySelector('.customer-stories .right-column').classList.remove('right-column');
+
+
  }
 
   function change_english(){
@@ -34,8 +39,6 @@ function changeLanguage(){
   }
   /* Navigation Bar */
 
-  /* Home */
-  // 
    
 
 //  document.getElementById('ar').addEventListener('click',()=>{
