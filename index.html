@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="body">
     <header>
 
     </header>
@@ -42,8 +42,33 @@
 
 
                     <div class="nav-btns-w-search">
-                        <div>
-                             <button type="button" name="mobile-contact-btn">Contact</button>
+                        <div class="contact-w-languages">
+                            <button type="button" name="mobile-contact-btn">Contact</button>
+                            <!-- <div class="language">
+                                <p>English</p>
+                                <div class="arabic-option">
+                                    <p>Arabic</p>
+                                </div>
+                            </div> -->
+                       
+                          
+                       
+                      
+                            <div class="sec-center"> 	
+                                <input class="dropdown" type="checkbox" id="dropdown"/>
+                                <label for="dropdown">Language</label>
+                                <div class="section-dropdown"> 
+                                    <label class="for-dropdown-sub" onclick="change_english()">English</label>
+                                    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+                                    <label class="for-dropdown-sub" onclick="change_arabic()">Arabic</label>
+                                    
+                                </div>
+                            </div>
+                            <!-- <select onchange="changeLanguage(value)">
+                                <option value="English" id="en">English</option>
+                                <option value="Arabic" id="ar" >Arabic</option>
+                            </select> -->
+                            <!-- <button type="button" name="change-lang-btn" onclick="changeLanguage()">Change Language</button> -->
                         </div>
 
                         <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
@@ -99,8 +124,11 @@
                     <h3 class="mini-heading">Standards</h3>
                 </div>
                 <h2 class="big-heading">Compilance With Standards</h2>
-                <p class="subtitle">Transpolis is an active member of the CEN (European Committee for Standardisation) working group, with the mission to constantly develop and evolve CE standards.</p>
-                <p class="subtitle">Our services include a range of tests to check for compliance with the applicable standards. From installation to crash testing, we support our customers during the entire process to ensure best results.</p>
+                <p class="subtitle">Transpolis is an active member of the CEN (European Committee for Standardisation)
+                    working group, with the mission to constantly develop and evolve CE standards.</p>
+                <p class="subtitle">Our services include a range of tests to check for compliance with the applicable
+                    standards. From installation to crash testing, we support our customers during the entire process to
+                    ensure best results.</p>
             </div>
         </div>
 
@@ -163,7 +191,8 @@
                                 <h3 class="mini-heading">CUSTOMIZED SERVICES</h3>
                             </div>
                             <h1 class="big-heading">Broad Range Of Services</h1>
-                            <p>A multitude of customised services on all types of surfaces to meet customers requirements</p>
+                            <p>A multitude of customised services on all types of surfaces to meet customers
+                                requirements</p>
                             <div class="inner-service single-card-service">
                                 <p class="positioned-one">Individual crash tests - no standards aim</p>
                             </div>
@@ -178,7 +207,7 @@
                         <div>
                             <div class="inner-service custom-one">
                                 <p class="positioned-two">Push/Pull Tests</p>
-                               </div>
+                            </div>
                             <div class="inner-service custom-two">
                                 <p class="positioned-three">Biomechanics - Humanbody simulation</p>
                             </div>
@@ -210,7 +239,9 @@
                     <h3 class="mini-heading">ADDED-VALUE SERVICES</h3>
                 </div>
                 <h2 class="big-heading">Working Together</h2>
-                <p>A dedicated team of experts for a turnkey service: FE Models, Crash tests, Analyses and Correlation. The crash test can be based on an internal study provided by the customer, or we can correlate parametric studies with 3D simulation expertise based on EN16303 / TR16303 standards.</p>
+                <p>A dedicated team of experts for a turnkey service: FE Models, Crash tests, Analyses and Correlation.
+                    The crash test can be based on an internal study provided by the customer, or we can correlate
+                    parametric studies with 3D simulation expertise based on EN16303 / TR16303 standards.</p>
             </div>
         </div>
 
@@ -451,6 +482,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+    <!-- <script src="index.js"></script> -->
     <script src="index.js"></script>
 </body>
 

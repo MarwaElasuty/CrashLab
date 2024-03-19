@@ -18,6 +18,30 @@ const sendEmail = (e) =>{
 
 contactForm.addEventListener('submit', sendEmail)
 
+
+function changeLanguage(){
+  
+ }
+ 
+ function change_arabic(){
+  document.getElementById('body').style.direction = "rtl";
+ }
+
+  function change_english(){
+    document.getElementById('body').style.direction = "ltr";
+  }
+  /* Navigation Bar */
+  document.querySelector(".customer-stories .right-column").classList.add("arabic-customers-stories");
+
+  /* Home */
+   document.querySelector(".customer-stories .right-column").classList.add("arabic-customers-stories");
+   document.querySelector('.customer-stories .right-column').classList.remove('right-column');
+
+//  document.getElementById('ar').addEventListener('click',()=>{
+//   changeLanguage();
+//  })
+
+
 const swiperEl = document.querySelector('swiper-container')
 
     const params = {
@@ -73,6 +97,7 @@ function formDiv(Div) {
     formDiv.style.display = "none";
   }
 }
+
 
 
 function hideDiv(Div) {
