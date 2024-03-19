@@ -1305,8 +1305,13 @@ img[alt="client"]{
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    display: flex
+    display: flex;
 }
+
+/* .about-legacy-background .section-container {
+    position: relative;
+    bottom: 100px;
+} */
 
 .test-center-background .section-container {
     display: flex;
@@ -1456,11 +1461,20 @@ img[alt=about-facility] {
 
 
 .about-container {
-    /* background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg); */
+    background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
     flex-direction: column;
     justify-content: center;
     padding: var(--spacing-md) 0;
     background-size: contain;
+    height: 100vh;
+}
+
+/* .about-container .section-container:nth-of-type(1){
+    margin-top: 0;
+} */
+
+.about-container-navbar{
+    margin-top: 0;
 }
 
 .about-legacy-background {
@@ -1471,11 +1485,7 @@ img[alt=about-facility] {
     margin: var(--spacing-xl) 0;
 }
 
-.about-legacy-background .left-column{
-    width: 51%;
-    position: relative;
-    left: 150px;
-}
+
 
 .blog-background,
 .blog-container {

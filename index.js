@@ -77,8 +77,9 @@ function formDiv(Div) {
 
 function hideDiv(Div) {
   var hide = document.getElementById(Div);
-  
-  if (hide.style.display == "none") {  
+  var contactForm = document.getElementById('contact-form');
+
+  if (hide.style.display == "none"){  
   } else {
     hide.style.display = "none";
     // document.querySelector('input').value= ' ';  
