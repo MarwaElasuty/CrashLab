@@ -2665,6 +2665,52 @@ swiper-slide img {
     }
 }
 
+.arabic-customers{
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-4);
+    font-size: var(--h1-size);
+    padding: var(--spacing-xl);
+    box-shadow: 2px 2px 5px 1px gainsboro;
+    width: 46%;
+}
+
+
+
+.arabic-desc-onee{
+    background-color: white;
+    position: relative;
+    left: -8%;
+    bottom: 125px;
+    padding: var(--spacing-lg);
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    margin-bottom: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.arabic-desc-two{
+    background-color: white;
+    position: relative;
+    right: 58%;
+    padding: var(--spacing-lg);
+    height: auto;
+    bottom: 447px;
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
 
 @media screen and (max-width:1200px) and (min-width:992) {
 
@@ -2848,6 +2894,7 @@ swiper-slide img {
     /* .accreditiations .right-column{
         background-size: cover;
     } */
+
 }
 
 @media screen and (max-width:992px) and (min-width:786px) {
@@ -3201,6 +3248,20 @@ swiper-slide img {
     position: unset;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     font-weight: var(--font-weight-4);
+    }
+    .arabic-customers{
+        position: unset;
+        width: 100%;
+    }
+    .arabic-desc-onee{
+        position: unset;
+        width: 100%;
+        height: 190px;
+    }
+    .arabic-desc-two{
+        position: unset;
+        width: 100%;
+        height: 190px;
     }
 }
 
@@ -3577,6 +3638,20 @@ swiper-slide img {
     position: unset;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     font-weight: var(--font-weight-4);
+    }
+    .arabic-customers{
+        position: unset;
+        width: 100%;
+    }
+    .arabic-desc-onee{
+        position: unset;
+        width: 100%;
+        height: 190px;
+    }
+    .arabic-desc-two{
+        position: unset;
+        width: 100%;
+        height: 190px;
     }
 }
 
@@ -3979,6 +4054,21 @@ swiper-slide img {
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     font-weight: var(--font-weight-4);
     }
+    .arabic-customers{
+        position: unset;
+        width: 100%;
+    }
+    .arabic-desc-onee{
+        position: unset;
+        width: 100%;
+        height: 190px;
+    }
+    .arabic-desc-two{
+        position: unset;
+        width: 100%;
+        height: 190px;
+    }
+
 }
 
 .display {
@@ -4193,48 +4283,8 @@ swiper-slide img {
 
 
 
-.arabic-desc-onee{
-    background-color: white;
-    position: unset;
-    right: 13%;
-    bottom: 125px;
-    padding: var(--spacing-lg);
-    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
-    margin-bottom: 30px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.arabic-desc-two{
-    background-color: white;
-    position: relative;
-    right: 58%;
-    padding: var(--spacing-lg);
-    height: auto;
-    bottom: 447px;
-    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 
-.arabic-customers{
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    text-transform: uppercase;
-    font-weight: var(--font-weight-4);
-    font-size: var(--h1-size);
-    padding: var(--spacing-xl);
-    box-shadow: 2px 2px 5px 1px gainsboro;
-    width: 46%;
-}
 
 
 .arabic-inner-ul-details{
