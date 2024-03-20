@@ -14,43 +14,119 @@ const sendEmail = (e) =>{
 contactForm.addEventListener('submit', sendEmail)
 
  
-function change_arabic(){
+function change_arabic() {
+  // Body element using getElementById
+  const bodyElement = document.getElementById('body');
+  if (bodyElement) {
+    bodyElement.style.direction = "rtl";
+  }
 
-  document.getElementById('body').style.direction = "rtl";
-  document.querySelector(".customer-stories-right").classList.add("arabic-customers");
-  document.querySelector('.customer-stories-right').classList.remove('right-column');
+  // Customer Stories Right using getElementsByClassName
+  const customerStoriesRightElements = document.getElementsByClassName('customer-stories-right');
+  if (customerStoriesRightElements.length > 0) {
+    customerStoriesRightElements[0].classList.add("arabic-customers");
+    customerStoriesRightElements[0].classList.remove('right-column');
+  }
 
-  document.querySelector(".about-container").classList.add("arabic-about-container");
-  document.querySelector('.about-container').classList.remove('about-container');
+  // About Container using document.querySelector
+  const aboutContainer = document.querySelector(".about-container");
+  if (aboutContainer) {
+    aboutContainer.classList.add("arabic-about-container");
+    aboutContainer.classList.remove('about-container');
+  }
 
-  document.querySelector(".desc-onee").classList.add("arabic-desc-onee");
-  document.querySelector('.desc-onee').classList.remove('desc-onee');
+  // Desc One and Two using getElementsByClassName with loop
+  var descElements = document.getElementsByClassName('desc-onee');
+  for (let i = 0; i < descElements.length; i++) {
+    descElements[i].classList.add("arabic-desc-onee");
+    descElements[i].classList.remove('desc-onee');
+  }
 
-  document.querySelector(".desc-two").classList.add("arabic-desc-two");
-  document.querySelector('.desc-two').classList.remove('desc-two');
+  descElements = document.getElementsByClassName('desc-two');
+  for (let i = 0; i < descElements.length; i++) {
+    descElements[i].classList.add("arabic-desc-two");
+    descElements[i].classList.remove('desc-two');
+  }
 
-  document.querySelector(".contact-form-container").classList.add("arabic-contact-black");
-  document.querySelector('.contact-form-container').classList.remove('contact-form-container');
-  
+  // Contact Form Container using getElementById (assuming unique ID)
+  var contactFormContainer = document.getElementById('contact-form-container');
+  if (contactFormContainer) {
+    contactFormContainer.classList.add("arabic-contact-black");
+    contactFormContainer.classList.remove('contact-form-container');
+  }
 
-  document.querySelector(".innovative-cards .left-column").classList.add("arabic-innovative-cards-left-column");
-  document.querySelector('.innovative-cards .left-column').classList.remove('left-column');
+  // Innovative Cards Left Column using CSS selector with document.querySelector
+  const innovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
+  if (innovativeCardsLeftColumn) {
+    innovativeCardsLeftColumn.classList.add("arabic-innovative-cards-left-column");
+    innovativeCardsLeftColumn.classList.remove('left-column');
+  }
 
-  document.querySelector(".added-real-text").classList.add("arabic-added-real-text");
-  document.querySelector('.added-real-text').classList.remove('added-real-text');
+  // Added Real Text using document.querySelector with similar selector
+  const addedRealText = document.querySelector(".added-real-text");
+  if (addedRealText) {
+    addedRealText.classList.add("arabic-added-real-text");
+    addedRealText.classList.remove('added-real-text');
+  }
 
-  document.querySelector(".last-added-card").classList.add("arabic-last-added-card");
-  document.querySelector('.last-added-card').classList.remove('last-added-card');
+  // Last Added Card using document.querySelector with similar selector
+  const lastAddedCard = document.querySelector(".last-added-card");
+  if (lastAddedCard) {
+    lastAddedCard.classList.add("arabic-last-added-card");
+    lastAddedCard.classList.remove('last-added-card');
+  }
 
-  
-  document.querySelectorAll(".added-value-cards p").forEach((para)=>{
+  // Added Value Cards paragraphs using document.querySelectorAll
+  const addedValueCardsParagraphs = document.querySelectorAll(".added-value-cards p");
+  addedValueCardsParagraphs.forEach((para) => {
     para.classList.add("arabic-added-value-cards");
     para.classList.remove('added-value-cards');
   });
 
-  document.querySelector(".about-us-flex .first-left-img-flex::before").classList.add("arabic-first-left-img-flex-before");
-  document.querySelector('.about-us-flex .first-left-img-flex::before').classList.remove('about-us-flex .first-left-img-flex::before');
- }
+  // About Us Flex using document.querySelector with complex selector
+  const aboutUsFlexBefore = document.querySelector(".about-us-flex .first-left-img-flex::before");
+  if (aboutUsFlexBefore) {
+    aboutUsFlexBefore.classList.add("arabic-first-left-img-flex-before");
+    aboutUsFlexBefore.classList.remove('about-us-flex .first-left-img-flex::before');
+  }
+}
+// function change_arabic(){
+
+//   document.getElementById('body').style.direction = "rtl";
+//   document.querySelector(".customer-stories-right").classList.add("arabic-customers");
+//   document.querySelector('.customer-stories-right').classList.remove('right-column');
+
+//   document.querySelector(".about-container").classList.add("arabic-about-container");
+//   document.querySelector('.about-container').classList.remove('about-container');
+
+//   document.querySelector(".desc-onee").classList.add("arabic-desc-onee");
+//   document.querySelector('.desc-onee').classList.remove('desc-onee');
+
+//   document.querySelector(".desc-two").classList.add("arabic-desc-two");
+//   document.querySelector('.desc-two').classList.remove('desc-two');
+
+//   document.querySelector(".contact-form-container").classList.add("arabic-contact-black");
+//   document.querySelector('.contact-form-container').classList.remove('contact-form-container');
+  
+
+//   document.querySelector(".innovative-cards .left-column").classList.add("arabic-innovative-cards-left-column");
+//   document.querySelector('.innovative-cards .left-column').classList.remove('left-column');
+
+//   document.querySelector(".added-real-text").classList.add("arabic-added-real-text");
+//   document.querySelector('.added-real-text').classList.remove('added-real-text');
+
+//   document.querySelector(".last-added-card").classList.add("arabic-last-added-card");
+//   document.querySelector('.last-added-card').classList.remove('last-added-card');
+
+  
+//   document.querySelectorAll(".added-value-cards p").forEach((para)=>{
+//     para.classList.add("arabic-added-value-cards");
+//     para.classList.remove('added-value-cards');
+//   });
+
+//   document.querySelector(".about-us-flex .first-left-img-flex::before").classList.add("arabic-first-left-img-flex-before");
+//   document.querySelector('.about-us-flex .first-left-img-flex::before').classList.remove('about-us-flex .first-left-img-flex::before');
+//  }
 
   function change_english(){
     document.getElementById('body').style.direction = "ltr";
