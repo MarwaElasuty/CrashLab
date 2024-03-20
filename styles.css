@@ -1131,18 +1131,6 @@ img[alt=about-us4]:hover {
     box-shadow: 2px 2px 5px 1px gainsboro;
 }
 
-.arabic-customers-stories{
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    text-transform: uppercase;
-    font-weight: var(--font-weight-4);
-    font-size: var(--h1-size);
-    padding: var(--spacing-xl);
-    box-shadow: 2px 2px 5px 1px gainsboro;
-    width: 46%;
-}
 
 .customer-stories .right-column>p {
     width: 71%
@@ -1322,6 +1310,21 @@ img[alt="client"]{
     display: flex;
 }
 
+.arabic-about-container{
+    background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--spacing-md) 0;
+    background-size: contain;
+    /* height: 100vh; */
+    background-position: left;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}
+
+
 /* .about-legacy-background .section-container {
     position: relative;
     bottom: 100px;
@@ -1479,7 +1482,7 @@ img[alt=about-facility] {
     justify-content: center;
     padding: var(--spacing-md) 0;
     background-size: contain;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .about-container-navbar{
@@ -1961,12 +1964,10 @@ textarea {
 
 .contact-black h1 {
     width: 50%;
-    text-align: left
 }
 
 .contact-black p {
     width: 65%;
-    text-align: left;
 }
 
 .contact-img {
@@ -2629,6 +2630,16 @@ swiper-slide img {
 
 
 
+.arabic-contact-black{
+    width: 34%;
+    position: absolute;
+    top: 15px;
+    right: unset !important;
+    left: -54px;
+    z-index: 1;
+    background-color: red;
+}
+
 @media screen and (max-width:1200px) and (min-width:992) {
 
     .main-navigation-bar {
@@ -2761,7 +2772,7 @@ swiper-slide img {
     .contact-black>div:nth-of-type(2) {
         width: 97%;
         position: absolute;
-        top: 669px;
+        top: 755px;
         right: 15px;
         z-index: 1
     }
@@ -2956,7 +2967,7 @@ swiper-slide img {
     .contact-black>div:nth-of-type(2) {
         width: 97%;
         position: absolute;
-        top: 669px;
+        top: 755px;
         right: 15px;
         z-index: 1
     }
@@ -3147,6 +3158,12 @@ swiper-slide img {
         position: unset;
         width: 100%;
     }
+    .arabic-customers-stories{
+        font-size: 30px;
+    }
+    .arabic-contact-black{
+        left: 0;
+    }
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -3291,7 +3308,7 @@ swiper-slide img {
     .contact-black>div:nth-of-type(2) {
         width: 97%;
         position: absolute;
-        top: 669px;
+        top: 755px;
         right: 15px;
         z-index: 1
     }
@@ -3505,6 +3522,12 @@ swiper-slide img {
         position: unset;
         width: 100%;
     }
+    .arabic-customers-stories{
+        font-size: 30px;
+    }
+    .arabic-contact-black{
+        left: 0;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -3653,7 +3676,7 @@ swiper-slide img {
     .contact-black>div:nth-of-type(2) {
         width: 97%;
         position: absolute;
-        top: 669px;
+        top: 755px;
         right: 7px;
         z-index: 1
     }
@@ -3674,7 +3697,7 @@ swiper-slide img {
 
     .contact-details .two-columns>div:first-of-type {
         margin: var(--spacing-md);
-        margin-top: 162px;
+        margin-top: 242px;
     }
 
     .contact-details .two-columns>div:nth-of-type(2) {
@@ -3796,6 +3819,12 @@ swiper-slide img {
     }
 
     .about-container {
+        background-image: none;
+        background-position: bottom;
+    }
+
+    .arabic-about-container {
+        background-image: none;
         background-position: bottom;
     }
 
@@ -3881,6 +3910,12 @@ swiper-slide img {
     .arabic-customers-stories{
         position: unset;
         width: 100%;
+    }
+    .arabic-customers-stories{
+        font-size: 30px;
+    }
+    .arabic-contact-black{
+        left: 0;
     }
 }
 
@@ -4065,4 +4100,98 @@ swiper-slide img {
     color: white;
     margin-bottom: 25px;
 
+}
+
+
+.arabic-added-value-cards{
+    position: relative;
+    right: 10px;
+}
+
+
+.arabic-first-left-img-flex-before{
+    content: "International recognition";
+    font-size: var(--h3-size);
+    position: absolute;
+    top: 21px;
+    color: white;
+    right: 23px;
+    z-index: 1;
+}
+
+.arabic-added-real-text{
+    right: 25px !important;
+}
+
+
+.arabic-last-added-card{
+    padding-left: 52px;
+}
+
+.arabic-innovative-cards-left-column{
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: var(--spacing-lg) var(--spacing-lg);
+    position: relative;
+    right: 81px;
+    bottom: -51px;
+    box-shadow: 0 0 11px 1px rgb(241 241 241);
+    width: 43%;
+    height: 71vh;
+    font-weight: var(--font-weight-4);
+}
+
+
+
+
+.arabic-desc-onee{
+    background-color: white;
+    width: 30%;
+    position: relative;
+    right: 13%;
+    bottom: 125px;
+    padding: var(--spacing-lg);
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    margin-bottom: 30px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arabic-desc-two{
+    background-color: white;
+    position: relative;
+    width: 30%;
+    right: 58%;
+    padding: var(--spacing-lg);
+    height: 190px;
+    bottom: 447px;
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.arabic-customers{
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-4);
+    font-size: var(--h1-size);
+    padding: var(--spacing-xl);
+    box-shadow: 2px 2px 5px 1px gainsboro;
+    width: 46%;
+}
+
+
+.arabic-inner-ul-details{
+    margin-right: 40px;
 }
