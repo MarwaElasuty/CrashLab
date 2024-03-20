@@ -1,17 +1,39 @@
 
+/* SMTP Email */
+
+function sendEmail() {
+ 
+  Email.send({
+      SecureToken: "dd899629-cca1-4ee2-8779-eafa408b00ce",
+      Host: "smtp.elasticemail.com",
+      Port: 2525,
+      Username: "marwa.mohamed8712000@gmail.com",
+      Password: "80FAF89EBB53CBB62E9A3BE538A03B876BBE",
+      To: 'esraamortada809@gmail.com',
+      From: 'marwa.mohamed8712000@gmail.com',
+      Subject: "This is the subject",
+      Body: "Name:" + document.getElementById('username').value +
+          "<br> Email: " + document.getElementById('useremail').value +
+          "<br> Phone: " + document.getElementById('usersub').value +
+          "<br> Message: " + document.getElementById('usermsg').value
+
+  }).then(
+      message => alert(message)
+  );
+}
 
 /* Send email to the user via EmailJS */
 
-const contactForm = document.getElementById('contact-form'),
-    contactMessage = document.getElementById('contact-message')
+// const contactForm = document.getElementById('contact-form'),
+//     contactMessage = document.getElementById('contact-message')
 
 
-const sendEmail = (e) =>{
-    e.preventDefault();
-    emailjs.sendForm('service_u0t85ax', 'template_sq0onfo', '#contact-form', 'NGE7DmxLauJeUM9jb')
-}
+// const sendEmail = (e) =>{
+//     e.preventDefault();
+//     emailjs.sendForm('service_u0t85ax', 'template_sq0onfo', '#contact-form', 'NGE7DmxLauJeUM9jb')
+// }
 
-contactForm.addEventListener('submit', sendEmail)
+// contactForm.addEventListener('submit', sendEmail)
 
  
 function change_arabic() {
@@ -49,7 +71,7 @@ function change_arabic() {
   }
 
   // Contact Form Container using getElementById (assuming unique ID)
-  var contactFormContainer = document.getElementById('contact-form-container');
+  var contactFormContainer = document.querySelector('.contact-form-container');
   if (contactFormContainer) {
     contactFormContainer.classList.add("arabic-contact-black");
     contactFormContainer.classList.remove('contact-form-container');
@@ -133,37 +155,37 @@ function change_arabic() {
   }
 
 
-const swiperEl = document.querySelector('swiper-container')
+// const swiperEl = document.querySelector('swiper-container')
 
-    const params = {
-      injectStyles: [`
-      .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        line-height: 20px;
-        font-size: 18px;
-        color: #000;
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.2);
-      }
+    // const params = {
+    //   injectStyles: [`
+    //   .swiper-pagination-bullet {
+    //     width: 20px;
+    //     height: 20px;
+    //     text-align: center;
+    //     line-height: 20px;
+    //     font-size: 18px;
+    //     color: #000;
+    //     opacity: 1;
+    //     background: rgba(0, 0, 0, 0.2);
+    //   }
 
-      .swiper-pagination-bullet-active {
-        color: #fff;
-        background: #ffad00;
-      }
-      `],
-      pagination: {
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-      },
-    }
+    //   .swiper-pagination-bullet-active {
+    //     color: #fff;
+    //     background: #ffad00;
+    //   }
+    //   `],
+    //   pagination: {
+    //     clickable: true,
+    //     renderBullet: function (index, className) {
+    //       return '<span class="' + className + '">' + (index + 1) + "</span>";
+    //     },
+    //   },
+    // }
 
-    Object.assign(swiperEl, params)
+    // Object.assign(swiperEl, params)
 
-    swiperEl.initialize();
+    // swiperEl.initialize();
 
 function appear() {
     document.querySelector(".ul-list").classList.toggle("display");
@@ -205,31 +227,30 @@ function hideDiv(Div) {
 }
 
 
-$(document).ready(function () {
-  $(".customer-logos").slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 300,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3
-        }
-      }
-    ]
-  });
-});
-
+// $(document).ready(function () {
+//   $(".customer-logos").slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 300,
+//     arrows: false,
+//     dots: false,
+//     pauseOnHover: false,
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 4
+//         }
+//       },
+//       {
+//         breakpoint: 520,
+//         settings: {
+//           slidesToShow: 3
+//         }
+//       }
+//     ]
+//   });
+// });
 
 
