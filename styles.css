@@ -2000,8 +2000,8 @@ textarea {
     right: unset !important;
     left: -8px;
     z-index: 1;
-    background-color: red;
 }
+
 
 .contact-black>div:nth-of-type(2) {
     width: 34%;
@@ -4554,4 +4554,15 @@ img[alt="arabic-language"]:hover{
     width: 43%;
     height: 71vh;
     font-weight: var(--font-weight-4);
+}
+
+
+
+.english-contact-black{
+    width: 34%;
+    position: absolute;
+    top: 15px;
+    left: unset !important;
+    left: -8px;
+    z-index: 1;
 }

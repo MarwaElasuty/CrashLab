@@ -211,6 +211,12 @@ function change_english() {
     EnglishInnovativeCardsLeftColumn.classList.remove("arabic-innovative-cards-left-column");
   }
 
+  var arabicContactBlack = document.querySelector('.contact-form-container');
+  if (arabicContactBlack) {
+    arabicContactBlack.classList.add("english-contact-black");
+    arabicContactBlack.classList.remove('contact-form-container');
+  }
+
   // if (contactFormContainer) {
   //   contactFormContainer.classList.add("contact-form-container");
   //   contactFormContainer.classList.remove('arabic-contact-black');
