@@ -808,7 +808,7 @@ img[alt="ur-service"] {
 
 .single-card-service {
     margin-left: auto;
-    margin-top: 25px;
+    margin-top: 99px;
     width: 288px;
     height: 188px;
     background-color: white;
@@ -820,6 +820,7 @@ img[alt="ur-service"] {
     background-repeat: no-repeat;
     background-position: 97px 18px;
     position: relative;
+    left: 68px;
 }
 
 
@@ -2196,6 +2197,7 @@ swiper-slide img {
 
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
+    
     .customer-stories .right-column>p {
         width: 100%;
     }
@@ -2320,7 +2322,11 @@ swiper-slide img {
 }
 
 
-@media screen and (max-width: 1200px) and (min-width:992px) {}
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .single-card-service {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     footer .section-container>div:nth-of-type(2) {
@@ -2465,8 +2471,8 @@ swiper-slide img {
     background-color: white;
     width: 30%;
     position: relative;
-    left: 13%;
-    bottom: 125px;
+    left: 9%;
+    bottom: 101px;
     padding: var(--spacing-lg);
     box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     margin-bottom: 30px;
@@ -2481,10 +2487,10 @@ swiper-slide img {
     background-color: white;
     position: relative;
     width: 30%;
-    left: 58%;
+    left: 60%;
     padding: var(--spacing-lg);
     height: auto;
-    bottom: 447px;
+    bottom: 480px;
     box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     display: flex;
     flex-direction: column;
@@ -4181,7 +4187,7 @@ swiper-slide img {
   position: absolute;
   padding: var(--spacing-md);
   background-color: #111;
-  top: 65px;
+  top: 55px;
   left: 0;
   width: 100%;
   border-radius: 4px;
