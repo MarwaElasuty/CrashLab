@@ -1302,7 +1302,7 @@ img[alt="client"] {
 }
 
 .test-center-background {
-    background-image: url(./images/new-shuba.svg);
+    background-image: url(./images/new-shuba.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1353,7 +1353,7 @@ img[alt="client"] {
 .test-center-background .black-card>p,
 .test-center-background .orange-card>p,
 .test-center-background p:first-of-type {
-    width: 70%;
+    width: 81%;
 }
 
 .test-center-background .section-container:nth-of-type(2) {
@@ -1368,7 +1368,10 @@ img[alt="client"] {
 }
 
 .test-center-background .orange-card {
-    background-color: rgba(255, 173, 0, 0.7)
+    background-color: rgba(255, 173, 0, 0.7);
+    position: relative;
+    right: 295px;
+    bottom: 52px;
 }
 
 .orange-card p {
@@ -1381,7 +1384,7 @@ img[alt="client"] {
 
 .second-black-card {
     background-color: rgba(26, 26, 26, 0.42);
-    margin-top: -273px;
+    margin-top: -540px;
 }
 
 img[alt=overview] {
