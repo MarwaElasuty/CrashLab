@@ -188,41 +188,41 @@ function change_english() {
 }
 
 
-// const swiperEl = document.querySelector('swiper-container')
+const swiperEl = document.querySelector('swiper-container')
 
-// const params = {
-//   injectStyles: [`
-//   .swiper-pagination-bullet {
-//     width: 20px;
-//     height: 20px;
-//     text-align: center;
-//     line-height: 20px;
-//     font-size: 18px;
-//     color: #000;
-//     opacity: 1;
-//     background: rgba(0, 0, 0, 0.2);
-//   }
+const params = {
+  injectStyles: [`
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
 
-//   .swiper-pagination-bullet-active {
-//     color: #fff;
-//     background: #ffad00;
-//   }
-//   `],
-//   pagination: {
-//     clickable: true,
-//     renderBullet: function (index, className) {
-//       return '<span class="' + className + '">' + (index + 1) + "</span>";
-//     },
-//   },
-// }
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #ffad00;
+  }
+  `],
+  pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+}
 
-// Object.assign(swiperEl, params)
+Object.assign(swiperEl, params)
 
-// swiperEl.initialize();
+swiperEl.initialize();
 
-// function appear() {
-//   document.querySelector(".ul-list").classList.toggle("display");
-// }
+function appear() {
+  document.querySelector(".ul-list").classList.toggle("display");
+}
 
 
 
@@ -230,10 +230,6 @@ function appear() {
   const listElements = document.querySelectorAll(".ul-list, .arabic-ul-list");
   listElements.forEach(element => element.classList.toggle("display"));
 }
-
-// function appear() {
-//   document.querySelector(".arabic-ul-list").classList.toggle("display");
-// }
 
 
 function showDiv(Div) {

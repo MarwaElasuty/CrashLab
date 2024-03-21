@@ -1259,7 +1259,7 @@ footer p {
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-md) 0;
 }
 
 img[alt="client"] {
@@ -1302,15 +1302,15 @@ img[alt="client"] {
 }
 
 .test-center-background {
-    background-image: url(./images/test-center-background.svg);
+    background-image: url(./images/new-shuba.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     color: #fff;
     display: flex;
     flex-direction: column;
     padding: 0 var(--spacing-md);
-    height: 85vh;
+    height: 100vh;
 }
 
 .about-container,
@@ -1364,20 +1364,24 @@ img[alt="client"] {
     padding: var(--spacing-lg) var(--spacing-md);
     font-size: var(--h4-size);
     text-transform: capitalize;
-    width: 28%;
+    width: 22%;
 }
 
 .test-center-background .orange-card {
-    background-color: var(--primary-color-1);
+    background-color: rgba(255, 173, 0, 0.7)
 }
 
+.orange-card p {
+    width: 85% !important;
+}
 
 .first-black-card {
-    background-color: var(--neutral-color-6);
+ background-color: rgba(26, 26, 26, 0.42);
 }
 
 .second-black-card {
-    background-color: var(--neutral-color-6);
+    background-color: rgba(26, 26, 26, 0.42);
+    margin-top: -273px;
 }
 
 img[alt=overview] {
@@ -4251,6 +4255,8 @@ swiper-slide img {
     }
 }
 
+
+
 .display {
     display: block
 }
@@ -4300,7 +4306,6 @@ swiper-slide img {
     height: 41px;
     transition: all 200ms linear;
     width: 74px;
-    letter-spacing: 1px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -4473,3 +4478,11 @@ swiper-slide img {
 .arabic-inner-ul-details {
     margin-right: 40px;
 }
+
+
+@media screen and (max-width:320px){
+    .last-added-card{
+        padding-right: 52px;
+    }
+}
+
