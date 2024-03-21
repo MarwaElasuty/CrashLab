@@ -4462,7 +4462,14 @@ swiper-slide img {
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
 
+img[alt="english-language"]:hover{
+    cursor: pointer;
+}
+
+img[alt="arabic-language"]:hover{
+    cursor: pointer;
 }
 
 .english-option-div{
