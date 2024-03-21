@@ -98,6 +98,13 @@ function change_arabic() {
     contactFormContainer.classList.remove('contact-form-container');
   }
 
+  // Navbar
+  var contactFormContainer = document.querySelector('.ul-list');
+  if (contactFormContainer) {
+    contactFormContainer.classList.add("arabic-ul-list");
+    contactFormContainer.classList.remove('ul-list');
+  }
+
   // Innovative Cards Left Column using CSS selector with document.querySelector
   const innovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
   if (innovativeCardsLeftColumn) {
