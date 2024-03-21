@@ -13,12 +13,12 @@ function emailSend() {
     From: "marwa.mohamed8712000@gmail.com",
     Subject: "This is the subject",
     Body: "Name:" + document.getElementById('username').value +
-    "<br><br>Email:" + document.getElementById('useremail').value +
-    "<br><br>Subject:" + document.getElementById('usersub').value +
-    "<br><br>Message:" + document.getElementById('usermsg').value
+      "<br><br>Email:" + document.getElementById('useremail').value +
+      "<br><br>Subject:" + document.getElementById('usersub').value +
+      "<br><br>Message:" + document.getElementById('usermsg').value
   })
 }
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 });
 
@@ -112,6 +112,9 @@ function change_arabic() {
     innovativeCardsLeftColumn.classList.remove('left-column');
   }
 
+
+  
+
   // Added Real Text using document.querySelector with similar selector
   const addedRealText = document.querySelector(".added-real-text");
   if (addedRealText) {
@@ -131,7 +134,11 @@ function change_arabic() {
   if (orangeCard) {
     orangeCard.classList.add("arabic-orange-card");
     orangeCard.classList.remove('test-center-background .orange-card');
+    orangeCard.classList.remove('english-orange-card');
+
   }
+
+  
 
   // Added Value Cards paragraphs using document.querySelectorAll
   const addedValueCardsParagraphs = document.querySelectorAll(".added-value-cards p");
@@ -186,13 +193,33 @@ function change_arabic() {
 //  }
 
 function change_english() {
-  document.getElementById('body').style.direction = "ltr";
-
-  if (contactFormContainer) {
-    contactFormContainer.classList.add("contact-form-container");
-    contactFormContainer.classList.remove('arabic-contact-black');
+  const bodyElement = document.getElementById('body');
+  if (bodyElement) {
+    bodyElement.style.direction = "ltr";
   }
+  // document.getElementById('body').style.direction = "ltr";
+
+  const orangeCard = document.querySelector(".test-center-background .orange-card");
+  if (orangeCard) {
+    orangeCard.classList.add("english-orange-card");
+    orangeCard.classList.remove('arabic-orange-card');
+  }
+
+  const EnglishInnovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
+  if (EnglishInnovativeCardsLeftColumn) {
+    EnglishInnovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
+    EnglishInnovativeCardsLeftColumn.classList.remove("arabic-innovative-cards-left-column");
+  }
+
+  // if (contactFormContainer) {
+  //   contactFormContainer.classList.add("contact-form-container");
+  //   contactFormContainer.classList.remove('arabic-contact-black');
+  // }
+
+ 
 }
+
+
 
 
 const swiperEl = document.querySelector('swiper-container')
@@ -318,19 +345,19 @@ checkLang();
 
 function checkLang() {
   if (localStorage.getItem('country')) {
-      const country = JSON.parse(localStorage.getItem('country'));
-      console.log(country);
-      if (country.dir == 'rtl') {
-          change_style();
-      }
-      document.body.dir = country.dir;
-      console.log(JSON.parse(localStorage.getItem('country')));
+    const country = JSON.parse(localStorage.getItem('country'));
+    console.log(country);
+    if (country.dir == 'rtl') {
+      change_style();
+    }
+    document.body.dir = country.dir;
+    console.log(JSON.parse(localStorage.getItem('country')));
   } else {
-      const country = {
-          lang: 'english',
-          dir: 'ltr'
-      }
-      setLang(country);
+    const country = {
+      lang: 'english',
+      dir: 'ltr'
+    }
+    setLang(country);
   }
 }
 
@@ -344,22 +371,22 @@ function changeLang(direction) {
   console.log(direction);
   console.log(localStorage.getItem('country'));
   if (localStorage.getItem('country')) {
-      let country = JSON.parse(localStorage.getItem('country'));
-      console.log(direction);
-      console.log(country.dir != direction);
-      if (country.dir != direction) {
+    let country = JSON.parse(localStorage.getItem('country'));
+    console.log(direction);
+    console.log(country.dir != direction);
+    if (country.dir != direction) {
 
-          country = {
-              dir: direction
-          }
-          console.log(direction);
+      country = {
+        dir: direction
       }
-      setLang(country);
+      console.log(direction);
+    }
+    setLang(country);
   } else {
-      const country = {
-          lang: 'english',
-          dir: 'ltr'
-      }
-      setLang(country);
+    const country = {
+      lang: 'english',
+      dir: 'ltr'
+    }
+    setLang(country);
   }
 }
