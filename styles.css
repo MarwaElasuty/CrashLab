@@ -1595,13 +1595,11 @@ img[alt=mission1] {
 }
 
 img[alt=mission2] {
-    filter: brightness(1.3);
     grid-area: b;
     width: 100%
 }
 
 img[alt=mission3] {
-    filter: brightness(1.3);
     grid-area: d;
     width: 100%
 }
