@@ -1605,10 +1605,30 @@ img[alt=mission3] {
 }
 
 
-img[alt=about-facility] {
-    width: 100%
+.facility-black{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 247px;
+    margin: var(--spacing-lg) 0;
+    color: var(--neutral-color-1);
 }
 
+.facility-black h2{
+    color: var(--primary-color-1);
+}
+
+.facility-desc{
+    position: relative;
+    right: 71px;
+    z-index: 1;
+    bottom: 10px;
+}
+
+img[alt="about-facility"]{
+    object-fit: cover;
+}
 
 .innovation-core .section-container {
     padding: 0 var(--spacing-lg);

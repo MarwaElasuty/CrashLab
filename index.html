@@ -49,10 +49,10 @@
                                 <input class="dropdown" type="checkbox" id="dropdown" />
                                 <label for="dropdown">Language</label>
                                 <div class="section-dropdown">
-                                    <label class="for-dropdown-sub" onclick="change_english()"
-                                        id="english-label">English</label>
+                                    <label class="for-dropdown-sub" onclick="change_english(); changeLang('ltr')"
+                                        id="english-label" >English</label>
                                     <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                                    <label id="arabic-label" class="for-dropdown-sub" onclick="change_arabic();displayLanguageOptions()">Arabic</label>
+                                    <label id="arabic-label" class="for-dropdown-sub" onclick="change_arabic();displayLanguageOptions(); changeLang('rtl')">Arabic</label>
                                 </div>
                             </div>
                         </div>
