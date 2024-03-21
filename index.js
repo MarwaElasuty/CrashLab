@@ -220,9 +220,20 @@ function change_english() {
 
 // swiperEl.initialize();
 
+// function appear() {
+//   document.querySelector(".ul-list").classList.toggle("display");
+// }
+
+
+
 function appear() {
-  document.querySelector(".ul-list").classList.toggle("display");
+  const listElements = document.querySelectorAll(".ul-list, .arabic-ul-list");
+  listElements.forEach(element => element.classList.toggle("display"));
 }
+
+// function appear() {
+//   document.querySelector(".arabic-ul-list").classList.toggle("display");
+// }
 
 
 function showDiv(Div) {

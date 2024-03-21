@@ -4295,13 +4295,12 @@ swiper-slide img {
 .dropdown:not(:checked)+label {
     position: relative;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2;
     height: 41px;
     transition: all 200ms linear;
-    width: 87px;
+    width: 74px;
     letter-spacing: 1px;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -4310,6 +4309,7 @@ swiper-slide img {
     cursor: pointer;
     color: white;
     box-shadow: 0 12px 35px 0 rgba(255, 235, 167, .15);
+    padding: 7px;
 }
 
 .dark-light:checked~.sec-center .for-dropdown {
