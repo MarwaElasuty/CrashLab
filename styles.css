@@ -4489,3 +4489,10 @@ swiper-slide img {
     }
 }
 
+
+.arabic-orange-card{
+    background-color: rgba(255, 173, 0, 0.7);
+    position: relative;
+    right: unset !important;
+    left: 295px !important;
+}

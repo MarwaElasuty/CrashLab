@@ -126,6 +126,13 @@ function change_arabic() {
     lastAddedCard.classList.remove('last-added-card');
   }
 
+  // Test Center orange card
+  const orangeCard = document.querySelector(".test-center-background .orange-card");
+  if (orangeCard) {
+    orangeCard.classList.add("arabic-orange-card");
+    orangeCard.classList.remove('test-center-background .orange-card');
+  }
+
   // Added Value Cards paragraphs using document.querySelectorAll
   const addedValueCardsParagraphs = document.querySelectorAll(".added-value-cards p");
   addedValueCardsParagraphs.forEach((para) => {
