@@ -44,26 +44,17 @@
                     <div class="nav-btns-w-search">
                         <div class="contact-w-languages">
                             <button type="button" name="mobile-contact-btn">Contact</button>
-                            <!-- <div class="language">
-                                <p>English</p>
-                                <div class="arabic-option">
-                                    <p>Arabic</p>
-                                </div>
-                            </div> -->
-                       
-                          
-                       
-                      
-                            <div class="sec-center"> 	
-                                <input class="dropdown" type="checkbox" id="dropdown"/>
+
+                            <div class="sec-center">
+                                <input class="dropdown" type="checkbox" id="dropdown" />
                                 <label for="dropdown">Language</label>
-                                <div class="section-dropdown"> 
-                                    <label class="for-dropdown-sub" onclick="change_english()" id="english-label">English</label>
-                                    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-                                    <label class="for-dropdown-sub" onclick="change_arabic()">Arabic</label>                 
+                                <div class="section-dropdown">
+                                    <label class="for-dropdown-sub" onclick="change_english()"
+                                        id="english-label">English</label>
+                                    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                                    <label id="arabic-label" class="for-dropdown-sub" onclick="change_arabic();displayLanguageOptions()">Arabic</label>
                                 </div>
                             </div>
-                           
                         </div>
 
                         <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">

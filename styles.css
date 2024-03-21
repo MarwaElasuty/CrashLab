@@ -289,7 +289,7 @@ button[name=start] {
 }
 
 button[name=mobile-contact-btn] {
-    width: 110px;
+    width: 95px;
     border: 1px solid var(--neutral-color-2);
     color: #fff;
     border-radius: 2px
@@ -1963,7 +1963,7 @@ textarea {
     position: absolute;
     top: 15px;
     right: unset !important;
-    left: -54px;
+    left: -8px;
     z-index: 1;
     background-color: red;
 }

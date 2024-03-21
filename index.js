@@ -1,26 +1,47 @@
 
 /* SMTP Email */
-
-function sendEmail() {
- 
+const form = document.getElementById('contact-form');
+function emailSend() {
+  console.log("shhhsgh");
+  // debugger;
   Email.send({
-      SecureToken: "dd899629-cca1-4ee2-8779-eafa408b00ce",
-      Host: "smtp.elasticemail.com",
-      Port: 2525,
-      Username: "marwa.mohamed8712000@gmail.com",
-      Password: "80FAF89EBB53CBB62E9A3BE538A03B876BBE",
-      To: 'esraamortada809@gmail.com',
-      From: 'marwa.mohamed8712000@gmail.com',
-      Subject: "This is the subject",
-      Body: "Name:" + document.getElementById('username').value +
-          "<br> Email: " + document.getElementById('useremail').value +
-          "<br> Phone: " + document.getElementById('usersub').value +
-          "<br> Message: " + document.getElementById('usermsg').value
-
-  }).then(
-      message => alert(message)
-  );
+    SecureToken: "005cf327-4b4c-4a98-8dae-ccb2a0db00cd",
+    Host: "smtp.elasticemail.com",
+    Port: 2525,
+    Username: "marwa.mohamed8712000@gmail.com",
+    Password: "8BEB72CC47A7E9D03BD12B4C5CD232E0B23E",
+    To: 'em9002648@gmail.com',
+    From: "marwa.mohamed8712000@gmail.com",
+    Subject: "This is the subject",
+    Body: "And this is the body"
+  }).then((message) => {
+    console.log(message);
+  });
 }
+form.addEventListener('submit',(e)=>{
+  e.preventDefault();
+});
+
+// function sendEmail() {
+
+//   Email.send({
+//       SecureToken: "dd899629-cca1-4ee2-8779-eafa408b00ce",
+//       Host: "smtp.elasticemail.com",
+//       Port: 2525,
+//       Username: "marwa.mohamed8712000@gmail.com",
+//       Password: "80FAF89EBB53CBB62E9A3BE538A03B876BBE",
+//       To: 'esraamortada809@gmail.com',
+//       From: 'marwa.mohamed8712000@gmail.com',
+//       Subject: "This is the subject",
+//       Body: "Name:" + document.getElementById('username').value +
+//           "<br> Email: " + document.getElementById('useremail').value +
+//           "<br> Phone: " + document.getElementById('usersub').value +
+//           "<br> Message: " + document.getElementById('usermsg').value
+
+//   }).then(
+//       message => alert(message)
+//   );
+// }
 
 /* Send email to the user via EmailJS */
 
@@ -35,7 +56,7 @@ function sendEmail() {
 
 // contactForm.addEventListener('submit', sendEmail)
 
- 
+
 function change_arabic() {
   // Body element using getElementById
   const bodyElement = document.getElementById('body');
@@ -129,7 +150,7 @@ function change_arabic() {
 
 //   document.querySelector(".contact-form-container").classList.add("arabic-contact-black");
 //   document.querySelector('.contact-form-container').classList.remove('contact-form-container');
-  
+
 
 //   document.querySelector(".innovative-cards .left-column").classList.add("arabic-innovative-cards-left-column");
 //   document.querySelector('.innovative-cards .left-column').classList.remove('left-column');
@@ -140,7 +161,7 @@ function change_arabic() {
 //   document.querySelector(".last-added-card").classList.add("arabic-last-added-card");
 //   document.querySelector('.last-added-card').classList.remove('last-added-card');
 
-  
+
 //   document.querySelectorAll(".added-value-cards p").forEach((para)=>{
 //     para.classList.add("arabic-added-value-cards");
 //     para.classList.remove('added-value-cards');
@@ -150,45 +171,50 @@ function change_arabic() {
 //   document.querySelector('.about-us-flex .first-left-img-flex::before').classList.remove('about-us-flex .first-left-img-flex::before');
 //  }
 
-  function change_english(){
-    document.getElementById('body').style.direction = "ltr";
+function change_english() {
+  document.getElementById('body').style.direction = "ltr";
+
+  if (contactFormContainer) {
+    contactFormContainer.classList.add("contact-form-container");
+    contactFormContainer.classList.remove('arabic-contact-black');
   }
+}
 
 
 // const swiperEl = document.querySelector('swiper-container')
 
-    // const params = {
-    //   injectStyles: [`
-    //   .swiper-pagination-bullet {
-    //     width: 20px;
-    //     height: 20px;
-    //     text-align: center;
-    //     line-height: 20px;
-    //     font-size: 18px;
-    //     color: #000;
-    //     opacity: 1;
-    //     background: rgba(0, 0, 0, 0.2);
-    //   }
+// const params = {
+//   injectStyles: [`
+//   .swiper-pagination-bullet {
+//     width: 20px;
+//     height: 20px;
+//     text-align: center;
+//     line-height: 20px;
+//     font-size: 18px;
+//     color: #000;
+//     opacity: 1;
+//     background: rgba(0, 0, 0, 0.2);
+//   }
 
-    //   .swiper-pagination-bullet-active {
-    //     color: #fff;
-    //     background: #ffad00;
-    //   }
-    //   `],
-    //   pagination: {
-    //     clickable: true,
-    //     renderBullet: function (index, className) {
-    //       return '<span class="' + className + '">' + (index + 1) + "</span>";
-    //     },
-    //   },
-    // }
+//   .swiper-pagination-bullet-active {
+//     color: #fff;
+//     background: #ffad00;
+//   }
+//   `],
+//   pagination: {
+//     clickable: true,
+//     renderBullet: function (index, className) {
+//       return '<span class="' + className + '">' + (index + 1) + "</span>";
+//     },
+//   },
+// }
 
-    // Object.assign(swiperEl, params)
+// Object.assign(swiperEl, params)
 
-    // swiperEl.initialize();
+// swiperEl.initialize();
 
 function appear() {
-    document.querySelector(".ul-list").classList.toggle("display");
+  document.querySelector(".ul-list").classList.toggle("display");
 }
 
 
@@ -217,7 +243,7 @@ function hideDiv(Div) {
   var hide = document.getElementById(Div);
   var contactForm = document.getElementById('contact-form');
 
-  if (hide.style.display == "none"){  
+  if (hide.style.display == "none") {
   } else {
     hide.style.display = "none";
     // document.querySelector('input').value= ' ';  
@@ -254,3 +280,12 @@ function hideDiv(Div) {
 // });
 
 
+function displayLanguageOptions() {
+  // #english-label
+  // #arabic-label
+
+  var dropdown = document.getElementsByClassName("section-dropdown")
+  var arabicLabel = document.getElementById("arabic-label").onclick(() => {
+    dropdown.style.display = "none";
+  })
+}

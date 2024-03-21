@@ -71,7 +71,7 @@
                             <div class="contact-form-container" id="formDiv">
                                 <div class="contact-form">
                                     <h3>Write to Us</h3>
-                                    <form id="contact-form" method="post" onsubmit="sendEmail()">
+                                    <form id="contact-form" method="post" onsubmit="emailSend()">
                                         <label>Name</label>
                                         <input type="text" id="username" name="user_name" required>
                                 
@@ -217,8 +217,9 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script> -->
     <script src="index.js"></script>
 
 </body>
