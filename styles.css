@@ -3202,6 +3202,8 @@ swiper-slide img {
 
     .tests-w-standards {
         margin-bottom: -15px;
+        margin: var(--spacing-xxl) 0 var(--spacing-lg) 0;
+
     }
 
     .customized-services {
@@ -3593,6 +3595,8 @@ swiper-slide img {
 
     .tests-w-standards {
         margin-bottom: -15px;
+        margin: var(--spacing-xxl) 0 var(--spacing-lg) 0;
+
     }
 
     .customized-services {
@@ -4003,6 +4007,8 @@ swiper-slide img {
 
     .tests-w-standards {
         margin-bottom: -15px;
+        margin: var(--spacing-xxl) 0 var(--spacing-lg) 0;
+
     }
 
     .customized-services {
@@ -4068,7 +4074,7 @@ swiper-slide img {
         width: 100%;
         height: 190px;
     }
-
+    
 }
 
 .display {

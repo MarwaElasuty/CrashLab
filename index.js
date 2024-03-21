@@ -2,7 +2,6 @@
 /* SMTP Email */
 const form = document.getElementById('contact-form');
 function emailSend() {
-  console.log("shhhsgh");
   // debugger;
   Email.send({
     SecureToken: "005cf327-4b4c-4a98-8dae-ccb2a0db00cd",
@@ -10,13 +9,14 @@ function emailSend() {
     Port: 2525,
     Username: "marwa.mohamed8712000@gmail.com",
     Password: "8BEB72CC47A7E9D03BD12B4C5CD232E0B23E",
-    To: 'em9002648@gmail.com',
+    To: 'marwa.mohamed871@yahoo.com',
     From: "marwa.mohamed8712000@gmail.com",
     Subject: "This is the subject",
-    Body: "And this is the body"
-  }).then((message) => {
-    console.log(message);
-  });
+    Body: "Name:" + document.getElementById('username').value +
+    "<br><br>Email:" + document.getElementById('useremail').value +
+    "<br><br>Subject:" + document.getElementById('usersub').value +
+    "<br><br>Message:" + document.getElementById('usermsg').value
+  })
 }
 form.addEventListener('submit',(e)=>{
   e.preventDefault();
