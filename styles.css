@@ -534,6 +534,61 @@ h6 {
     background-size: cover
 }
 
+.new-service:nth-of-type(1){
+    height: 500px;
+    background-image: url(./images/un-colored4.svg);
+    background-size: cover
+}
+
+.new-service:nth-of-type(2){
+    height: 500px;
+    background-image: url(./images/un-colored5.svg);
+    background-size: cover
+}
+
+
+.new-service:nth-of-type(3){
+    height: 500px;
+    background-image: url(./images/un-colored6.svg);
+    background-size: cover
+}
+
+.newer-service:nth-of-type(1){
+    height: 500px;
+    background-image: url(./images/un-colored7.svg);
+    background-size: cover
+}
+
+.newer-service:nth-of-type(3){
+    height: 500px;
+    background-image: url(./images/un-colored9.svg);
+    background-size: cover
+}
+
+.newer-service:nth-of-type(2){
+    height: 500px;
+    background-image: url(./images/un-colored8.svg);
+    background-size: cover
+}
+/* .shrinked-img:nth-child(4){
+    height: 500px;
+    background-image: url(./images/un-colored4.svg);
+    background-size: cover
+}
+
+
+.shrinked-img:nth-child(5){
+    height: 500px;
+    background-image: url(./images/un-colored5.svg);
+    background-size: cover
+}
+
+
+.shrinked-img:nth-child(6){
+    height: 500px;
+    background-image: url(./images/un-colored6.svg);
+    background-size: cover
+} */
 
 .accreditiations .right-column {
     background-image: url(./images/Property\ 1=yes.svg);
@@ -883,6 +938,18 @@ img[alt="ur-service"] {
     transition: width 0.5s ease;
 }
 
+.new-service{
+    width: 27%;
+    transition: width 0.5s ease;
+}
+
+.newer-service{
+    width: 27%;
+    transition: width 0.5s ease;
+}
+
+
+
 .shrinked-img:nth-child(1):hover {
     background-image: url(./images/colored-box1.jpg);
     cursor: pointer;
@@ -898,6 +965,43 @@ img[alt="ur-service"] {
 
 .shrinked-img:nth-child(3):hover {
     background-image: url(./images/colored3.svg);
+    cursor: pointer;
+    width: 38%;
+}
+
+
+.new-service:nth-of-type(1):hover{
+    background-image: url(./images/colored4.svg);
+    cursor: pointer;
+    width: 38%;
+}
+
+.new-service:nth-of-type(2):hover{
+    background-image: url(./images/colored5.svg);
+    cursor: pointer;
+    width: 38%;
+}
+
+.new-service:nth-of-type(3):hover{
+    background-image: url(./images/colored6.svg);
+    cursor: pointer;
+    width: 38%;
+}
+
+.newer-service:nth-of-type(1):hover{
+    background-image: url(./images/colored7.svg);
+    cursor: pointer;
+    width: 38%;
+}
+
+.newer-service:nth-of-type(2):hover{
+    background-image: url(./images/colored8.svg);
+    cursor: pointer;
+    width: 38%;
+}
+
+.newer-service:nth-of-type(3):hover{
+    background-image: url(./images/colored9.svg);
     cursor: pointer;
     width: 38%;
 }
