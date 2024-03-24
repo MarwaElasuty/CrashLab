@@ -173,7 +173,6 @@ img[alt=mission3] {
 .contact-w-languages {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     row-gap: 5px;
     column-gap: 15px;
 }
@@ -2945,7 +2944,7 @@ swiper-slide img {
 
     button[name=mobile-contact-btn] {
         padding: 2px;
-        width: 87px;
+        width: 80px;
     }
 
     button[name=start] {
@@ -3161,7 +3160,7 @@ swiper-slide img {
 
     button[name=mobile-contact-btn] {
         padding: 2px;
-        width: 87px;
+        width: 80px;
     }
 
     button[name=start] {
@@ -3514,6 +3513,7 @@ swiper-slide img {
         background-image: url(./images/un-colored8.svg);
         width: 100%;
      }
+
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -3603,7 +3603,7 @@ swiper-slide img {
 
     button[name=mobile-contact-btn] {
         padding: 2px;
-        width: 87px;
+        width: 80px;
     }
 
     button[name=start] {
@@ -4068,7 +4068,7 @@ swiper-slide img {
 
     button[name=mobile-contact-btn] {
         padding: 2px;
-        width: 87px;
+        width: 80px;
     }
 
     button[name=start] {
@@ -4500,6 +4500,13 @@ swiper-slide img {
     max-width: 100%;
     text-align: center;
     z-index: 200;
+    display: flex;
+    column-gap: 17px;
+}
+
+label[for="dropdown"]{
+    position: relative;
+    top: 5px;
 }
 
 [type="checkbox"]:checked,
@@ -4526,11 +4533,10 @@ swiper-slide img {
     justify-content: center;
     text-align: center;
     border: none;
-    background-color: var(--primary-color-1);
     cursor: pointer;
     color: white;
-    box-shadow: 0 12px 35px 0 rgba(255, 235, 167, .15);
     padding: 7px;
+    top: 5px;
 }
 
 .dark-light:checked~.sec-center .for-dropdown {
@@ -4607,7 +4613,7 @@ swiper-slide img {
     z-index: 1;
 }
 
-.section-dropdown:after {
+/* .section-dropdown:after {
     position: absolute;
     top: -7px;
     left: 30px;
@@ -4620,7 +4626,7 @@ swiper-slide img {
     display: block;
     z-index: 2;
     transition: all 200ms linear;
-}
+} */
 
 .dark-light:checked~.sec-center .section-dropdown:after {
     border-bottom: 8px solid #fff;
@@ -4683,21 +4689,11 @@ img[alt="arabic-language"]:hover{
 }
 
 .english-option-div{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    background-color: white;
-    padding: 9px;
     border-radius: 18px;
     margin-bottom: 10px;
 }
 
 .arabic-option-div{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    background-color: white;
-    padding: 9px;
     border-radius: 18px;
 }
 
@@ -4775,4 +4771,27 @@ img[alt="arabic-language"]:hover{
     left: unset !important;
     left: -8px;
     z-index: 1;
+}
+
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+  
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+   
+.sec-center{
+    column-gap: 4px;
+ }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+ 
+.sec-center{
+    column-gap: 4px;
+ }
+}
+@media  screen and (max-width: 600px){
+ 
+.sec-center{
+    column-gap: 4px;
+ }
 }
