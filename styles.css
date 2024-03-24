@@ -2879,9 +2879,9 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 77px;
+        top: 56px;
         right: 6px;
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -3101,9 +3101,9 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 77px;
+        top: 56px;
         right: 6px;
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -3543,9 +3543,9 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 77px;
+        top: 56px;
         right: 6px;
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -4009,9 +4009,9 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 77px;
+        top: 56px;
         right: 6px;
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -4502,12 +4502,11 @@ swiper-slide img {
     z-index: 200;
     display: flex;
     column-gap: 17px;
-    justify-content: center;
 }
 
 label[for="dropdown"]{
     position: relative;
-    top: 4px;
+    top: 42px;
 }
 
 [type="checkbox"]:checked,
@@ -4576,11 +4575,15 @@ label[for="dropdown"]{
     transition: transform 200ms linear;
 }
 
+.sec-center-mobile{
+    display: none;
+}
+
 .section-dropdown {
-    position: absolute;
+    position: relative;
     padding: var(--spacing-md);
     background-color: rgb(267 259 240 / 48%);
-    top: 39px;
+    top: 3px;
     left: 0;
     border-radius: 4px;
     display: block;
@@ -4589,7 +4592,6 @@ label[for="dropdown"]{
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
-    width: 100%;
     transition: all 200ms linear;
 }
 
@@ -4784,16 +4786,34 @@ img[alt="arabic-language"]:hover{
 .sec-center{
     column-gap: 4px;
  }
+ .sec-center{
+    display: none;
+ }
+ .sec-center-mobile{
+    display: block;
+}
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
  
 .sec-center{
     column-gap: 4px;
  }
+ .sec-center{
+    display: none;
+ }
+ .sec-center-mobile{
+    display: block;
+}
 }
 @media  screen and (max-width: 600px){
  
 .sec-center{
     column-gap: 4px;
  }
+ .sec-center{
+    display: none;
+ }
+ .sec-center-mobile{
+    display: block;
+}
 }

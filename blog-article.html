@@ -34,33 +34,54 @@
                             <li><a href="test-center.html">Center</a></li>
                             <li><a href="about-us.html">About</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>                    
                         </ul>
+                        <div class="sec-center-mobile">
+                            <input class="dropdown" type="checkbox" id="dropdown" />
+                            <img src="./images/english.svg" alt="english-switch">
+                            <label for="dropdown">
+                                <img src="./images/angle-small-down.png" alt="drop-icon">
+                            </label>
+                            <div class="section-dropdown">
+                                <div class="english-option-div">
+                                    <img class="for-dropdown-sub" onclick="change_english()" id="english-label"
+                                        src="./images/english.svg" alt="english-switch">
+                                </div>
+                                <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                                <div class="arabic-option-div">
+                                    <img src="./images/arabic.svg" class="for-dropdown-sub" onclick="change_arabic()"
+                                    id="arabic-label">                                     
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
 
 
                     <div class="nav-btns-w-search">
                         <div class="contact-w-languages">
-
-                            <button type="button" name="mobile-contact-btn">Contact</button>
-                            <div class="sec-center"> 	
-                                <input class="dropdown" type="checkbox" id="dropdown"/>
-                                <label for="dropdown">Language</label>
-                                <div class="section-dropdown"> 
+                            <div class="sec-center">
+                                <input class="dropdown" type="checkbox" id="dropdown" />
+                                <img src="./images/english.svg" alt="english-switch">
+                                <label for="dropdown">
+                                    <img src="./images/angle-small-down.png" alt="drop-icon">
+                                </label>
+                                <div class="section-dropdown">
                                     <div class="english-option-div">
-                                        <img src="./images/united-kingdom.png" alt="english-language">
-                                        <label class="for-dropdown-sub" onclick="change_english()" id="english-label">English</label>
+                                        <img class="for-dropdown-sub" onclick="change_english()" id="english-label"
+                                            src="./images/english.svg" alt="english-switch">
                                     </div>
-                                    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+                                    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
                                     <div class="arabic-option-div">
-                                        <img src="./images/united-arab-emirates.png" alt="arabic-language">
-                                        <label class="for-dropdown-sub" onclick="change_arabic()" id="arabic-label">Arabic</label>                 
+                                        <img src="./images/arabic.svg" class="for-dropdown-sub" onclick="change_arabic()"
+                                        id="arabic-label">                                     
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                    </div>
+                            <button type="button" name="mobile-contact-btn">Contact</button>                          
+                        </div>
 
                         <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
                     </div>
