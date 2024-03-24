@@ -204,9 +204,6 @@ nav {
     color: var(--neutral-color-2)
 }
 
-.main-navigation-bar .active {
-    color: var(--neutral-color-1);
-}
 
 .background span:first-of-type,
 .pages>p:first-of-type,
@@ -4874,35 +4871,66 @@ img[alt="arabic-language"]:hover {
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%; /* Fills the width of the container */
+    justify-content: center;
   }
   
-  .language-switcher label {
+  .language-toggle {
     display: flex;
     align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     cursor: pointer;
+    background-color: #fff;
     transition: all 0.2s ease-in-out;
   }
   
-  .language-switcher img:first-child {
+  .language-toggle:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .language-toggle img:first-child {
+    margin-right: 10px;
+  }
+  
+  .language-toggle span {
     margin-right: 10px;
   }
   
   .language-options {
     position: absolute;
-    top: 100%; /* Removed the extra space here */
+    top: 100%;
     left: 0;
     width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: none; /* Initial state: hidden */
+    display: none;
     transition: all 0.2s ease-in-out;
   }
   
-  .language-options label {
+  .language-options li {
     padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  
+  .language-options a {
+    text-decoration: none;
+    color: #333;
     display: block;
-    text-align: left;
+    font-size: 17px;
+    font-weight: var(--font-weight-4);
+    letter-spacing: 0.5px;
+  }
+  
+  .language-toggle.active + .language-options {
+    display: block;
   }
   
   .arrow {
@@ -4910,10 +4938,6 @@ img[alt="arabic-language"]:hover {
     transition: transform 0.2s ease-in-out;
   }
   
-  #language-dropdown:checked + .language-switcher label .arrow {
+  .language-toggle.active .arrow {
     transform: rotate(180deg); /* Rotates arrow on click */
-  }
-  
-  #language-dropdown:checked + .language-switcher .language-options {
-    display: block; /* Shows language options on click */
   }

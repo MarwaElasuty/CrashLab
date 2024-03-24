@@ -378,8 +378,9 @@ function mini_nav_language() {
 }
 
 
-function showLanguageOptions() {
-  const dropdown = document.getElementById("language-dropdown");
-  const languageDropdown = document.querySelector(".section-dropdown");
-  languageDropdown.style.display = dropdown.checked ? "block" : "none";
-}
+const languageToggle = document.querySelector(".language-toggle");
+  const languageOptions = document.querySelector(".language-options");
+
+  languageToggle.addEventListener("click", function() {
+    languageToggle.classList.toggle("active");
+  });
