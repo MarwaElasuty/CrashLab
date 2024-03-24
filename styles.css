@@ -2112,9 +2112,9 @@ textarea {
 .contact-black>div:nth-of-type(2) {
     width: 34%;
     position: absolute;
-    top: 15px;
-    right: 0;
-    z-index: 1
+    top: 53px;
+    right: -3px;
+    z-index: 1;
 }
 
 
