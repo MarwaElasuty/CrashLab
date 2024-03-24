@@ -44,7 +44,7 @@
     --submit-btn-background-color: rgba(255, 173, 0, 1);
     --spacing-ssm: 4px;
     --spacing-sm: 8px;
-    --spacing-md: 16px;
+    --spacing-md: 18px;
     --spacing-lg: 24px;
     --spacing-xl: 45px;
     --spacing-xxl: 85px;
@@ -330,12 +330,11 @@ img[alt=added-card] {
     color: #fff;
     background-size: cover;
     height: 100vh;
-    padding: 0 var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md);
 }
 
 .background-container nav {
     display: flex;
-    padding: var(--spacing-md) 0;
 }
 
 .background,
@@ -1255,7 +1254,7 @@ footer p {
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-md) var(--spacing-md);
 }
 
 img[alt="client"] {
@@ -1315,6 +1314,7 @@ img[alt="client"] {
     background-position: right;
     background-size: contain;
     display: flex;
+
 
 }
 
@@ -1496,9 +1496,8 @@ img[alt=about-facility] {
     background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
     flex-direction: column;
     justify-content: center;
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-md) var(--spacing-md);
     background-size: contain;
-    /* height: 100vh; */
 }
 
 .about-container-navbar {
@@ -1896,10 +1895,15 @@ img[alt="right-arrow"]:hover {
     justify-content: center;
 }
 
-.contact-container,
+
 .contact-details .two-columns>div,
 .contact-form {
     padding: var(--spacing-md) var(--spacing-lg)
+}
+
+
+.contact-container{
+    padding: var(--spacing-md) var(--spacing-md);
 }
 
 .blog-article-background p,
@@ -1930,7 +1934,6 @@ img[alt="right-arrow"]:hover {
 .table-of-content .inner-shadowed-table>*,
 .table-of-content .inner-table>* {
     letter-spacing: .5px;
-    padding: 0 0 var(--spacing-md) 0;
 }
 
 .inner-ul-details {
@@ -1939,6 +1942,7 @@ img[alt="right-arrow"]:hover {
 
 .inner-table h4 {
     margin: var(--spacing-md) 0;
+    padding: var(--spacing-md) 0 var(--spacing-md) 0;
 }
 
 .table-of-content h5 {
@@ -1988,6 +1992,10 @@ textarea {
     flex-wrap: wrap;
     row-gap: 15px;
     text-align: center
+}
+
+.contact-background{
+    padding: var(--spacing-md) var(--spacing-md);
 }
 
 .arabic-contact-black {
