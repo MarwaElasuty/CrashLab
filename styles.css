@@ -2881,7 +2881,7 @@ swiper-slide img {
         position: absolute;
         top: 77px;
         right: 6px;
-        padding: var(--spacing-lg);
+        padding: var(--spacing-lg) 0;
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -3103,7 +3103,7 @@ swiper-slide img {
         position: absolute;
         top: 77px;
         right: 6px;
-        padding: var(--spacing-lg);
+        padding: var(--spacing-lg) 0;
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -3545,7 +3545,7 @@ swiper-slide img {
         position: absolute;
         top: 77px;
         right: 6px;
-        padding: var(--spacing-lg);
+        padding: var(--spacing-lg) 0;
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -4011,7 +4011,7 @@ swiper-slide img {
         position: absolute;
         top: 77px;
         right: 6px;
-        padding: var(--spacing-lg);
+        padding: var(--spacing-lg) 0;
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
         font-size: 25px;
@@ -4502,11 +4502,12 @@ swiper-slide img {
     z-index: 200;
     display: flex;
     column-gap: 17px;
+    justify-content: center;
 }
 
 label[for="dropdown"]{
     position: relative;
-    top: 5px;
+    top: 4px;
 }
 
 [type="checkbox"]:checked,
@@ -4588,6 +4589,7 @@ label[for="dropdown"]{
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
+    width: 100%;
     transition: all 200ms linear;
 }
 
