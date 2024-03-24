@@ -890,10 +890,6 @@ img[alt="ur-service"] {
     width: 38%;
 }
 
-.shrinked-img:nth-child(2) {
-    width: 27%;
-    transition: width 0.5s ease;
-}
 
 .shrinked-img:nth-child(2):hover {
     background-image: url(./images/colored2.svg);
@@ -1933,7 +1929,8 @@ img[alt="right-arrow"]:hover {
 
 .table-of-content .inner-shadowed-table>*,
 .table-of-content .inner-table>* {
-    letter-spacing: .5px
+    letter-spacing: .5px;
+    padding: 0 0 var(--spacing-md) 0;
 }
 
 .inner-ul-details {
@@ -1950,7 +1947,7 @@ img[alt="right-arrow"]:hover {
 
 
 .table-of-content .inner-table {
-    padding: var(--spacing-sm) var(--spacing-md);
+    /* padding: var(--spacing-sm) var(--spacing-md); */
     margin: var(--spacing-lg) 0;
     text-transform: capitalize
 }
