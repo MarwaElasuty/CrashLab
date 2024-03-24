@@ -1409,7 +1409,7 @@ img[alt="client"] {
     display: flex;
     flex-direction: column;
     padding: 0 var(--spacing-md);
-    height: 100vh;
+    height: 88vh;
 }
 
 .about-container,
@@ -2469,6 +2469,9 @@ swiper-slide img {
     .single-card-service {
         display: none;
     }
+    .customized-services .right-column{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -2881,7 +2884,7 @@ swiper-slide img {
         display: none;
         position: absolute;
         top: 56px;
-        right: 6px;
+        right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -3104,7 +3107,7 @@ swiper-slide img {
         display: none;
         position: absolute;
         top: 56px;
-        right: 6px;
+        right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -3549,7 +3552,7 @@ swiper-slide img {
         display: none;
         position: absolute;
         top: 56px;
-        right: 6px;
+        right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -4018,7 +4021,7 @@ swiper-slide img {
         display: none;
         position: absolute;
         top: 56px;
-        right: 6px;
+        right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -4587,11 +4590,19 @@ label[for="dropdown"] {
     transition: transform 200ms linear;
 }
 
+.dropdown-sub:checked + .section-dropdown {
+    display: block;
+  }
 .sec-center-mobile {
     display: none;
 }
 
+
+  .dropdown-sub {
+    display: block;
+  }
 .section-dropdown {
+    display: none;
     position: relative;
     padding: var(--spacing-md);
     background-color: rgb(267 259 240 / 48%);
@@ -4617,6 +4628,14 @@ label[for="dropdown"] {
     pointer-events: auto;
     transform: translateY(0);
 }
+
+
+.dropdown-mobile:checked~.section-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
 
 .section-dropdown:before {
     position: absolute;
@@ -4847,3 +4866,54 @@ img[alt="arabic-language"]:hover {
         top: 5px;
     }
 }
+
+
+
+
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Fills the width of the container */
+  }
+  
+  .language-switcher label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .language-switcher img:first-child {
+    margin-right: 10px;
+  }
+  
+  .language-options {
+    position: absolute;
+    top: 100%; /* Removed the extra space here */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Initial state: hidden */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .language-options label {
+    padding: 10px;
+    display: block;
+    text-align: left;
+  }
+  
+  .arrow {
+    transform: rotate(0deg); /* Initial state */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #language-dropdown:checked + .language-switcher label .arrow {
+    transform: rotate(180deg); /* Rotates arrow on click */
+  }
+  
+  #language-dropdown:checked + .language-switcher .language-options {
+    display: block; /* Shows language options on click */
+  }
