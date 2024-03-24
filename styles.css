@@ -4485,10 +4485,6 @@ swiper-slide img {
 
 
 
-.display {
-    display: block
-}
-
 
 .desc-one-rtl {
     background-color: white;
@@ -4969,4 +4965,11 @@ img[alt="arabic-language"]:hover {
     .language-options{
         width: 78%;
     }
+}
+
+
+
+
+.display {
+    display: block
 }

@@ -108,10 +108,10 @@ function change_arabic() {
   }
 
   // Test Center orange card
-  const orangeCard = document.querySelector(".test-center-background .orange-card");
+  const orangeCard = document.querySelector(".orange-card");
   if (orangeCard) {
     orangeCard.classList.add("arabic-orange-card");
-    orangeCard.classList.remove('test-center-background .orange-card');
+    orangeCard.classList.remove('.orange-card');
     orangeCard.classList.remove('english-orange-card');
 
   }
@@ -214,32 +214,6 @@ function hideDiv(Div) {
   }
 }
 
-
-// $(document).ready(function () {
-//   $(".customer-logos").slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 300,
-//     arrows: false,
-//     dots: false,
-//     pauseOnHover: false,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 4
-//         }
-//       },
-//       {
-//         breakpoint: 520,
-//         settings: {
-//           slidesToShow: 3
-//         }
-//       }
-//     ]
-//   });
-// });
 
 
 function displayLanguageOptions() {
