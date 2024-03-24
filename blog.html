@@ -38,50 +38,38 @@
                                 <li><a href="test-center.html">Center</a></li>
                                 <li><a href="about-us.html">About</a></li>
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>                    
-                            </ul>
-                            <div class="sec-center-mobile">
-                                <input class="dropdown" type="checkbox" id="dropdown" />
-                                <img src="./images/english.svg" alt="english-switch">
-                                <label for="dropdown">
-                                    <img src="./images/angle-small-down.png" alt="drop-icon">
-                                </label>
-                                <div class="section-dropdown">
-                                    <div class="english-option-div">
-                                        <img class="for-dropdown-sub" onclick="change_english()" id="english-label"
-                                            src="./images/english.svg" alt="english-switch">
-                                    </div>
-                                    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                                    <div class="arabic-option-div">
-                                        <img src="./images/arabic.svg" class="for-dropdown-sub" onclick="change_arabic()"
-                                        id="arabic-label">                                     
-                                    </div>
+                                <li><a href="contact-us.html">Contact</a></li>
     
-                                </div>
-                            </div>
+    
+    
+                                <div class="language-switcher">
+                                    <button type="button" class="language-toggle">
+                                      <img src="./images/english.svg" alt="English Flag">
+                                      <span>English</span>
+                                      <img src="./images/angle-small-down.png" alt="Dropdown Arrow" class="arrow">
+                                    </button>
+                                    <ul class="language-options">
+                                      <li>
+                                        <img src="./images/english.svg" alt="">
+                                        <a href="#" onclick="change_english()">English</a>
+                                    </li>
+                                      <li>
+                                        <img src="./images/arabic.svg" alt="">
+                                        <a href="#" onclick="change_arabic()">اللغة العربية</a>
+                                    </li>
+                                    </ul>
+                                  </div>
+    
+                            </ul>
+    
                         </div>
+    
+    
+    
                         <div class="nav-btns-w-search">
                             <div class="contact-w-languages">
-                                <div class="sec-center">
-                                    <input class="dropdown" type="checkbox" id="dropdown" />
-                                    <img src="./images/english.svg" alt="english-switch">
-                                    <label for="dropdown">
-                                        <img src="./images/angle-small-down.png" alt="drop-icon">
-                                    </label>
-                                    <div class="section-dropdown">
-                                        <div class="english-option-div">
-                                            <img class="for-dropdown-sub" onclick="change_english()" id="english-label"
-                                                src="./images/english.svg" alt="english-switch">
-                                        </div>
-                                        <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                                        <div class="arabic-option-div">
-                                            <img src="./images/arabic.svg" class="for-dropdown-sub" onclick="change_arabic()"
-                                            id="arabic-label">                                     
-                                        </div>
-    
-                                    </div>
-                                </div>
-                                <button type="button" name="mobile-contact-btn">Contact</button>                          
+                               
+                                <button type="button" name="mobile-contact-btn">Contact</button>
                             </div>
     
                             <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
