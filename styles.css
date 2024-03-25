@@ -190,7 +190,7 @@ nav {
 
 .main-navigation-bar {
     display: flex;
-    column-gap: 74px;
+    justify-content: space-evenly;
     list-style-type: none;
     padding-right: 33px;
     font-weight: 600;
@@ -211,6 +211,10 @@ nav {
     color: var(--primary-color-1)
 }
 
+
+.ul-list{
+    width: 74%;
+}
 
 .pages-w-arrows {
     display: flex;
