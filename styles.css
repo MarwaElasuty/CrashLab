@@ -2113,14 +2113,7 @@ textarea {
     padding: var(--spacing-md) var(--spacing-md);
 }
 
-.arabic-contact-black {
-    width: 34%;
-    position: absolute;
-    top: 15px;
-    right: unset !important;
-    left: -8px;
-    z-index: 1;
-}
+
 
 
 .contact-black>div:nth-of-type(2) {
@@ -4824,23 +4817,20 @@ img[alt="arabic-language"]:hover {
     display: flex;
     align-items: center;
     padding: 4px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: inherit;
     transition: all 0.2s ease-in-out;
+    border-style: none;
   }
   
-  .language-toggle:hover {
-    background-color: #f5f5f5;
-  }
+ 
   
   .language-toggle img:first-child {
     margin-right: 10px;
   }
   
   .language-toggle span {
-    margin-right: 10px;
+    display: none;
   }
   
   .language-options {
@@ -4854,30 +4844,21 @@ img[alt="arabic-language"]:hover {
         display: none;
         transition: all 0.2s ease-in-out;
         margin-top: 4px;
+        z-index: 2;
   }
   
   .language-options li {
-    padding: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 8px;
     display: flex;
-    align-items: center;
-    column-gap: 10px;
+    column-gap: 9px;
     justify-content: center;
-    border: 1px solid white;
+    border: 1px solid #878787;
     border-radius: 5px;
     margin-bottom: 5px;
   }
   
   .language-options a {
-    text-decoration: none;
-    display: block;
-    font-size: 15px;
-    font-weight: var(--font-weight-4);
-    letter-spacing: 0.5px;
+    display: none;
   }
   
   .language-toggle.active + .language-options {
@@ -4920,7 +4901,7 @@ img[alt="arabic-language"]:hover {
         position: unset;
     }
     .language-options{
-        width: 78%;
+        width: 100%;
     }
 }
 
@@ -4945,7 +4926,7 @@ img[alt="arabic-language"]:hover {
         position: unset;
     }
     .language-options{
-        width: 78%;
+        width: 100%;
     }
 }
 
@@ -4970,7 +4951,7 @@ img[alt="arabic-language"]:hover {
         position: unset;
     }
     .language-options{
-        width: 78%;
+        width: 100%;
     }
 }
 
@@ -4994,6 +4975,14 @@ img[alt="arabic-language"]:hover {
     padding: var(--spacing-xl);
     box-shadow: 2px 2px 5px 1px gainsboro;
     width: 46%;
+}
+
+img[alt="english-flag"]:hover{
+    cursor: pointer;
+}
+
+img[alt="arabic-flag"]:hover{
+    cursor: pointer;
 }
 
 
@@ -5031,6 +5020,30 @@ img[alt="arabic-language"]:hover {
     footer .section-container{
         justify-content: unset;
     }
+    .language-toggle {
+        display: flex;
+        align-items: center;
+        padding: 4px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+      .language-toggle:hover {
+        background-color: #f5f5f5;
+      }
+      .language-toggle span {
+        display: block;
+        margin-right: 10px;
+      }
+      .language-options a {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: var(--font-weight-4);
+        letter-spacing: 0.5px;
+      }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .map-footer-container{
@@ -5039,6 +5052,30 @@ img[alt="arabic-language"]:hover {
     footer .section-container{
         justify-content: unset;
     }
+    .language-toggle {
+        display: flex;
+        align-items: center;
+        padding: 4px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+      .language-toggle:hover {
+        background-color: #f5f5f5;
+      }
+      .language-toggle span {
+        display: block;
+        margin-right: 10px;
+      }
+      .language-options a {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: var(--font-weight-4);
+        letter-spacing: 0.5px;
+      }
 }
 @media  screen and (max-width: 600px){
     .map-footer-container{
@@ -5046,5 +5083,58 @@ img[alt="arabic-language"]:hover {
     }
     footer .section-container{
         justify-content: unset;
+    }
+    .language-toggle {
+        display: flex;
+        align-items: center;
+        padding: 4px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+      .language-toggle:hover {
+        background-color: #f5f5f5;
+      }
+      .language-toggle span {
+        display: block;
+        margin-right: 10px;
+      }
+      .language-options a {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: var(--font-weight-4);
+        letter-spacing: 0.5px;
+      }
+}
+
+
+.arabic-contact-black {
+    width: 34%;
+    position: absolute;
+    top: 15px;
+    right: unset !important;
+    left: -8px;
+    z-index: 1;
+}
+
+
+.english-contact-black {
+    width: 34%;
+    position: absolute;
+    top: 15px;
+    left: unset !important;
+    right: -8px;
+    z-index: 1;
+}
+
+
+
+
+@media  screen and (max-width: 768px){
+    .contact-black>div:nth-of-type(2){
+        top: 458px;
     }
 }

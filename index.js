@@ -174,7 +174,14 @@ function change_english() {
   //   contactFormContainer.classList.remove('arabic-contact-black');
   // }
 
- 
+  var englishContactFormContainer = document.querySelector('.contact-form-container');
+  if (englishContactFormContainer) {
+    englishContactFormContainer.classList.add("english-contact-black");
+  contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
+
+    englishContactFormContainer.classList.remove('arabic-contact-black');
+  }
+
 }
 
 
