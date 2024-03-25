@@ -2918,11 +2918,25 @@ swiper-slide img {
 
 
     .arabic-ul-list {
-        display: none;
         position: absolute;
         top: 77px;
         right: unset !important;
         left: 6px !important;
+        padding: var(--spacing-lg);
+        background-color: rgba(10, 10, 10, 0.8);
+        color: #000;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        width: 250px;
+    }
+
+    .english-ul-list{
+        position: absolute;
+        top: 77px;
+        left: unset !important;
+
+        right: 6px !important;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -3138,11 +3152,24 @@ swiper-slide img {
     }
 
     .arabic-ul-list {
-        display: none;
         position: absolute;
         top: 77px;
         right: unset !important;
         left: 6px !important;
+        padding: var(--spacing-lg);
+        background-color: rgba(10, 10, 10, 0.8);
+        color: #000;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        width: 250px;
+    }
+    .english-ul-list{
+        position: absolute;
+        top: 77px;
+        left: unset !important;
+
+        right: 6px !important;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -3582,11 +3609,23 @@ swiper-slide img {
     }
 
     .arabic-ul-list {
-        display: none;
         position: absolute;
         top: 77px;
         right: unset !important;
         left: 6px !important;
+        padding: var(--spacing-lg);
+        background-color: rgba(10, 10, 10, 0.8);
+        color: #000;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        width: 250px;
+    }
+
+    .english-ul-list{
+        position: absolute;
+        top: 77px;
+        right: 6px !important;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -4046,11 +4085,24 @@ swiper-slide img {
     }
 
     .arabic-ul-list {
-        display: none;
         position: absolute;
         top: 77px;
         right: unset !important;
         left: 6px !important;
+        padding: var(--spacing-lg);
+        background-color: rgba(10, 10, 10, 0.8);
+        color: #000;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        width: 250px;
+    }
+
+    .english-ul-list{
+        position: absolute;
+        top: 77px;
+        left: unset !important;
+        right: 6px !important;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
         color: #000;
@@ -5138,3 +5190,4 @@ img[alt="arabic-flag"]:hover{
         top: 458px;
     }
 }
+

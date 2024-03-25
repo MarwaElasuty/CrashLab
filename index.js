@@ -169,10 +169,6 @@ function change_english() {
     innovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
     innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
   }
-  // if (contactFormContainer) {
-  //   contactFormContainer.classList.add("contact-form-container");
-  //   contactFormContainer.classList.remove('arabic-contact-black');
-  // }
 
   var englishContactFormContainer = document.querySelector('.contact-form-container');
   if (englishContactFormContainer) {
@@ -180,6 +176,12 @@ function change_english() {
   contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
 
     englishContactFormContainer.classList.remove('arabic-contact-black');
+  }
+
+  var contactFormContainer = document.querySelector('.arabic-ul-list');
+  if (contactFormContainer) {
+    contactFormContainer.classList.add("english-ul-list");
+    contactFormContainer.classList.remove('ul-list');
   }
 
 }
