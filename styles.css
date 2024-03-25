@@ -1381,6 +1381,12 @@ img[alt="client"] {
 .blogs .section-container>div {
     width: 32%;
     box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.09);
+    transition: background-color 0.5s;
+}
+
+.blogs .section-container>*:hover{
+    background-color: rgba(255, 173, 0, 0.7);
+    color: white;
 }
 
 .blogs a {
