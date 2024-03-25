@@ -187,9 +187,13 @@ function appear() {
 
 function showDiv(Div) {
   var x = document.getElementById(Div);
-  let inputValue = document.forms["contact-form"]["user_name"].value;
+  let inputName = document.forms["contact-form"]["user_name"].value;
+  let inputEmail = document.forms["contact-form"]["user_email"].value;
+  let inputSubject = document.forms["contact-form"]["user_subject"].value;
+  let inputMsg = document.forms["contact-form"]["message"].value;
+
   if (x.style.display == "none") {
-    if(inputValue != ""){
+    if(inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != ""){
       x.style.display = "block";
     }
   } else {
