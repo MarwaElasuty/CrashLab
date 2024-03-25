@@ -8,7 +8,7 @@ function emailSend() {
     Port: 2525,
     Username: "marwa.mohamed8712000@gmail.com",
     Password: "8BEB72CC47A7E9D03BD12B4C5CD232E0B23E",
-    To: 'marwa.mohamed871@yahoo.com',
+    To: 'marwa.mohamed8712000@gmail.com',
     From: "marwa.mohamed8712000@gmail.com",
     Subject: "This is the subject",
     Body: "Name:" + document.getElementById('username').value +

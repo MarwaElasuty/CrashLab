@@ -187,8 +187,11 @@ function appear() {
 
 function showDiv(Div) {
   var x = document.getElementById(Div);
+  let inputValue = document.forms["contact-form"]["user_name"].value;
   if (x.style.display == "none") {
-    x.style.display = "block";
+    if(inputValue != ""){
+      x.style.display = "block";
+    }
   } else {
     x.style.display = "none";
   }
