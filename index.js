@@ -179,19 +179,10 @@ function change_english() {
 
 
 
-
-
-
 function appear() {
   document.querySelector(".ul-list").classList.toggle("display");
 }
 
-
-
-// function appear() {
-//   const listElements = document.querySelectorAll(".mobile-menu, .arabic-ul-list");
-//   listElements.forEach(element => element.classList.toggle("display"));
-// }
 
 
 function showDiv(Div) {

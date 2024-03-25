@@ -1285,7 +1285,7 @@ footer p:hover {
 
 footer .section-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 20px;
@@ -1431,6 +1431,7 @@ img[alt="client"] {
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    height: 100vh;
 }
 
 
@@ -1481,7 +1482,7 @@ img[alt="client"] {
 
 .second-black-card {
     background-color: rgba(26, 26, 26, 0.42);
-    margin-top: -463px;
+    margin-top: -100px;
 }
 
 img[alt=overview] {
@@ -1599,6 +1600,7 @@ img[alt=about-facility] {
     justify-content: center;
     padding: var(--spacing-md) var(--spacing-md);
     background-size: contain;
+    height: 100vh;
 }
 
 .about-container-navbar {
@@ -3536,7 +3538,13 @@ swiper-slide img {
         background-image: url(./images/un-colored8.svg);
         width: 100%;
     }
+    .about-container {
+        height: auto;
+    }
 
+    .arabic-about-container {
+        height: auto;
+    }
 }
 
 @media screen and (max-width:786px) and (min-width:600px) {
@@ -4004,6 +4012,9 @@ swiper-slide img {
         background-image: url(./images/un-colored8.svg);
         width: 100%;
     }
+    .about-container {
+        height: auto;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -4313,11 +4324,13 @@ swiper-slide img {
     .about-container {
         background-image: none;
         background-position: bottom;
+        height: auto;
     }
 
     .arabic-about-container {
         background-image: none;
         background-position: bottom;
+        height: auto;
     }
 
     .legacy-cards>div {
@@ -4498,6 +4511,9 @@ swiper-slide img {
     .newer-service:nth-child(2):hover {
         background-image: url(./images/un-colored8.svg);
         width: 100%;
+    }
+    .arabic-about-container {
+        height: auto;
     }
 }
 
