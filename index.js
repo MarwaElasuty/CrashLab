@@ -43,11 +43,14 @@ function change_arabic() {
   }
 
   // Customer Stories Right using getElementsByClassName
-  const customerStoriesRightElements = document.getElementsByClassName('customer-stories-right');
-  if (customerStoriesRightElements.length > 0) {
-    customerStoriesRightElements[0].classList.add("arabic-customers");
-    customerStoriesRightElements[0].classList.remove('right-column');
+  const customerStoriesRightElements = document.querySelector('.customer-stories-right');
+  if (customerStoriesRightElements) {
+    customerStoriesRightElements.classList.add("arabic-customers");
+    customerStoriesRightElements.classList.remove('right-column');
   }
+
+
+  
 
   // About Container using document.querySelector
   const aboutContainer = document.querySelector(".about-container");
@@ -87,7 +90,8 @@ function change_arabic() {
   const innovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
   if (innovativeCardsLeftColumn) {
     innovativeCardsLeftColumn.classList.add("arabic-innovative-cards-left-column");
-    innovativeCardsLeftColumn.classList.remove('left-column');
+    innovativeCardsLeftColumn.classList.remove('english-innovative-cards-left-column');
+    // innovativeCardsLeftColumn.classList.remove('left-column');
   }
 
 
@@ -139,7 +143,6 @@ function change_english() {
   if (bodyElement) {
     bodyElement.style.direction = "ltr";
   }
-  // document.getElementById('body').style.direction = "ltr";
 
   const orangeCard = document.querySelector(".test-center-background .orange-card");
   if (orangeCard) {
@@ -154,7 +157,18 @@ function change_english() {
   }
 
 
+  const customerStoriesRightElements = document.getElementsByClassName('arabic-customers');
+  if (customerStoriesRightElements.length > 0) {
+    customerStoriesRightElements[0].classList.add("english-customers");
+    customerStoriesRightElements[0].classList.remove('arabic-customers');
+  }
 
+
+  const innovativeCardsLeftColumn = document.querySelector(".arabic-innovative-cards-left-column");
+  if (innovativeCardsLeftColumn) {
+    innovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
+    innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
+  }
   // if (contactFormContainer) {
   //   contactFormContainer.classList.add("contact-form-container");
   //   contactFormContainer.classList.remove('arabic-contact-black');

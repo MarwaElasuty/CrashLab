@@ -2678,12 +2678,15 @@ swiper-slide img {
 
 }
 
-.arabic-innovative-cards-left-column {
+
+
+
+.english-innovative-cards-left-column {
     background-color: #fff;
     text-transform: uppercase;
     padding: var(--spacing-lg) var(--spacing-lg);
     position: relative;
-    right: 81px;
+    left: 81px;
     bottom: -51px;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     width: 43%;
@@ -2692,6 +2695,19 @@ swiper-slide img {
 }
 
 
+.arabic-innovative-cards-left-column {
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: var(--spacing-lg) var(--spacing-lg);
+    position: relative;
+    left: unset;
+    right: 81px !important;
+    bottom: -51px;
+    box-shadow: 0 0 11px 1px rgb(241 241 241);
+    width: 43%;
+    height: 71vh;
+    font-weight: var(--font-weight-4);
+}
 
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
@@ -2822,11 +2838,13 @@ swiper-slide img {
     }
 }
 
-.arabic-customers {
+
+
+.english-customers{
     background-color: #fff;
     position: absolute;
     z-index: 1;
-    left: 0;
+    right: 0;
     text-transform: uppercase;
     font-weight: var(--font-weight-4);
     font-size: var(--h1-size);
@@ -4777,18 +4795,6 @@ img[alt="arabic-language"]:hover {
 }
 
 
-.english-innovative-cards-left-column {
-    background-color: #fff;
-    text-transform: uppercase;
-    padding: var(--spacing-lg) var(--spacing-lg);
-    position: relative;
-    left: 81px !important;
-    bottom: -51px;
-    box-shadow: 0 0 11px 1px rgb(241 241 241);
-    width: 43%;
-    height: 71vh;
-    font-weight: var(--font-weight-4);
-}
 
 
 
@@ -4972,4 +4978,19 @@ img[alt="arabic-language"]:hover {
 
 .display {
     display: block
+}
+
+
+.arabic-customers {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    right: unset;
+    left: 0 !important;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-4);
+    font-size: var(--h1-size);
+    padding: var(--spacing-xl);
+    box-shadow: 2px 2px 5px 1px gainsboro;
+    width: 46%;
 }
