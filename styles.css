@@ -5027,3 +5027,31 @@ img[alt="arabic-language"]:hover {
     }
 }
 
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+  
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .map-footer-container{
+        width: 45%;
+    }
+    footer .section-container{
+        justify-content: unset;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .map-footer-container{
+        width: 45%;
+    }
+    footer .section-container{
+        justify-content: unset;
+    }
+}
+@media  screen and (max-width: 600px){
+    .map-footer-container{
+        width: 45%;
+    }
+    footer .section-container{
+        justify-content: unset;
+    }
+}
