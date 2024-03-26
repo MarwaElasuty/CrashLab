@@ -34,7 +34,7 @@ function change_arabic() {
   }
 
 
- var ArabicAboutDescTwo = document.querySelector(".desc-two")
+  var ArabicAboutDescTwo = document.querySelector(".desc-two")
   if (ArabicAboutDescTwo) {
     ArabicAboutDescTwo.classList.toggle("arabic-desc-two");
 
@@ -99,84 +99,98 @@ function change_arabic() {
     aboutUsFlexBefore.classList.add("arabic-first-left-img-flex-before");
     aboutUsFlexBefore.classList.remove('about-us-flex .first-left-img-flex::before');
   }
+
+
+  var ArabicSingleCardService = document.querySelector(".single-card-service");
+  if (ArabicSingleCardService) {
+    ArabicSingleCardService.classList.toggle("arabic-single-card-service");
+
+    if (ArabicSingleCardService.classList.contains("english-single-card-service")) {
+      ArabicSingleCardService.classList.remove("english-single-card-service");
+    }
+  }
+  
 }
 
+function change_english() {
+  const bodyElement = document.getElementById('body');
+  if (bodyElement) {
+    bodyElement.style.direction = "ltr";
+  }
+
+  const orangeCard = document.querySelector(".test-center-background .orange-card");
+  if (orangeCard) {
+    orangeCard.classList.add("english-orange-card");
+    orangeCard.classList.remove('arabic-orange-card');
+  }
+
+  const EnglishInnovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
+  if (EnglishInnovativeCardsLeftColumn) {
+    EnglishInnovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
+    EnglishInnovativeCardsLeftColumn.classList.remove("arabic-innovative-cards-left-column");
+  }
 
 
-  function change_english() {
-    const bodyElement = document.getElementById('body');
-    if (bodyElement) {
-      bodyElement.style.direction = "ltr";
+  const customerStoriesRightElements = document.getElementsByClassName('arabic-customers');
+  if (customerStoriesRightElements.length > 0) {
+    customerStoriesRightElements[0].classList.add("english-customers");
+    customerStoriesRightElements[0].classList.remove('arabic-customers');
+  }
+
+
+  const innovativeCardsLeftColumn = document.querySelector(".arabic-innovative-cards-left-column");
+  if (innovativeCardsLeftColumn) {
+    innovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
+    innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
+  }
+
+  var englishContactFormContainer = document.querySelector('.contact-form-container');
+  if (englishContactFormContainer) {
+    englishContactFormContainer.classList.add("english-contact-black");
+    contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
+
+    englishContactFormContainer.classList.remove('arabic-contact-black');
+  }
+
+
+  var contactFormContainer = document.querySelector('.ul-list');
+  if (contactFormContainer) {
+    contactFormContainer.classList.toggle("english-ul-list");
+
+    // If the element has the "arabic-ul-list" class, remove it
+    if (contactFormContainer.classList.contains("arabic-ul-list")) {
+      contactFormContainer.classList.remove("arabic-ul-list");
     }
+  }
 
-    const orangeCard = document.querySelector(".test-center-background .orange-card");
-    if (orangeCard) {
-      orangeCard.classList.add("english-orange-card");
-      orangeCard.classList.remove('arabic-orange-card');
+
+  var ArabicAboutContainer = document.querySelector(".about-container");
+  if (ArabicAboutContainer) {
+    ArabicAboutContainer.classList.toggle("english-about-container");
+
+    // If the element has the "english-about-container" class, remove it
+    if (ArabicAboutContainer.classList.contains("arabic-about-container")) {
+      ArabicAboutContainer.classList.remove("arabic-about-container");
     }
+  }
 
-    const EnglishInnovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
-    if (EnglishInnovativeCardsLeftColumn) {
-      EnglishInnovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
-      EnglishInnovativeCardsLeftColumn.classList.remove("arabic-innovative-cards-left-column");
+
+  
+
+
+
+
+  var EnglishAboutDescOne = document.querySelector(".desc-onee");
+  if (EnglishAboutDescOne) {
+    EnglishAboutDescOne.classList.toggle("english-desc-onee");
+
+    if (EnglishAboutDescOne.classList.contains("arabic-desc-onee")) {
+      EnglishAboutDescOne.classList.remove("arabic-desc-onee");
     }
+  }
 
 
-    const customerStoriesRightElements = document.getElementsByClassName('arabic-customers');
-    if (customerStoriesRightElements.length > 0) {
-      customerStoriesRightElements[0].classList.add("english-customers");
-      customerStoriesRightElements[0].classList.remove('arabic-customers');
-    }
-
-
-    const innovativeCardsLeftColumn = document.querySelector(".arabic-innovative-cards-left-column");
-    if (innovativeCardsLeftColumn) {
-      innovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
-      innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
-    }
-
-    var englishContactFormContainer = document.querySelector('.contact-form-container');
-    if (englishContactFormContainer) {
-      englishContactFormContainer.classList.add("english-contact-black");
-      contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
-
-      englishContactFormContainer.classList.remove('arabic-contact-black');
-    }
-
-
-    var contactFormContainer = document.querySelector('.ul-list');
-    if (contactFormContainer) {
-      contactFormContainer.classList.toggle("english-ul-list");
-
-      // If the element has the "arabic-ul-list" class, remove it
-      if (contactFormContainer.classList.contains("arabic-ul-list")) {
-        contactFormContainer.classList.remove("arabic-ul-list");
-      }
-    }
-
-
-    var ArabicAboutContainer = document.querySelector(".about-container");
-    if (ArabicAboutContainer) {
-      ArabicAboutContainer.classList.toggle("english-about-container");
-
-      // If the element has the "english-about-container" class, remove it
-      if (ArabicAboutContainer.classList.contains("arabic-about-container")) {
-        ArabicAboutContainer.classList.remove("arabic-about-container");
-      }
-    }
-
-
-    var EnglishAboutDescOne = document.querySelector(".desc-onee");
-    if (EnglishAboutDescOne) {
-      EnglishAboutDescOne.classList.toggle("english-desc-onee");
-
-      if (EnglishAboutDescOne.classList.contains("arabic-desc-onee")) {
-        EnglishAboutDescOne.classList.remove("arabic-desc-onee");
-      }
-    }
-
-
-    var EnglishAboutDescTwo = document.querySelector(".desc-two")
+  var EnglishAboutDescTwo = document.querySelector(".desc-two")
   if (EnglishAboutDescTwo) {
     EnglishAboutDescTwo.classList.toggle("english-desc-twoo");
 
@@ -185,129 +199,107 @@ function change_arabic() {
     }
   }
 
+
+  var EnglishSingleCardService = document.querySelector(".single-card-service");
+  if (EnglishSingleCardService) {
+    EnglishSingleCardService.classList.toggle("english-single-card-service");
+    
+
+    if (EnglishSingleCardService.classList.contains("arabic-single-card-service")) {
+      EnglishSingleCardService.classList.remove("arabic-single-card-service");
+    }
   }
 
-    function appear() {
-      document.querySelector(".ul-list").classList.toggle("display");
+}
+
+function appear() {
+  document.querySelector(".ul-list").classList.toggle("display");
+}
+
+
+
+function showDiv(Div) {
+  var x = document.getElementById(Div);
+  let inputName = document.forms["contact-form"]["user_name"].value;
+  let inputEmail = document.forms["contact-form"]["user_email"].value;
+  let inputSubject = document.forms["contact-form"]["user_subject"].value;
+  let inputMsg = document.forms["contact-form"]["message"].value;
+
+  if (x.style.display == "none") {
+    if (inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != "") {
+      x.style.display = "block";
     }
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+function formDiv(Div) {
+  var formDiv = document.getElementById(Div);
+  if (formDiv.style.display == "none") {
+    formDiv.style.display = "block";
+  } else {
+    formDiv.style.display = "none";
+  }
+}
 
 
 
-    function showDiv(Div) {
-      var x = document.getElementById(Div);
-      let inputName = document.forms["contact-form"]["user_name"].value;
-      let inputEmail = document.forms["contact-form"]["user_email"].value;
-      let inputSubject = document.forms["contact-form"]["user_subject"].value;
-      let inputMsg = document.forms["contact-form"]["message"].value;
+function hideDiv(Div) {
+  var hide = document.getElementById(Div);
+  var contactForm = document.getElementById('contact-form');
 
-      if (x.style.display == "none") {
-        if (inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != "") {
-          x.style.display = "block";
-        }
-      } else {
-        x.style.display = "none";
-      }
-    }
+  if (hide.style.display == "none") {
+  } else {
+    hide.style.display = "none";
+    document.getElementById('contact-form').reset();
+  }
+}
 
 
-    function formDiv(Div) {
-      var formDiv = document.getElementById(Div);
-      if (formDiv.style.display == "none") {
-        formDiv.style.display = "block";
-      } else {
-        formDiv.style.display = "none";
-      }
-    }
+function mini_nav_language() {
+
+  document.querySelector(".mini-nav-language").classList.toggle("display");
+}
 
 
+const languageToggle = document.querySelector(".language-toggle");
+const languageOptions = document.querySelector(".language-options");
 
-    function hideDiv(Div) {
-      var hide = document.getElementById(Div);
-      var contactForm = document.getElementById('contact-form');
-
-      if (hide.style.display == "none") {
-      } else {
-        hide.style.display = "none";
-        document.getElementById('contact-form').reset();
-      }
-    }
+languageToggle.addEventListener("click", function () {
+  languageToggle.classList.toggle("active");
+});
 
 
-
-    function displayLanguageOptions() {
-      var dropdown = document.getElementsByClassName("section-dropdown")
-      var arabicLabel = document.getElementById("arabic-label").onclick(() => {
-        dropdown.style.display = "none";
-      })
-    }
+function welcoming() {
+  console.log("hello");
+}
 
 
-    checkLang();
-
-    function checkLang() {
-      if (localStorage.getItem('country')) {
-        const country = JSON.parse(localStorage.getItem('country'));
-        console.log(country);
-        if (country.dir == 'rtl') {
-          change_style();
-        }
-        document.body.dir = country.dir;
-        console.log(JSON.parse(localStorage.getItem('country')));
-      } else {
-        const country = {
-          lang: 'english',
-          dir: 'ltr'
-        }
-        setLang(country);
-      }
-    }
+// Local Storage for Languages 
 
 
-    function setLang(country) {
-      localStorage.setItem('country', JSON.stringify(country));
-      document.body.dir = country.dir
-    }
+const directionToggleBtn = document.getElementById('direction-toggle'); // Assuming you have a button with this ID
+const bodyElement = document.body;
 
-    function changeLang(direction) {
-      console.log(direction);
-      console.log(localStorage.getItem('country'));
-      if (localStorage.getItem('country')) {
-        let country = JSON.parse(localStorage.getItem('country'));
-        console.log(direction);
-        console.log(country.dir != direction);
-        if (country.dir != direction) {
+// Get the current direction from local storage (or default to LTR)
+let currentDirection = localStorage.getItem('textDirection') || 'ltr';
 
-          country = {
-            dir: direction
-          }
-          console.log(direction);
-        }
-        setLang(country);
-      } else {
-        const country = {
-          lang: 'english',
-          dir: 'ltr'
-        }
-        setLang(country);
-      }
-    }
+// Update body element's direction class based on stored value
+bodyElement.classList.add(currentDirection); // Use class for styling flexibility
 
+// Function to toggle direction and update local storage
+function toggleDirection() {
+  if (currentDirection === 'ltr') {
+    currentDirection = 'rtl';
+    bodyElement.classList.replace('ltr', 'rtl');
+  } else {
+    currentDirection = 'ltr';
+    bodyElement.classList.replace('rtl', 'ltr');
+  }
+  localStorage.setItem('textDirection', currentDirection);
+}
 
-    function mini_nav_language() {
-
-      document.querySelector(".mini-nav-language").classList.toggle("display");
-    }
-
-
-    const languageToggle = document.querySelector(".language-toggle");
-    const languageOptions = document.querySelector(".language-options");
-
-    languageToggle.addEventListener("click", function () {
-      languageToggle.classList.toggle("active");
-    });
-
-
-    function welcoming() {
-      console.log("hello");
-    }
-  
+// Add event listener to the button (modify this line if your button ID is different)
+directionToggleBtn.addEventListener('click', toggleDirection);

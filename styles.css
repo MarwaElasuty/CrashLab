@@ -887,6 +887,41 @@ img[alt="ur-service"] {
 }
 
 
+.arabic-single-card-service{
+    margin-right: auto;
+    margin-top: 99px;
+    width: 288px;
+    height: 188px;
+    background-color: white;
+    box-shadow: 1px 2px 3px 2px rgb(240, 240, 240);
+    margin-bottom: 22px;
+    transition: all 0.3s ease;
+    background-image: url(./images/oranged-customer-service.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 97px 18px;
+    position: relative;
+    left: 68px;
+}
+
+
+.english-single-card-service{
+    margin-left: auto;
+    margin-top: 99px;
+    width: 288px;
+    height: 188px;
+    background-color: white;
+    box-shadow: 1px 2px 3px 2px rgb(240, 240, 240);
+    margin-bottom: 22px;
+    transition: all 0.3s ease;
+    background-image: url(./images/oranged-customer-service.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 97px 18px;
+    position: relative;
+    left: 68px;
+}
+
 .customized-services .right-column>div:nth-of-type(1) {
     margin-top: 88px;
 }
