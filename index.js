@@ -1,10 +1,18 @@
-
-
+getLanguage();
+function getLanguage(){
+  var currentLanguage=localStorage.getItem('lang');
+  if(currentLanguage=='Ar')
+    change_arabic();
+  else
+    change_english();
+}
 function change_arabic() {
 
   const bodyElement = document.getElementById('body');
   if (bodyElement) {
+    localStorage.setItem('lang','Ar');
     bodyElement.style.direction = "rtl";
+    document.getElementById("main-flag").src = "./images/arabic.svg";
   }
 
   const customerStoriesRightElements = document.querySelector('.customer-stories-right');
@@ -115,7 +123,9 @@ function change_arabic() {
 function change_english() {
   const bodyElement = document.getElementById('body');
   if (bodyElement) {
+    localStorage.setItem('lang','En');
     bodyElement.style.direction = "ltr";
+    document.getElementById("main-flag").src = "./images/english.svg";
   }
 
   const orangeCard = document.querySelector(".test-center-background .orange-card");
@@ -277,29 +287,30 @@ function welcoming() {
 }
 
 
+
 // Local Storage for Languages 
 
 
-const directionToggleBtn = document.getElementById('direction-toggle'); // Assuming you have a button with this ID
-const bodyElement = document.body;
+// const directionToggleBtn = document.getElementById('direction-toggle'); // Assuming you have a button with this ID
+// const bodyElement = document.body;
 
-// Get the current direction from local storage (or default to LTR)
-let currentDirection = localStorage.getItem('textDirection') || 'ltr';
+// // Get the current direction from local storage (or default to LTR)
+// let currentDirection = localStorage.getItem('textDirection') || 'ltr';
 
-// Update body element's direction class based on stored value
-bodyElement.classList.add(currentDirection); // Use class for styling flexibility
+// // Update body element's direction class based on stored value
+// bodyElement.classList.add(currentDirection); // Use class for styling flexibility
 
-// Function to toggle direction and update local storage
-function toggleDirection() {
-  if (currentDirection === 'ltr') {
-    currentDirection = 'rtl';
-    bodyElement.classList.replace('ltr', 'rtl');
-  } else {
-    currentDirection = 'ltr';
-    bodyElement.classList.replace('rtl', 'ltr');
-  }
-  localStorage.setItem('textDirection', currentDirection);
-}
+// // Function to toggle direction and update local storage
+// function toggleDirection() {
+//   if (currentDirection === 'ltr') {
+//     currentDirection = 'rtl';
+//     bodyElement.classList.replace('ltr', 'rtl');
+//   } else {
+//     currentDirection = 'ltr';
+//     bodyElement.classList.replace('rtl', 'ltr');
+//   }
+//   localStorage.setItem('textDirection', currentDirection);
+// }
 
-// Add event listener to the button (modify this line if your button ID is different)
-directionToggleBtn.addEventListener('click', toggleDirection);
+// // Add event listener to the button (modify this line if your button ID is different)
+// directionToggleBtn.addEventListener('click', toggleDirection);

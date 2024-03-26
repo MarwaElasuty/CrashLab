@@ -3623,12 +3623,16 @@ swiper-slide img {
 
     .new-service:nth-child(1) {
         width: 100%;
+        background-position: center;
     }
 
     .newer-service:nth-child(2) {
         width: 100%;
     }
 
+    .shrinked-img:nth-child(2){
+        background-position: top;
+    }
     .shrinked-img:nth-child(2):hover {
         background-image: url(./images/un-colored2.svg);
         width: 100%;
@@ -4101,10 +4105,14 @@ swiper-slide img {
 
     .new-service:nth-child(1) {
         width: 100%;
+        background-position: center;
     }
 
     .newer-service:nth-child(2) {
         width: 100%;
+    }
+    .shrinked-img:nth-child(2){
+        background-position: top;
     }
 
     .shrinked-img:nth-child(2):hover {
@@ -4604,10 +4612,15 @@ swiper-slide img {
 
     .new-service:nth-child(1) {
         width: 100%;
+        background-position: center;
     }
 
     .newer-service:nth-child(2) {
         width: 100%;
+    }
+
+    .shrinked-img:nth-child(2){
+        background-position: top;
     }
 
     .shrinked-img:nth-child(2):hover {
