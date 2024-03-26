@@ -1,128 +1,92 @@
 
 
-// function sendEmail() {
-
-//   Email.send({
-//       SecureToken: "dd899629-cca1-4ee2-8779-eafa408b00ce",
-//       Host: "smtp.elasticemail.com",
-//       Port: 2525,
-//       Username: "marwa.mohamed8712000@gmail.com",
-//       Password: "80FAF89EBB53CBB62E9A3BE538A03B876BBE",
-//       To: 'esraamortada809@gmail.com',
-//       From: 'marwa.mohamed8712000@gmail.com',
-//       Subject: "This is the subject",
-//       Body: "Name:" + document.getElementById('username').value +
-//           "<br> Email: " + document.getElementById('useremail').value +
-//           "<br> Phone: " + document.getElementById('usersub').value +
-//           "<br> Message: " + document.getElementById('usermsg').value
-
-//   }).then(
-//       message => alert(message)
-//   );
-// }
-
-/* Send email to the user via EmailJS */
-
-// const contactForm = document.getElementById('contact-form'),
-//     contactMessage = document.getElementById('contact-message')
-
-
-// const sendEmail = (e) =>{
-//     e.preventDefault();
-//     emailjs.sendForm('service_u0t85ax', 'template_sq0onfo', '#contact-form', 'NGE7DmxLauJeUM9jb')
-// }
-
-// contactForm.addEventListener('submit', sendEmail)
-
-
 function change_arabic() {
-  // Body element using getElementById
+
   const bodyElement = document.getElementById('body');
   if (bodyElement) {
     bodyElement.style.direction = "rtl";
   }
 
-  // Customer Stories Right using getElementsByClassName
   const customerStoriesRightElements = document.querySelector('.customer-stories-right');
   if (customerStoriesRightElements) {
     customerStoriesRightElements.classList.add("arabic-customers");
     customerStoriesRightElements.classList.remove('right-column');
   }
 
+  var ArabicAboutContainer = document.querySelector(".about-container");
+  if (ArabicAboutContainer) {
+    ArabicAboutContainer.classList.toggle("arabic-about-container");
 
-  
-
-  // About Container using document.querySelector
-  const aboutContainer = document.querySelector(".about-container");
-  if (aboutContainer) {
-    aboutContainer.classList.add("arabic-about-container");
-    aboutContainer.classList.remove('about-container');
+    // If the element has the "english-about-container" class, remove it
+    if (ArabicAboutContainer.classList.contains("english-about-container")) {
+      ArabicAboutContainer.classList.remove("english-about-container");
+    }
   }
 
-  // Desc One and Two using getElementsByClassName with loop
-  var descElements = document.getElementsByClassName('desc-onee');
-  for (let i = 0; i < descElements.length; i++) {
-    descElements[i].classList.add("arabic-desc-onee");
-    descElements[i].classList.remove('desc-onee');
+
+  var ArabicAboutDescOne = document.querySelector(".desc-onee")
+  if (ArabicAboutDescOne) {
+    ArabicAboutDescOne.classList.toggle("arabic-desc-onee");
+
+    if (ArabicAboutDescOne.classList.contains("english-desc-onee")) {
+      ArabicAboutDescOne.classList.remove("english-desc-onee");
+    }
   }
 
-  descElements = document.getElementsByClassName('desc-two');
-  for (let i = 0; i < descElements.length; i++) {
-    descElements[i].classList.add("arabic-desc-two");
-    descElements[i].classList.remove('desc-two');
+
+ var ArabicAboutDescTwo = document.querySelector(".desc-two")
+  if (ArabicAboutDescTwo) {
+    ArabicAboutDescTwo.classList.toggle("arabic-desc-two");
+
+    if (ArabicAboutDescTwo.classList.contains("english-desc-two")) {
+      ArabicAboutDescTwo.classList.remove("english-desc-two");
+    }
   }
 
-  // Contact Form Container using getElementById (assuming unique ID)
   var contactFormContainer = document.querySelector('.contact-form-container');
   if (contactFormContainer) {
     contactFormContainer.classList.add("arabic-contact-black");
     contactFormContainer.classList.remove('contact-form-container');
   }
 
-  // Navbar
+
   var contactFormContainer = document.querySelector('.ul-list');
   if (contactFormContainer) {
-    contactFormContainer.classList.add("arabic-ul-list");
-    contactFormContainer.classList.remove('ul-list');
+    contactFormContainer.classList.toggle("arabic-ul-list");
+
+    // If the element has the "english-ul-list" class, remove it
+    if (contactFormContainer.classList.contains("english-ul-list")) {
+      contactFormContainer.classList.remove("english-ul-list");
+    }
   }
 
-  // Innovative Cards Left Column using CSS selector with document.querySelector
   const innovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
   if (innovativeCardsLeftColumn) {
     innovativeCardsLeftColumn.classList.add("arabic-innovative-cards-left-column");
     innovativeCardsLeftColumn.classList.remove('english-innovative-cards-left-column');
-    // innovativeCardsLeftColumn.classList.remove('left-column');
   }
 
 
-  
-
-  // Added Real Text using document.querySelector with similar selector
   const addedRealText = document.querySelector(".added-real-text");
   if (addedRealText) {
     addedRealText.classList.add("arabic-added-real-text");
     addedRealText.classList.remove('added-real-text');
   }
 
-  // Last Added Card using document.querySelector with similar selector
   const lastAddedCard = document.querySelector(".last-added-card");
   if (lastAddedCard) {
     lastAddedCard.classList.add("arabic-last-added-card");
     lastAddedCard.classList.remove('last-added-card');
   }
 
-  // Test Center orange card
   const orangeCard = document.querySelector(".orange-card");
   if (orangeCard) {
     orangeCard.classList.add("arabic-orange-card");
     orangeCard.classList.remove('.orange-card');
     orangeCard.classList.remove('english-orange-card');
-
   }
 
-  
 
-  // Added Value Cards paragraphs using document.querySelectorAll
   const addedValueCardsParagraphs = document.querySelectorAll(".added-value-cards p");
   addedValueCardsParagraphs.forEach((para) => {
     para.classList.add("arabic-added-value-cards");
@@ -138,178 +102,212 @@ function change_arabic() {
 }
 
 
-function change_english() {
-  const bodyElement = document.getElementById('body');
-  if (bodyElement) {
-    bodyElement.style.direction = "ltr";
-  }
 
-  const orangeCard = document.querySelector(".test-center-background .orange-card");
-  if (orangeCard) {
-    orangeCard.classList.add("english-orange-card");
-    orangeCard.classList.remove('arabic-orange-card');
-  }
-
-  const EnglishInnovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
-  if (EnglishInnovativeCardsLeftColumn) {
-    EnglishInnovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
-    EnglishInnovativeCardsLeftColumn.classList.remove("arabic-innovative-cards-left-column");
-  }
-
-
-  const customerStoriesRightElements = document.getElementsByClassName('arabic-customers');
-  if (customerStoriesRightElements.length > 0) {
-    customerStoriesRightElements[0].classList.add("english-customers");
-    customerStoriesRightElements[0].classList.remove('arabic-customers');
-  }
-
-
-  const innovativeCardsLeftColumn = document.querySelector(".arabic-innovative-cards-left-column");
-  if (innovativeCardsLeftColumn) {
-    innovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
-    innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
-  }
-
-  var englishContactFormContainer = document.querySelector('.contact-form-container');
-  if (englishContactFormContainer) {
-    englishContactFormContainer.classList.add("english-contact-black");
-  contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
-
-    englishContactFormContainer.classList.remove('arabic-contact-black');
-  }
-
-  var contactFormContainer = document.querySelector('.arabic-ul-list');
-  if (contactFormContainer) {
-    contactFormContainer.classList.add("english-ul-list");
-    contactFormContainer.classList.remove('ul-list');
-  }
-
-}
-
-
-
-function appear() {
-  document.querySelector(".ul-list").classList.toggle("display");
-}
-
-
-
-function showDiv(Div) {
-  var x = document.getElementById(Div);
-  let inputName = document.forms["contact-form"]["user_name"].value;
-  let inputEmail = document.forms["contact-form"]["user_email"].value;
-  let inputSubject = document.forms["contact-form"]["user_subject"].value;
-  let inputMsg = document.forms["contact-form"]["message"].value;
-
-  if (x.style.display == "none") {
-    if(inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != ""){
-      x.style.display = "block";
+  function change_english() {
+    const bodyElement = document.getElementById('body');
+    if (bodyElement) {
+      bodyElement.style.direction = "ltr";
     }
-  } else {
-    x.style.display = "none";
-  }
-}
 
-
-function formDiv(Div) {
-  var formDiv = document.getElementById(Div);
-  if (formDiv.style.display == "none") {
-    formDiv.style.display = "block";
-  } else {
-    formDiv.style.display = "none";
-  }
-}
-
-
-
-function hideDiv(Div) {
-  var hide = document.getElementById(Div);
-  var contactForm = document.getElementById('contact-form');
-
-  if (hide.style.display == "none") {
-  } else {
-    hide.style.display = "none";
-    // document.querySelector('input').value= ' ';  
-    document.getElementById('contact-form').reset();
-
-  }
-}
-
-
-
-function displayLanguageOptions() {
-  // #english-label
-  // #arabic-label
-
-  var dropdown = document.getElementsByClassName("section-dropdown")
-  var arabicLabel = document.getElementById("arabic-label").onclick(() => {
-    dropdown.style.display = "none";
-  })
-}
-
-
-
-
-checkLang();
-
-function checkLang() {
-  if (localStorage.getItem('country')) {
-    const country = JSON.parse(localStorage.getItem('country'));
-    console.log(country);
-    if (country.dir == 'rtl') {
-      change_style();
+    const orangeCard = document.querySelector(".test-center-background .orange-card");
+    if (orangeCard) {
+      orangeCard.classList.add("english-orange-card");
+      orangeCard.classList.remove('arabic-orange-card');
     }
-    document.body.dir = country.dir;
-    console.log(JSON.parse(localStorage.getItem('country')));
-  } else {
-    const country = {
-      lang: 'english',
-      dir: 'ltr'
+
+    const EnglishInnovativeCardsLeftColumn = document.querySelector(".innovative-cards .left-column");
+    if (EnglishInnovativeCardsLeftColumn) {
+      EnglishInnovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
+      EnglishInnovativeCardsLeftColumn.classList.remove("arabic-innovative-cards-left-column");
     }
-    setLang(country);
-  }
-}
 
 
-function setLang(country) {
-  localStorage.setItem('country', JSON.stringify(country));
-  document.body.dir = country.dir
-}
+    const customerStoriesRightElements = document.getElementsByClassName('arabic-customers');
+    if (customerStoriesRightElements.length > 0) {
+      customerStoriesRightElements[0].classList.add("english-customers");
+      customerStoriesRightElements[0].classList.remove('arabic-customers');
+    }
 
-function changeLang(direction) {
-  console.log(direction);
-  console.log(localStorage.getItem('country'));
-  if (localStorage.getItem('country')) {
-    let country = JSON.parse(localStorage.getItem('country'));
-    console.log(direction);
-    console.log(country.dir != direction);
-    if (country.dir != direction) {
 
-      country = {
-        dir: direction
+    const innovativeCardsLeftColumn = document.querySelector(".arabic-innovative-cards-left-column");
+    if (innovativeCardsLeftColumn) {
+      innovativeCardsLeftColumn.classList.add("english-innovative-cards-left-column");
+      innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
+    }
+
+    var englishContactFormContainer = document.querySelector('.contact-form-container');
+    if (englishContactFormContainer) {
+      englishContactFormContainer.classList.add("english-contact-black");
+      contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
+
+      englishContactFormContainer.classList.remove('arabic-contact-black');
+    }
+
+
+    var contactFormContainer = document.querySelector('.ul-list');
+    if (contactFormContainer) {
+      contactFormContainer.classList.toggle("english-ul-list");
+
+      // If the element has the "arabic-ul-list" class, remove it
+      if (contactFormContainer.classList.contains("arabic-ul-list")) {
+        contactFormContainer.classList.remove("arabic-ul-list");
       }
-      console.log(direction);
     }
-    setLang(country);
-  } else {
-    const country = {
-      lang: 'english',
-      dir: 'ltr'
+
+
+    var ArabicAboutContainer = document.querySelector(".about-container");
+    if (ArabicAboutContainer) {
+      ArabicAboutContainer.classList.toggle("english-about-container");
+
+      // If the element has the "english-about-container" class, remove it
+      if (ArabicAboutContainer.classList.contains("arabic-about-container")) {
+        ArabicAboutContainer.classList.remove("arabic-about-container");
+      }
     }
-    setLang(country);
+
+
+    var EnglishAboutDescOne = document.querySelector(".desc-onee");
+    if (EnglishAboutDescOne) {
+      EnglishAboutDescOne.classList.toggle("english-desc-onee");
+
+      if (EnglishAboutDescOne.classList.contains("arabic-desc-onee")) {
+        EnglishAboutDescOne.classList.remove("arabic-desc-onee");
+      }
+    }
+
+
+    var EnglishAboutDescTwo = document.querySelector(".desc-two")
+  if (EnglishAboutDescTwo) {
+    EnglishAboutDescTwo.classList.toggle("english-desc-twoo");
+
+    if (EnglishAboutDescTwo.classList.contains("arabic-desc-two")) {
+      EnglishAboutDescTwo.classList.remove("arabic-desc-two");
+    }
   }
-}
+
+  }
+
+    function appear() {
+      document.querySelector(".ul-list").classList.toggle("display");
+    }
 
 
-function mini_nav_language() {
- 
-  document.querySelector(".mini-nav-language").classList.toggle("display");
-}
+
+    function showDiv(Div) {
+      var x = document.getElementById(Div);
+      let inputName = document.forms["contact-form"]["user_name"].value;
+      let inputEmail = document.forms["contact-form"]["user_email"].value;
+      let inputSubject = document.forms["contact-form"]["user_subject"].value;
+      let inputMsg = document.forms["contact-form"]["message"].value;
+
+      if (x.style.display == "none") {
+        if (inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != "") {
+          x.style.display = "block";
+        }
+      } else {
+        x.style.display = "none";
+      }
+    }
 
 
-const languageToggle = document.querySelector(".language-toggle");
-  const languageOptions = document.querySelector(".language-options");
+    function formDiv(Div) {
+      var formDiv = document.getElementById(Div);
+      if (formDiv.style.display == "none") {
+        formDiv.style.display = "block";
+      } else {
+        formDiv.style.display = "none";
+      }
+    }
 
-  languageToggle.addEventListener("click", function() {
-    languageToggle.classList.toggle("active");
-  });
+
+
+    function hideDiv(Div) {
+      var hide = document.getElementById(Div);
+      var contactForm = document.getElementById('contact-form');
+
+      if (hide.style.display == "none") {
+      } else {
+        hide.style.display = "none";
+        document.getElementById('contact-form').reset();
+      }
+    }
+
+
+
+    function displayLanguageOptions() {
+      var dropdown = document.getElementsByClassName("section-dropdown")
+      var arabicLabel = document.getElementById("arabic-label").onclick(() => {
+        dropdown.style.display = "none";
+      })
+    }
+
+
+    checkLang();
+
+    function checkLang() {
+      if (localStorage.getItem('country')) {
+        const country = JSON.parse(localStorage.getItem('country'));
+        console.log(country);
+        if (country.dir == 'rtl') {
+          change_style();
+        }
+        document.body.dir = country.dir;
+        console.log(JSON.parse(localStorage.getItem('country')));
+      } else {
+        const country = {
+          lang: 'english',
+          dir: 'ltr'
+        }
+        setLang(country);
+      }
+    }
+
+
+    function setLang(country) {
+      localStorage.setItem('country', JSON.stringify(country));
+      document.body.dir = country.dir
+    }
+
+    function changeLang(direction) {
+      console.log(direction);
+      console.log(localStorage.getItem('country'));
+      if (localStorage.getItem('country')) {
+        let country = JSON.parse(localStorage.getItem('country'));
+        console.log(direction);
+        console.log(country.dir != direction);
+        if (country.dir != direction) {
+
+          country = {
+            dir: direction
+          }
+          console.log(direction);
+        }
+        setLang(country);
+      } else {
+        const country = {
+          lang: 'english',
+          dir: 'ltr'
+        }
+        setLang(country);
+      }
+    }
+
+
+    function mini_nav_language() {
+
+      document.querySelector(".mini-nav-language").classList.toggle("display");
+    }
+
+
+    const languageToggle = document.querySelector(".language-toggle");
+    const languageOptions = document.querySelector(".language-options");
+
+    languageToggle.addEventListener("click", function () {
+      languageToggle.classList.toggle("active");
+    });
+
+
+    function welcoming() {
+      console.log("hello");
+    }
+  

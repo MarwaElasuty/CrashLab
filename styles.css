@@ -1448,6 +1448,21 @@ img[alt="client"] {
 }
 
 
+.english-about-container {
+    background-image: linear-gradient(to right, transparent 100%, black 30%), url(./images/legacy.svg);
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--spacing-md) 0;
+    background-size: contain;
+    /* height: 100vh; */
+    background-position: right;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 100vh;
+}
+
 /* .about-legacy-background .section-container {
     position: relative;
     bottom: 100px;
@@ -2863,25 +2878,58 @@ swiper-slide img {
 
 
 .arabic-desc-onee {
-    background-color: white;
+     background-color: white;
+    width: 24%;
     position: relative;
     left: -8%;
-    bottom: 125px;
+    bottom: 212px;
     padding: var(--spacing-lg);
     box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     margin-bottom: 30px;
-    height: auto;
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
 }
+
+.english-desc-onee {
+    background-color: white;
+    width: 24%;
+    position: relative;
+    right: -8%;
+    bottom: 212px;
+    padding: var(--spacing-lg);
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    margin-bottom: 30px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .arabic-desc-two {
     background-color: white;
     position: relative;
-    right: 58%;
+    width: 24.3%;
+    right: 61%;
+    padding: var(--spacing-lg);
+    height: auto;
+    bottom: 700px;
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.english-desc-two {
+    background-color: white;
+    position: relative;
+    left: 58%;
     padding: var(--spacing-lg);
     height: auto;
     bottom: 447px;
@@ -2892,7 +2940,6 @@ swiper-slide img {
     align-items: center;
     width: 30%;
 }
-
 
 @media screen and (max-width:1200px) and (min-width:992) {
 
