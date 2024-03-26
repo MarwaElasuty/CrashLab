@@ -118,6 +118,15 @@ function change_arabic() {
     }
   }
   
+  var arabicContactFormContainer = document.querySelector('.contact-form-container');
+  if (arabicContactFormContainer) {
+    arabicContactFormContainer.classList.toggle("arabic-contact-black");
+
+    if (arabicContactFormContainer.classList.contains("english-contact-black")) {
+      arabicContactFormContainer.classList.remove("english-contact-black");
+    }
+  }
+
 }
 
 function change_english() {
@@ -154,12 +163,15 @@ function change_english() {
     innovativeCardsLeftColumn.classList.remove('arabic-innovative-cards-left-column');
   }
 
+
+
   var englishContactFormContainer = document.querySelector('.contact-form-container');
   if (englishContactFormContainer) {
-    englishContactFormContainer.classList.add("english-contact-black");
-    contactFormContainer.classList.add("contact-form-container"); // Retain the generic class
+    englishContactFormContainer.classList.toggle("english-contact-black");
 
-    englishContactFormContainer.classList.remove('arabic-contact-black');
+    if (englishContactFormContainer.classList.contains("arabic-contact-black")) {
+      englishContactFormContainer.classList.remove("arabic-contact-black");
+    }
   }
 
 

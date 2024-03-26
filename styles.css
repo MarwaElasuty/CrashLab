@@ -86,6 +86,11 @@ img[alt=mission3] {
     transition: filter 0.5s;
 }
 
+.active{
+    color: white !important;
+  }
+
+
 .innovative-cards .left-column {
     background-color: #fff;
     text-transform: uppercase;
@@ -2987,7 +2992,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 57px;
         right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -3001,7 +3006,7 @@ swiper-slide img {
 
     .arabic-ul-list {
         position: absolute;
-        top: 77px;
+        top: 57px;
         right: unset !important;
         left: 6px !important;
         padding: var(--spacing-lg);
@@ -3015,7 +3020,7 @@ swiper-slide img {
 
     .english-ul-list{
         position: absolute;
-        top: 77px;
+        top: 57px;
         left: unset !important;
 
         right: 6px !important;
@@ -3222,7 +3227,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 57px;
         right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -3235,7 +3240,7 @@ swiper-slide img {
 
     .arabic-ul-list {
         position: absolute;
-        top: 77px;
+        top: 57px;
         right: unset !important;
         left: 6px !important;
         padding: var(--spacing-lg);
@@ -3248,7 +3253,7 @@ swiper-slide img {
     }
     .english-ul-list{
         position: absolute;
-        top: 77px;
+        top: 57px;
         left: unset !important;
 
         right: 6px !important;
@@ -3683,7 +3688,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 57px;
         right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -3696,7 +3701,7 @@ swiper-slide img {
 
     .arabic-ul-list {
         position: absolute;
-        top: 77px;
+        top: 57px;
         right: unset !important;
         left: 6px !important;
         padding: var(--spacing-lg);
@@ -3710,7 +3715,7 @@ swiper-slide img {
 
     .english-ul-list{
         position: absolute;
-        top: 77px;
+        top: 57px;
         right: 6px !important;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -4163,7 +4168,7 @@ swiper-slide img {
     .ul-list {
         display: none;
         position: absolute;
-        top: 56px;
+        top: 57px;
         right: -5px;
         padding: var(--spacing-lg);
         background-color: rgba(10, 10, 10, 0.8);
@@ -4176,7 +4181,7 @@ swiper-slide img {
 
     .arabic-ul-list {
         position: absolute;
-        top: 77px;
+        top: 57px;
         right: unset !important;
         left: 6px !important;
         padding: var(--spacing-lg);
@@ -4190,7 +4195,7 @@ swiper-slide img {
 
     .english-ul-list{
         position: absolute;
-        top: 77px;
+        top: 57px;
         left: unset !important;
         right: 6px !important;
         padding: var(--spacing-lg);
@@ -4939,18 +4944,6 @@ img[alt="arabic-language"]:hover {
 
 
 
-.english-contact-black {
-    width: 34%;
-    position: absolute;
-    top: 15px;
-    left: unset !important;
-    left: -8px;
-    z-index: 1;
-}
-
-
-
-
 
 .language-switcher {
     position: relative;
@@ -5021,6 +5014,8 @@ img[alt="arabic-language"]:hover {
     transform: rotate(180deg); /* Rotates arrow on click */
   }
 
+
+ 
 
 
 
@@ -5258,24 +5253,26 @@ img[alt="arabic-flag"]:hover{
 }
 
 
-.arabic-contact-black {
-    width: 34%;
-    position: absolute;
-    top: 15px;
-    right: unset !important;
-    left: -8px;
-    z-index: 1;
-}
-
-
 .english-contact-black {
     width: 34%;
     position: absolute;
     top: 15px;
     left: unset !important;
-    right: -8px;
+    right: 6px;
     z-index: 1;
 }
+
+
+.arabic-contact-black {
+    width: 34%;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1;
+}
+
+
+
 
 
 
