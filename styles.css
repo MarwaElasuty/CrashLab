@@ -1863,7 +1863,7 @@ img[alt="inno-people"] {
 #partner-slider {
     width: var(--standard-width);
     overflow: hidden;
-    animation: 4s ease-in-out infinite slideLeft;
+    animation: 0.3s ease-in-out infinite slideLeft;
     width: 64%;
     display: flex;
     align-items: center
@@ -2351,7 +2351,7 @@ img[alt="innovation-img1"] {
 .slider img {
     width: 145px;
     height: 100px;
-    animation: scroll 10s linear infinite;
+    animation: scroll 8.5s linear infinite;
 
 }
 
@@ -5296,3 +5296,7 @@ img[alt="arabic-flag"]:hover{
     }
 }
 
+
+
+
+  
