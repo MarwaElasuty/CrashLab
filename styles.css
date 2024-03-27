@@ -2834,6 +2834,10 @@ swiper-slide img {
     .background h1:nth-of-type(2) {
         font-size: 30px;
     }
+    .english-customers{
+        position: unset;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -2866,6 +2870,10 @@ swiper-slide img {
     .background h1:nth-of-type(2) {
         font-size: 30px;
     }
+    .english-customers{
+        position: unset;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -2897,6 +2905,10 @@ swiper-slide img {
 
     .background h1:nth-of-type(2) {
         font-size: 30px;
+    }
+    .english-customers{
+        position: unset;
+        width: 100%;
     }
 }
 
