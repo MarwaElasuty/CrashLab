@@ -282,6 +282,22 @@ button[name=login] {
     font-size: 23px
 }
 
+.english-desc-onee {
+    background-color: white;
+    width: 24%;
+    position: relative;
+    right: -8%;
+    bottom: 212px;
+    padding: var(--spacing-lg);
+    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
+    margin-bottom: 30px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 button[name=mobile-contact-btn],
 button[name=start] {
     padding: 7px;
@@ -2946,21 +2962,7 @@ swiper-slide img {
     align-items: center;
 }
 
-.english-desc-onee {
-    background-color: white;
-    width: 24%;
-    position: relative;
-    right: -8%;
-    bottom: 212px;
-    padding: var(--spacing-lg);
-    box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
-    margin-bottom: 30px;
-    height: 190px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 .arabic-desc-two {
