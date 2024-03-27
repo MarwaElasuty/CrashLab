@@ -5253,6 +5253,19 @@ img[alt="arabic-flag"]:hover{
 }
 
 
+
+.arabic-contact-black {
+    width: 34%;
+    position: absolute;
+    top: 15px;
+    right: unset !important;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+
 .english-contact-black {
     width: 34%;
     position: absolute;
@@ -5261,18 +5274,6 @@ img[alt="arabic-flag"]:hover{
     right: 6px;
     z-index: 1;
 }
-
-
-.arabic-contact-black {
-    width: 34%;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    z-index: 1;
-}
-
-
-
 
 
 

@@ -51,12 +51,6 @@ function change_arabic() {
     }
   }
 
-  var contactFormContainer = document.querySelector('.contact-form-container');
-  if (contactFormContainer) {
-    contactFormContainer.classList.add("arabic-contact-black");
-    contactFormContainer.classList.remove('contact-form-container');
-  }
-
 
   var contactFormContainer = document.querySelector('.ul-list');
   if (contactFormContainer) {
