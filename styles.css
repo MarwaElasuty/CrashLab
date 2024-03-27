@@ -2704,19 +2704,19 @@ swiper-slide img {
 
 
 .innovation-description-containerr {
-   display: none;
+    position: relative;
 }
 
 .desc-onee {
     background-color: white;
     width: 24%;
-    position: relative;
+    position: absolute;
     left: 15%;
-    bottom: 212px;
+    bottom: 80px;
     padding: var(--spacing-lg);
     box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     margin-bottom: 30px;
-    height: 190px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2725,12 +2725,12 @@ swiper-slide img {
 
 .desc-two {
     background-color: white;
-    position: relative;
+    position: absolute;
     width: 24.3%;
     left: 61%;
     padding: var(--spacing-lg);
     height: auto;
-    bottom: 700px;
+    bottom: 246px;
     box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     display: flex;
     flex-direction: column;
@@ -2754,8 +2754,8 @@ swiper-slide img {
 
 .journeyy {
     margin: 0 0 var(--spacing-xl) 0;
-    margin-top: -235px;
     margin-bottom: 100px;
+    margin-top: 40px;
 }
 
 .journeyy p:nth-of-type(1) {
@@ -2831,7 +2831,7 @@ swiper-slide img {
     }
 
     .journeyy {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .desc-onee p {
@@ -2853,7 +2853,7 @@ swiper-slide img {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .journeyy {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .desc-onee {
@@ -2889,7 +2889,7 @@ swiper-slide img {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .journeyy {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .desc-onee {
@@ -2925,7 +2925,7 @@ swiper-slide img {
 
 @media screen and (max-width: 600px) {
     .journeyy {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .desc-onee {
@@ -5307,19 +5307,6 @@ img[alt="arabic-flag"]:hover{
 
 
 
-
-@media  screen and (min-width: 768px){
-    .contact-black>div:nth-of-type(2){
-        position: unset;
-        width: 100%;
-    }
-    .contact-black h1{
-        width: 100%;
-    }
-    .contact-black p{
-        width: 100%;
-    }
-}
 
 
 
