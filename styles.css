@@ -1400,6 +1400,7 @@ footer p {
 
 .overview {
     padding: 0 var(--spacing-lg);
+    position: relative;
     margin: var(--spacing-xxl) 0;
 }
 
@@ -1409,10 +1410,24 @@ footer p {
 }
 
 .overview-img-container {
-    background-image: url("./images/overview.svg");
+    background-image: url("./images/new-overview.svg");
     background-size: cover;
     height: 43vh;
     background-position: center;
+}
+
+.overview-gray-card {
+    position: absolute;
+    left: 320px;
+    top: 285px;
+    background-color: rgb(155 155 155 / 42%);
+    color: white;
+    width: 24%;
+    padding: var(--spacing-md);
+}
+
+.overview-gray-card p {
+    font-size: var(--h4-size);
 }
 
 .test-center-container {
@@ -1828,7 +1843,7 @@ img[alt=mission3] {
     width: 60%;
 }
 
-.facility-boy{
+.facility-boy {
     width: 40%;
 }
 
@@ -2444,7 +2459,7 @@ swiper-slide img {
         width: 100%;
     }
 
-    .facility-boy{
+    .facility-boy {
         width: 40%;
     }
 
@@ -2475,9 +2490,10 @@ swiper-slide img {
         padding: var(--spacing-md);
     }
 
-    .facility-boy{
+    .facility-boy {
         width: 40%;
     }
+
     .facility-desc {
         width: 60%;
         right: 64px;
@@ -5368,7 +5384,7 @@ img[alt="arabic-flag"]:hover {
 }
 
 
-.our-facilities-boy{
+.our-facilities-boy {
     background-image: url("./images/shape.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -5379,7 +5395,7 @@ img[alt="arabic-flag"]:hover {
     margin: var(--spacing-lg) 0;
 }
 
-.boy-desc{
+.boy-desc {
     position: absolute;
     left: 288px;
     top: 44px;
@@ -5398,25 +5414,37 @@ img[alt="arabic-flag"]:hover {
 }
 
 
-@media  screen and (max-width: 1200px) and (min-width:992px) {
-    
-}
-@media  screen and (max-width: 992px) and (min-width:786px) {
-    .boy-desc{
+@media screen and (max-width: 1200px) and (min-width:992px) {}
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    .boy-desc {
         top: 0;
         left: 0;
     }
+    .overview-gray-card{
+        position: unset;
+        width: 100%;
+     }
 }
-@media  screen and (max-width: 786px) and (min-width:600px) {
-    .boy-desc{
+
+@media screen and (max-width: 786px) and (min-width:600px) {
+    .boy-desc {
         top: 0;
         left: 0;
     }
-}
-@media  screen and (max-width: 600px){
-    .boy-desc{
-        top: 0;
-        left: 0;
+    .overview-gray-card{
+       position: unset;
+       width: 100%;
     }
 }
 
+@media screen and (max-width: 600px) {
+    .boy-desc {
+        top: 0;
+        left: 0;
+    }
+    .overview-gray-card{
+        position: unset;
+        width: 100%;
+     }
+}
