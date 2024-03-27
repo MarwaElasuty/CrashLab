@@ -1355,6 +1355,10 @@ footer .section-container {
     margin: auto;
 }
 
+footer .section-container:hover{
+    cursor: pointer;
+}
+
 
 footer .follow-icons {
     display: flex;
@@ -1968,6 +1972,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.5s;
+
+}
+
+
+.circular-div:hover{
+    background-color: var(--primary-color-1);
+    cursor: pointer;
 }
 
 
@@ -4958,7 +4970,9 @@ img[alt="arabic-language"]:hover {
 
 
 
-
+img[alt="brand-logo"]:hover{
+    cursor: pointer;
+}
 
 .language-switcher {
     position: relative;
@@ -4977,7 +4991,9 @@ img[alt="arabic-language"]:hover {
     background-color: inherit;
     transition: all 0.2s ease-in-out;
     border-style: none;
-
+    font-size: 16px;
+    font-weight: var(--font-weight-4);
+    letter-spacing: 1.1px;
   }
   
  
