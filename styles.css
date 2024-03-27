@@ -1238,7 +1238,7 @@ img[alt=added-card]:hover {
     font-size: var(--h4-size);
     color: rgb(226, 226, 226);
     position: absolute;
-    top: 60px;
+    top: 90px;
     left: 23px;
     z-index: 1;
 }
@@ -5191,7 +5191,7 @@ img[alt="arabic-flag"]:hover{
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
     .map-footer-container{
-        width: 45%;
+        width: 56%;
     }
     footer .section-container{
         justify-content: unset;
@@ -5220,7 +5220,7 @@ img[alt="arabic-flag"]:hover{
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .map-footer-container{
-        width: 45%;
+        width: 56%;
     }
     footer .section-container{
         justify-content: unset;
@@ -5248,7 +5248,7 @@ img[alt="arabic-flag"]:hover{
 }
 @media  screen and (max-width: 600px){
     .map-footer-container{
-        width: 45%;
+        width: 56%;
     }
     footer .section-container{
         justify-content: unset;
