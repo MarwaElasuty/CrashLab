@@ -432,6 +432,7 @@ footer {
 
 .accreditiations .two-columns {
     row-gap: 0;
+    padding: 0 var(--spacing-lg);
 }
 
 .accreditiations .left-column {
@@ -1653,7 +1654,7 @@ img[alt=about-facility] {
 .amenities-cards-divs {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 20px;
     flex-wrap: wrap;
     row-gap: 23px
@@ -3890,14 +3891,14 @@ swiper-slide img {
         margin: var(--spacing-md)
     }
 
-    .mission .left-column {
+    /* .mission .left-column {
         display: grid;
         grid-template-areas:
             "a"
             "b"
             "d";
         grid-gap: 15px;
-    }
+    } */
 
     .background p {
         width: 100%;
