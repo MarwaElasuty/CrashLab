@@ -2704,8 +2704,7 @@ swiper-slide img {
 
 
 .innovation-description-containerr {
-    position: relative;
-    top: -7px;
+   display: none;
 }
 
 .desc-onee {
@@ -2832,7 +2831,7 @@ swiper-slide img {
     }
 
     .journeyy {
-        margin-top: 2px;
+        margin-top: 20px;
     }
 
     .desc-onee p {
@@ -2854,7 +2853,7 @@ swiper-slide img {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .journeyy {
-        margin-top: 2px;
+        margin-top: 20px;
     }
 
     .desc-onee {
@@ -2890,7 +2889,7 @@ swiper-slide img {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .journeyy {
-        margin-top: 2px;
+        margin-top: 20px;
     }
 
     .desc-onee {
@@ -2926,7 +2925,7 @@ swiper-slide img {
 
 @media screen and (max-width: 600px) {
     .journeyy {
-        margin-top: 2px;
+        margin-top: 20px;
     }
 
     .desc-onee {
@@ -5321,6 +5320,8 @@ img[alt="arabic-flag"]:hover{
         width: 100%;
     }
 }
+
+
 
 
 
