@@ -13,8 +13,11 @@ function change_arabic() {
     localStorage.setItem('lang','Ar');
     bodyElement.style.direction = "rtl";
     document.getElementById("main-flag").src = "./images/arabic.svg";
+    document.querySelector("#language-toggle-span").textContent = "عربي";
+  
   }
 
+  
   const customerStoriesRightElements = document.querySelector('.customer-stories-right');
   if (customerStoriesRightElements) {
     customerStoriesRightElements.classList.add("arabic-customers");
@@ -129,6 +132,8 @@ function change_english() {
     localStorage.setItem('lang','En');
     bodyElement.style.direction = "ltr";
     document.getElementById("main-flag").src = "./images/english.svg";
+    document.querySelector("#language-toggle-span").textContent = "English";
+
   }
 
   const orangeCard = document.querySelector(".test-center-background .orange-card");
