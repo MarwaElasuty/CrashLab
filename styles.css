@@ -1973,7 +1973,7 @@ img[alt="inno-people"] {
     justify-content: center;
     position: relative;
     z-index: -1;
-    top: 85px;
+    top: -11px;
     margin: var(--spacing-xl) 0
 }
 
@@ -2183,7 +2183,6 @@ img[alt="right-arrow"]:hover {
 
 .inner-table h4 {
     margin: var(--spacing-md) 0;
-    padding: var(--spacing-md) 0 var(--spacing-md) 0;
 }
 
 .table-of-content h5 {
@@ -3259,9 +3258,7 @@ swiper-slide img {
         position: unset;
     }
 
-    .blog-article-background {
-        height: 165vh
-    }
+
 
     .contact-black>div:nth-of-type(2) {
         width: 97%;
@@ -3477,10 +3474,6 @@ swiper-slide img {
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-md);
         position: unset;
-    }
-
-    .blog-article-background {
-        height: 165vh
     }
 
     .contact-black>div:nth-of-type(2) {
@@ -3936,9 +3929,7 @@ swiper-slide img {
         position: unset;
     }
 
-    .blog-article-background {
-        height: 165vh
-    }
+
 
     .contact-black>div:nth-of-type(2) {
         width: 97%;
@@ -4418,10 +4409,6 @@ swiper-slide img {
     .blog-background {
         padding: 0 var(--spacing-md) 0 var(--spacing-lg);
         position: unset;
-    }
-
-    .blog-article-background {
-        height: 165vh
     }
 
     .contact-black>div:nth-of-type(2) {
