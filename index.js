@@ -13,7 +13,7 @@ function change_arabic() {
     localStorage.setItem('lang','Ar');
     bodyElement.style.direction = "rtl";
     document.getElementById("main-flag").src = "./images/arabic.svg";
-    document.querySelector("#language-toggle-span").textContent = "عربي";
+    document.querySelector("#language-toggle-span").textContent = "اللغة العربية";
   
   }
 
@@ -325,3 +325,15 @@ function welcoming() {
 
 // // Add event listener to the button (modify this line if your button ID is different)
 // directionToggleBtn.addEventListener('click', toggleDirection);
+
+
+document.addEventListener('click', function(event) {
+  const isClickOutOfDropdown = !event.target.closest('.language-switcher');
+  const languageOptions = document.querySelector('.language-options');
+  
+  if (isClickOutOfDropdown && languageOptions.classList.contains('active')) {
+    languageOptions.classList.remove('active');
+    // Update arrow rotation if needed (optional)
+    document.querySelector('.language-toggle .arrow').style.transform = 'rotate(0deg)';
+  }
+});
