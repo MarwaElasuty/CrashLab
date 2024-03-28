@@ -667,6 +667,10 @@ footer .section-container {
     margin: var(--spacing-xxl) 0;
 }
 
+.breakdown{
+    margin-top: 135px;
+}
+
 .customized-services .right-column {
     display: flex;
     width: 55%;
@@ -940,7 +944,7 @@ img[alt="ur-service"] {
     background-repeat: no-repeat;
     background-position: 97px 18px;
     position: relative;
-    left: -27px;
+    left: -2px;
 }
 
 .customized-services .right-column>div:nth-of-type(1) {
@@ -1417,7 +1421,7 @@ footer p {
     background-position: center;
 }
 
-.overview-gray-card {
+/* .overview-gray-card {
     position: absolute;
     left: 320px;
     top: 285px;
@@ -1425,6 +1429,14 @@ footer p {
     color: white;
     width: 24%;
     padding: var(--spacing-md);
+} */
+
+.gray-card{
+    background-color: rgb(155 155 155 / 42%);
+    color: white;
+    width: 24%;
+    padding: var(--spacing-md);
+    margin-top: -250px;
 }
 
 .overview-gray-card p {
@@ -5461,6 +5473,10 @@ img[alt="arabic-flag"]:hover {
         align-items: center;
     
     }
+    .gray-card{
+        width: 75%;
+        margin-top: -198px;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -5498,6 +5514,10 @@ img[alt="arabic-flag"]:hover {
         flex-direction: column;
         align-items: center;
     
+    }
+    .gray-card{
+        width: 75%;
+        margin-top: -198px;
     }
 }
 
@@ -5541,6 +5561,10 @@ img[alt="arabic-flag"]:hover {
         flex-direction: column;
         align-items: center;
     
+    }
+    .gray-card{
+        width: 100%;
+        margin-top: -198px;
     }
 }
 
