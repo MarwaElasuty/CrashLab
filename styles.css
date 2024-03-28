@@ -2787,6 +2787,7 @@ swiper-slide img {
 
 .innovation-description-containerr {
     position: relative;
+    padding: 0 var(--spacing-md);
 }
 
 .desc-onee {
@@ -2798,6 +2799,7 @@ swiper-slide img {
     padding: var(--spacing-lg);
     box-shadow: 2px 1px 2px 3px rgba(155, 155, 155, 0.14);
     margin-bottom: 30px;
+    margin-top: 30px;
     height: auto;
     display: flex;
     flex-direction: column;
